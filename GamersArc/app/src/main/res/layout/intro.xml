@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_marginTop="30dp"
+        android:text="welcome"
+        android:textColor="@color/lightBlue2"
+        android:id="@+id/introTitle"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/introImage"
+        android:src="@drawable/page2new"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="find_someone"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/DarkBlue"
+        android:id="@+id/introDescription1"
+        />
+
+    <TextView
+        android:text="to_run_with"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/DarkBlue"
+        android:id="@+id/introDescription2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/DarkBlue"
+        android:id="@+id/introDescription3"
+        />
+
+
+</LinearLayout>

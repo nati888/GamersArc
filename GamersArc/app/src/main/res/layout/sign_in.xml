@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/lightBlue"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="welcome_back"
+        android:textSize="18sp"
+        android:textColor="@color/DarkBlue"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign_in"
+        android:textSize="25sp"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/lightBlue2"
+                app:boxStrokeWidth="1.2dp"
+                app:hintTextColor="@color/lightBlue2"
+                app:boxCornerRadiusTopStart="22dp"
+                app:boxCornerRadiusTopEnd="22dp"
+                app:boxCornerRadiusBottomStart="22dp"
+                app:boxCornerRadiusBottomEnd="22dp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="5dp"
+                app:boxStrokeWidthFocused="1.9dp"
+                android:hint="email"
+                app:errorEnabled="true"
+                android:id="@+id/sign_in_et_layout_email"
+                app:boxStrokeErrorColor="@color/orange"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailEtSignIn"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="@color/lightBlue2"
+                app:boxStrokeWidth="1.2dp"
+                app:hintTextColor="@color/lightBlue2"
+                app:boxCornerRadiusTopStart="22dp"
+                app:boxCornerRadiusTopEnd="22dp"
+                app:boxCornerRadiusBottomStart="22dp"
+                app:boxCornerRadiusBottomEnd="22dp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="5dp"
+                app:boxStrokeWidthFocused="1.9dp"
+                app:errorEnabled="true"
+                android:hint="password"
+                android:id="@+id/sign_in_et_layout_password"
+                app:boxStrokeErrorColor="@color/orange"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:id="@+id/passwordEtSignIn"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+                android:indeterminateDrawable="@drawable/progress_bar_sign_up"
+                android:id="@+id/signIn_progressBar"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="sign_in"
+                android:paddingHorizontal="30dp"
+                android:textSize="18sp"
+                android:background="@drawable/orange_btn"
+                android:textColor="#FFF"
+                android:textAllCaps="false"
+                android:id="@+id/signIn"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"/>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

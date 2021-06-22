@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign_up"
+        android:textSize="25sp"
+        android:textColor="@color/DarkBlue"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="preferred_running_partner"
+        android:textSize="18sp"
+        android:textColor="@color/DarkBlue"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="1.5dp"
+            app:cardMaxElevation="2dp"
+            app:cardCornerRadius="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:text="gender"
+                    android:id="@+id/gender_text_signUp3"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/genderGroupPartner"
+                    android:layout_toEndOf="@+id/gender_text_signUp3"
+                    android:layout_marginStart="40dp">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="male"
+                        android:buttonTint="@color/orange"
+                        android:textColor="@color/lightGray"
+                        android:id="@+id/maleRBPartner"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="female"
+                        android:buttonTint="@color/orange"
+                        android:textColor="@color/lightGray"
+                        android:id="@+id/femaleRBPartner"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="both"
+                        android:buttonTint="@color/orange"
+                        android:textColor="@color/lightGray"
+                        android:id="@+id/bothRBPartner"/>
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="1.5dp"
+            app:cardMaxElevation="2dp"
+            app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/lightBlue2"
+                android:text="age"
+                android:id="@+id/age_text_signUp3"/>
+
+            <com.google.android.material.slider.RangeSlider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="1"
+                android:valueTo="121"
+                android:stepSize="1"
+                android:id="@+id/slider_multiple_thumbs_signUp3"
+                android:layout_toEndOf="@+id/age_text_signUp3"/>
+
+
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="1.5dp"
+            app:cardMaxElevation="2dp"
+            app:cardCornerRadius="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:text="running_level"
+                    android:id="@+id/runningLevel_text"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toEndOf="@+id/runningLevel_text"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/levelGroupPartner">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="easy"
+                        android:drawableTop="@drawable/easy_option"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/option_text"
+                        android:button="@android:color/transparent"
+                        android:layout_marginEnd="10dp"
+
+                        android:id="@+id/easyRBPartner"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/medium_option"
+                        android:textAlignment="center"
+                        android:text="medium"
+                        android:button="@android:color/transparent"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@drawable/option_text"
+                        android:id="@+id/mediumRBPartner"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/expert_option"
+                        android:textAlignment="center"
+                        android:text="expert"
+                        android:button="@android:color/transparent"
+                        android:textColor="@drawable/option_text"
+                        android:id="@+id/expertRBPartner"/>
+                </RadioGroup>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/progress_bar_sign_up"
+            android:id="@+id/signUp3_progressBar"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="sign_up"
+            android:paddingHorizontal="30dp"
+            android:textSize="18sp"
+            android:background="@drawable/orange_btn"
+            android:textColor="#FFF"
+            android:id="@+id/signUpDone"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circles_3"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

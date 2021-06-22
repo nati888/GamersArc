@@ -1,0 +1,314 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create_new_event"
+        android:textSize="25sp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/DarkBlue"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/ic_date_range_lightblue2_24dp"
+                    android:layout_marginEnd="9dp" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:hint="date"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:background="@drawable/edit_text_background"
+                    android:drawablePadding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/eventDateEt"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/ic_query_builder_black_24dp"
+                    android:layout_marginEnd="9dp" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:hint="time"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:background="@drawable/edit_text_background"
+                    android:drawablePadding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/eventTimeEt"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_marginTop="7dp"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:layout_marginEnd="9dp" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:hint="location"
+                    android:padding="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:background="@drawable/edit_text_background"
+                    android:drawablePadding="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/eventLocationEt"
+                    />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="running_level"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/lightBlue2" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/levelGroupCreateEvent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="easy"
+                            android:drawableTop="@drawable/easy_option"
+                            android:button="@null"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/option_text"
+                            android:id="@+id/easyRBCreateEvent"
+                            android:layout_marginEnd="10dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="medium"
+                            android:drawableTop="@drawable/medium_option"
+                            android:button="@null"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/option_text"
+                            android:id="@+id/mediumRBCreateEvent"
+                            android:layout_marginEnd="10dp"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="expert"
+                            android:drawableTop="@drawable/expert_option"
+                            android:button="@null"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/option_text"
+                            android:id="@+id/expertRBCreateEvent"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="15dp"
+                        android:text="event_status"
+                        android:textColor="@color/lightBlue2"
+                        />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/event_status"
+                        android:orientation="horizontal"
+                        >
+
+                        <RadioButton
+                            android:drawableStart="@drawable/radio_btn_orange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:textSize="15sp"
+                            android:button="@null"
+                            android:text="public_event"
+                            android:id="@+id/public_event"
+                            android:textColor="@color/darkGray"
+                            android:layout_marginEnd="10dp"/>
+
+                        <RadioButton
+                            android:drawableStart="@drawable/radio_btn_orange"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="5dp"
+                            android:textSize="15sp"
+                            android:button="@null"
+                            android:textColor="@color/darkGray"
+                            android:text="private_event"
+                            android:id="@+id/private_event"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:id="@+id/invite_friend_layout">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_add_light_blue_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="invite_friends_btn"
+                    android:textSize="20sp"
+                    android:textColor="@color/lightBlue2"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textSize="17sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="invite_friends_btn"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_btn"
+                android:layout_marginTop="17dp"
+                android:id="@+id/inviteFriendsBtn"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:textSize="17sp"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="17dp"
+                    android:text="done_btn"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:background="@drawable/orange_btn"
+                    android:id="@+id/doneBtn"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

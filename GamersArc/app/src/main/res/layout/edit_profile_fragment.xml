@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="27sp"
+                android:textColor="@color/DarkBlue"
+                android:layout_gravity="center"
+                android:text="edit_profile"/>
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    app:civ_border_color="@color/darkGray"
+                    app:civ_border_width="2dp"
+
+                    android:id="@+id/imageEditProfile"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    app:civ_circle_background_color="@color/DarkBlue"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_gravity="bottom"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textSize="15sp"
+                    android:layout_marginStart="40dp"
+                    android:text="full_name"
+                    android:textColor="@color/lightBlue2"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fullNameEditProfileEt"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/changeFullNameImage"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        app:civ_circle_background_color="@color/DarkBlue"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:focusable="false"
+                    android:text="gender"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:textColor="@color/lightBlue2"
+                    android:id="@+id/ageEditProfile"/>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:id="@+id/genderGroupEditProfile">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@color/gray"
+                        android:text="male"
+                        android:id="@+id/maleEditProfileRB"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:text="female"
+                        android:id="@+id/femaleEditProfileRB"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/lightBlue2"
+                    android:text="birthdate" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/ic_date_range_black_24dp"
+                        android:background="@null"
+                        android:id="@+id/dateEditImageButton"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:focusable="false"
+                        android:id="@+id/dateEditProfileET"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_marginStart="40dp"
+                    android:textColor="@color/lightBlue2"
+                    android:textSize="15sp"
+                    android:text="running_level"/>
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5.5"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toEndOf="@+id/runningLevel_text"
+                    android:id="@+id/levelGroupEditProfile">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="easy"
+                        android:drawableTop="@drawable/easy_option_blue"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/option_text_blue"
+                        android:button="@null"
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/easyEditProfileRB"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/medium_option_blue"
+                        android:textAlignment="center"
+                        android:text="medium"
+                        android:button="@null"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@drawable/option_text_blue"
+                        android:id="@+id/mediumEditProfileRB"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/expert_option_blue"
+                        android:textAlignment="center"
+                        android:text="expert"
+                        android:button="@null"
+                        android:textColor="@drawable/option_text_blue"
+                        android:id="@+id/expertEditProfileRB"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/orange_btn"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffff"
+                android:text="save"
+                android:id="@+id/saveEditProfileButton"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0.7dp"
+    app:cardMaxElevation="1dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_location_on_blue_24dp"
+            android:id="@+id/managedCellLocationIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:textColor="@color/DarkBlue"
+            android:text="Rehovot, golda meir"
+            android:layout_toEndOf="@+id/managedCellLocationIcon"
+            android:id="@+id/managedCellAddressTV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/lightBlue2"
+            android:layout_marginTop="5dp"
+            android:text="26.9.2020"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/managedCellAddressTV"
+            android:id="@+id/managedCellDateTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/managedCellDateTV"
+            android:layout_toEndOf="@+id/managedCellDateTV"
+            android:layout_marginStart="20dp"
+            android:text="10:00"
+            android:textColor="@color/lightBlue2"
+            android:textSize="16sp"
+            android:id="@+id/managedCellTimeTV"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/managedCellRunners"
+            android:layout_below="@+id/managedCellDateTV"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_run_orange_24dp"
+                android:id="@+id/managedCellRunnersIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="runners"
+                android:layout_marginStart="2dp"
+
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/orange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/managedCellAddressTV"
+            android:id="@+id/buttonsLayoutManagedCell">
+
+
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="cancel"
+
+                android:background="@drawable/grey_btn"
+                android:textColor="@color/lightGray"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:id="@+id/managedCellCancelBtn"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

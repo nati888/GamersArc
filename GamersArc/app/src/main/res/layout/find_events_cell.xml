@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardMaxElevation="1dp"
+    app:cardElevation="0.7dp"
+    app:contentPadding="20dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:text="event_date"
+                android:textColor="@color/DarkBlue"
+                android:id="@+id/event1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="1/1/1"
+                android:textColor="@color/lightBlue2"
+                android:layout_toEndOf="@id/event1"
+                android:id="@+id/dateTVRecyclerCell"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:text="event_time"
+                android:textStyle="bold"
+                android:textColor="@color/DarkBlue"
+                android:layout_below="@id/event1"
+                android:id="@+id/event2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="00:00"
+                android:layout_below="@+id/event1"
+                android:layout_toEndOf="@id/event2"
+                android:textColor="@color/lightBlue2"
+                android:id="@+id/timeTVRecyclerCell"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentStart="true"
+                android:textSize="18sp"
+                android:text="event_location"
+                android:textStyle="bold"
+                android:textColor="@color/DarkBlue"
+                android:layout_below="@id/event2"
+                android:id="@+id/event3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:text="Rehovot"
+                android:textColor="@color/lightBlue2"
+                android:layout_below="@id/event2"
+                android:layout_toEndOf="@id/event3"
+                android:id="@+id/locationTVRecyclerCell"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@color/DarkBlue"
+                android:id="@+id/runnersAmountTVRecyclerCell"
+                android:layout_below="@+id/locationTVRecyclerCell"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:text="number_of_runners"
+                android:layout_below="@id/locationTVRecyclerCell"
+                android:textColor="@color/DarkBlue"
+                android:id="@+id/event4"
+                android:layout_toEndOf="@id/runnersAmountTVRecyclerCell"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/runnersAmountTVRecyclerCell"
+                android:orientation="horizontal"
+                android:id="@+id/seeMembersTv">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_run_orange_24dp"
+                    android:paddingBottom="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="see_members"
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/medium"
+                    android:id="@+id/runningLevelIm"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="easy"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="15sp"
+                    android:id="@+id/runningLevelTVRecyclerCell"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <ToggleButton
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textOn="cancel_join_btn"
+            android:textOff="join_btn"
+            android:checked="false"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/toggle_btn_backgroung"
+            android:id="@+id/joinEventBtn"/>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

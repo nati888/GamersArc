@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="30sp"
+                android:textColor="@color/DarkBlue"
+                android:layout_gravity="center"
+                android:text="edit_preferences"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp"
+                    android:text="gender"
+                    android:textColor="@color/lightBlue2"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:id="@+id/genderGroupPartnerEditP">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="male"
+                        android:buttonTint="@color/lightBlue2"
+                        android:textColor="@color/lightGray"
+                        android:id="@+id/maleRBPartnerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightGray"
+                        android:buttonTint="@color/lightBlue2"
+                        android:text="female"
+                        android:id="@+id/femaleRBPartnerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/lightGray"
+                        android:buttonTint="@color/lightBlue2"
+                        android:text="both"
+                        android:id="@+id/bothRBPartnerEditP"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/lightBlue2"
+                    android:text="age"
+                    android:id="@+id/age_text_signUp3"/>
+
+                <com.google.android.material.slider.RangeSlider
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="wrap_content"
+                    android:valueFrom="1"
+                    android:valueTo="121"
+                    android:stepSize="1"
+                    android:id="@+id/slider_multiple_thumbs"
+                    android:layout_toEndOf="@+id/age_text_signUp3"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="running_level"
+                    android:textColor="@color/lightBlue2"
+                    android:textSize="18sp"/>
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="45dp"
+                    android:layout_toEndOf="@+id/runningLevel_text"
+                    android:id="@+id/levelGroupPartnerEditP">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="easy"
+                        android:drawableTop="@drawable/easy_option_blue"
+                        android:textAlignment="center"
+                        android:textColor="@drawable/option_text_blue"
+                        android:button="@null"
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/easyRBPartnerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/medium_option_blue"
+                        android:textAlignment="center"
+                        android:text="medium"
+                        android:button="@null"
+                        android:layout_marginEnd="10dp"
+                        android:textColor="@drawable/option_text_blue"
+                        android:id="@+id/mediumRBPartnerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/expert_option_blue"
+                        android:textAlignment="center"
+                        android:text="expert"
+                        android:button="@null"
+                        android:textColor="@drawable/option_text_blue"
+                        android:id="@+id/expertRBPartnerEditP"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/orange_btn"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/signUpDoneEditP"
+                android:textColor="#ffff"
+                android:text="save"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

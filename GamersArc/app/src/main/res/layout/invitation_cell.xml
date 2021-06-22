@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0.7dp"
+    app:cardMaxElevation="1dp"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_location_on_blue_24dp"
+            android:id="@+id/invitationsCellLocationIcon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:textColor="@color/DarkBlue"
+            android:text="Rehovot, golda meir"
+            android:layout_toEndOf="@+id/invitationsCellLocationIcon"
+            android:id="@+id/invitationCellAddressTV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/lightBlue2"
+            android:layout_marginTop="5dp"
+            android:text="26.9.2020"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/invitationCellAddressTV"
+            android:id="@+id/invitationCellDateTV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/invitationCellDateTV"
+            android:layout_toEndOf="@+id/invitationCellDateTV"
+            android:layout_marginStart="20dp"
+            android:text="10:00"
+            android:textColor="@color/lightBlue2"
+            android:textSize="16sp"
+            android:id="@+id/invitationCellTimeTV"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/invitationsCellRunners"
+            android:layout_below="@+id/invitationCellDateTV"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_run_orange_24dp"
+                android:id="@+id/invitationsCellRunnersIcon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="runners"
+                android:layout_marginStart="2dp"
+
+                android:textSize="14sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/orange"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/invitationCellAddressTV"
+            android:layout_marginTop="9dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/buttonsLayoutInvitationCell">
+
+
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="join"
+                android:background="@drawable/orange_btn"
+
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:id="@+id/invitationCellJoinBtn"/>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="remove"
+                android:background="@drawable/blue_btn"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:id="@+id/invitationCellRemoveBtn"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

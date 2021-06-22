@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nevHome"
+        android:icon="@drawable/home_dark_blue"
+        android:title="home"
+        />
+
+    <item
+        android:id="@+id/nevGroup"
+        android:icon="@drawable/friends_dark_blue"
+        android:title="friends"
+        />
+
+    <item
+        android:id="@+id/nevLocation"
+        android:icon="@drawable/events_dark_blue"
+        android:title="events"
+        />
+
+    <item
+        android:id="@+id/nevProfile"
+        android:icon="@drawable/profile_dark_blue"
+        android:title="profile"
+        />
+
+    <item
+        android:id="@+id/nevMessage"
+        android:icon="@drawable/messanger_dark_blue"
+        android:title="chat"
+        />
+
+
+</menu>

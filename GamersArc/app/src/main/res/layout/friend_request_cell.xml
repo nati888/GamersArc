@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0.7dp"
+    android:layout_marginVertical="5dp"
+    app:cardMaxElevation="1dp"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/friendRequestCellImageView"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/friendRequestCellImageView"
+            android:layout_marginStart="25dp"
+            android:text="Rami"
+            android:textStyle="bold"
+            android:textColor="@color/DarkBlue"
+            android:textSize="20sp"
+            android:id="@+id/friendRequestCellNameTV"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/buttonsLayoutFriendRequestCell">
+
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:text="accept"
+                android:background="@drawable/orange_btn"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:id="@+id/friendRequestCellAllowBtn"/>
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+            <Button
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:text="remove"
+                android:textAllCaps="false"
+                android:background="@drawable/blue_btn"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:id="@+id/friendRequestCellRemoveBtn"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

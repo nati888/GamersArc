@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightBlue"
+        android:layout_height="60dp"
+        android:id="@+id/myFriendsDialogTitle">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="my_friends"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_clear_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:id="@+id/cancelBtnFriendDialog"/>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/myFriendsRecycler"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="60dp"
+        android:visibility="gone"
+        android:id="@+id/no_friend_layout"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="no_friends"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/lightBlue2"
+            android:layout_margin="20dp"
+            android:id="@+id/no_friends_TV"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="60dp"
+        android:id="@+id/done_Layout"
+        android:gravity="center_vertical"
+        android:layout_marginEnd="20dp">
+
+
+
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="done"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/blue_btn"
+            android:id="@+id/doneBtnFriendDialog" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

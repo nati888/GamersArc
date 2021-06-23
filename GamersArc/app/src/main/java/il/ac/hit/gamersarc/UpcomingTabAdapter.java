@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class UpcomingTabAdapter extends RecyclerView.Adapter<com.example.runtime.UpcomingTabAdapter.UpcomingViewHolder> {
+public class UpcomingTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.UpcomingTabAdapter.UpcomingViewHolder> {
 
     private ArrayList<Event> upcomingEvents = new ArrayList<>();
     private Context context;

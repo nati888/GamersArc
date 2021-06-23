@@ -5,7 +5,7 @@ import android.net.Uri;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import com.example.runtime.UserInstance;
+import il.ac.hit.gamersarc.UserInstance;
 
 public class EditProfileVM extends ViewModel implements DataBaseClass.OnGetUserImage,DataBaseClass.OnSaveImageListener {
 

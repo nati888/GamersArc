@@ -14,7 +14,7 @@ public class FriendsViewPagerAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         if (position == 0){
-            return new com.example.runtime.FriendsTabFragment();
+            return new il.ac.hit.gamersarc.FriendsTabFragment();
         } else {
             return new FriendsRequestsTabFragment();
         }

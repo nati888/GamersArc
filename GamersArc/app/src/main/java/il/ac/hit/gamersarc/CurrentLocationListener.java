@@ -14,13 +14,13 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 public class CurrentLocationListener extends LiveData<Location> {
 
-    private static com.example.runtime.CurrentLocationListener instance;
+    private static il.ac.hit.gamersarc.CurrentLocationListener instance;
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationRequest mLocationRequest;
 
-    public static com.example.runtime.CurrentLocationListener getInstance(Context appContext) {
+    public static il.ac.hit.gamersarc.CurrentLocationListener getInstance(Context appContext) {
         if (instance == null) {
-            instance = new com.example.runtime.CurrentLocationListener(appContext);
+            instance = new il.ac.hit.gamersarc.CurrentLocationListener(appContext);
         }
         return instance;
     }

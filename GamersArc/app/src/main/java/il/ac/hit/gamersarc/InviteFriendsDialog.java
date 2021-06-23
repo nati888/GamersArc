@@ -31,8 +31,8 @@ public class InviteFriendsDialog extends DialogFragment implements InviteFriends
         void onFinishEditDialog(ArrayList<String> invitedFriendsIds);
     }
 
-    public static com.example.runtime.InviteFriendsDialog getInstance(ArrayList<String> invitedFriends){
-        com.example.runtime.InviteFriendsDialog dialog = new com.example.runtime.InviteFriendsDialog();
+    public static il.ac.hit.gamersarc.InviteFriendsDialog getInstance(ArrayList<String> invitedFriends){
+        il.ac.hit.gamersarc.InviteFriendsDialog dialog = new il.ac.hit.gamersarc.InviteFriendsDialog();
         dialog.invitedFriendsIds.addAll(invitedFriends);
         return dialog;
     }

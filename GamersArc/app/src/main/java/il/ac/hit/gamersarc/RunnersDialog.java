@@ -26,9 +26,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class RunnersDialog extends DialogFragment {
 
-    private com.example.runtime.RunnersDialogVM viewModel;
+    private il.ac.hit.gamersarc.RunnersDialogVM viewModel;
     private ArrayList<User> runners = new ArrayList<>();
-    com.example.runtime.RunnersDialogAdapter adapter;
+    il.ac.hit.gamersarc.RunnersDialogAdapter adapter;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -37,14 +37,14 @@ public class RunnersDialog extends DialogFragment {
         assert getArguments() != null;
         eventId = getArguments().getString("eventId");
 
-        viewModel = new com.example.runtime.RunnersModelFactory(eventId).create(com.example.runtime.RunnersDialogVM.class);
+        viewModel = new il.ac.hit.gamersarc.RunnersModelFactory(eventId).create(il.ac.hit.gamersarc.RunnersDialogVM.class);
     }
 
     public RunnersDialog() {
     }
 
-    public static com.example.runtime.RunnersDialog newInstance(String eventId) {
-        com.example.runtime.RunnersDialog dialog = new com.example.runtime.RunnersDialog();
+    public static il.ac.hit.gamersarc.RunnersDialog newInstance(String eventId) {
+        il.ac.hit.gamersarc.RunnersDialog dialog = new il.ac.hit.gamersarc.RunnersDialog();
         Bundle args = new Bundle();
         args.putString("eventId", eventId);
         dialog.setArguments(args);
@@ -79,7 +79,7 @@ public class RunnersDialog extends DialogFragment {
         final CircleImageView managerImageView = view.findViewById(R.id.managerImageView);
         final TextView managerNameTV = view.findViewById(R.id.runnerDialogManagerName);
         RecyclerView runnersRecycler = view.findViewById(R.id.runnersRecycler);
-        adapter = new com.example.runtime.RunnersDialogAdapter(runners, this.getContext());
+        adapter = new il.ac.hit.gamersarc.RunnersDialogAdapter(runners, this.getContext());
         runnersRecycler.setAdapter(adapter);
         runnersRecycler.setHasFixedSize(true);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(this.getContext());
@@ -98,7 +98,9 @@ public class RunnersDialog extends DialogFragment {
         viewModel.getManagerImageUriLiveData().observe(getViewLifecycleOwner(), new Observer<Uri>() {
             @Override
             public void onChanged(Uri uri) {
-                Glide.with(Objects.requireNonNull(getContext())).load(uri).placeholder(R.drawable.placeholder_small).into(managerImageView);
+                Glide.with(requireContext()).load(uri).placeholder(R.drawable.placeholder_small).into(managerImageView);
+
+                // original                Glide.with(Objects.requireNonNull(getContext())).load(uri).placeholder(R.drawable.placeholder_small).into(managerImageView);
             }
 
 

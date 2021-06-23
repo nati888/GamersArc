@@ -27,7 +27,7 @@ public class FriendsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        com.example.runtime.FriendsViewPagerAdapter adapter = new com.example.runtime.FriendsViewPagerAdapter(this);
+        il.ac.hit.gamersarc.FriendsViewPagerAdapter adapter = new il.ac.hit.gamersarc.FriendsViewPagerAdapter(this);
         ViewPager2 viewPager = view.findViewById(R.id.friendsViewPager);
         viewPager.setAdapter(adapter);
 

@@ -12,8 +12,8 @@ public class UserInstance {
         void onGetUser();
     }
 
-    private com.example.runtime.UserInstance.OnGetUserListener callBackUserGet;
-    private static com.example.runtime.UserInstance userInstance = null;
+    private il.ac.hit.gamersarc.UserInstance.OnGetUserListener callBackUserGet;
+    private static il.ac.hit.gamersarc.UserInstance userInstance = null;
     private User user;
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();
 
@@ -39,10 +39,10 @@ public class UserInstance {
         this.user= new User();
     }
 
-    public static com.example.runtime.UserInstance getInstance()
+    public static il.ac.hit.gamersarc.UserInstance getInstance()
     {
         if (userInstance == null)
-            userInstance = new com.example.runtime.UserInstance();
+            userInstance = new il.ac.hit.gamersarc.UserInstance();
 
         return userInstance;
     }
@@ -59,7 +59,7 @@ public class UserInstance {
         this.user = user;
     }
 
-    public void setCallBackUserGet(com.example.runtime.UserInstance.OnGetUserListener callBackUserGet) {
+    public void setCallBackUserGet(il.ac.hit.gamersarc.UserInstance.OnGetUserListener callBackUserGet) {
         this.callBackUserGet = callBackUserGet;
     }
 }

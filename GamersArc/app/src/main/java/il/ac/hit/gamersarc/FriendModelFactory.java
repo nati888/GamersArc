@@ -16,8 +16,8 @@ public class FriendModelFactory implements ViewModelProvider.Factory {
     @NonNull
     @Override
     public <T extends ViewModel> T create(Class<T> modelClass) {
-        if (modelClass.isAssignableFrom(com.example.runtime.FriendDialogVM.class)) {
-            return (T) new com.example.runtime.FriendDialogVM(friendId);
+        if (modelClass.isAssignableFrom(il.ac.hit.gamersarc.FriendDialogVM.class)) {
+            return (T) new il.ac.hit.gamersarc.FriendDialogVM(friendId);
         }
 
         throw new IllegalArgumentException("Unknown ViewModel class");

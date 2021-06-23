@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class FindPeopleFragment extends Fragment implements FindPeopleAdapter.AddFriendBtnListener, FindPeopleAdapter.StrangerClickListener, SwipeRefreshLayout.OnRefreshListener {
 
-    private com.example.runtime.FindPeopleVM viewModel;
+    private il.ac.hit.gamersarc.FindPeopleVM viewModel;
     private ArrayList<User> relevantUsers = new ArrayList<>();
     private FindPeopleAdapter adapter;
     private ArrayList<String> recentSentRequests = new ArrayList<>();
@@ -31,7 +31,7 @@ public class FindPeopleFragment extends Fragment implements FindPeopleAdapter.Ad
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
 
-        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(com.example.runtime.FindPeopleVM.class);
+        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(il.ac.hit.gamersarc.FindPeopleVM.class);
     }
 
     @Nullable
@@ -117,7 +117,7 @@ public class FindPeopleFragment extends Fragment implements FindPeopleAdapter.Ad
     public void onStrangerClicked(String strangerId, boolean isRequested) {
 
         FragmentManager fm = getFragmentManager();
-        com.example.runtime.FriendDialog dialog = com.example.runtime.FriendDialog.newInstance(strangerId);
+        il.ac.hit.gamersarc.FriendDialog dialog = il.ac.hit.gamersarc.FriendDialog.newInstance(strangerId);
         assert fm != null;
         dialog.show(fm, "friendDialog");
     }

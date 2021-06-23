@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class FriendsTabAdapter extends RecyclerView.Adapter<com.example.runtime.FriendsTabAdapter.FriendViewHolder> {
+public class FriendsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.FriendsTabAdapter.FriendViewHolder> {
 
     private ArrayList<User> friends = new ArrayList<>();
     private Context context;

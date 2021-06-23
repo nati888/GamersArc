@@ -39,7 +39,7 @@ public class RegisterClass {
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
 
 
-    private static com.example.runtime.RegisterClass registerClass = null;
+    private static il.ac.hit.gamersarc.RegisterClass registerClass = null;
 
     private SignUpStatusListener signUpCallback;
     private SignInStatusListener signInCallback;
@@ -69,9 +69,9 @@ public class RegisterClass {
 
 
 
-    public static com.example.runtime.RegisterClass getInstance(){
+    public static il.ac.hit.gamersarc.RegisterClass getInstance(){
         if(registerClass == null ){
-            registerClass = new com.example.runtime.RegisterClass();
+            registerClass = new il.ac.hit.gamersarc.RegisterClass();
         }
         return registerClass;
     };

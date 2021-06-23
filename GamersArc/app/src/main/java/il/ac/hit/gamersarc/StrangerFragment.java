@@ -30,8 +30,8 @@ public class StrangerFragment extends Fragment {
     private String currentStrangerId;
     private boolean isRequested;
 
-    public static com.example.runtime.StrangerFragment newInstance(String userId, boolean isRequested){
-        com.example.runtime.StrangerFragment strangerFragment = new com.example.runtime.StrangerFragment();
+    public static il.ac.hit.gamersarc.StrangerFragment newInstance(String userId, boolean isRequested){
+        il.ac.hit.gamersarc.StrangerFragment strangerFragment = new il.ac.hit.gamersarc.StrangerFragment();
         Bundle bundle = new Bundle();
         bundle.putString("userId", userId);
         bundle.putBoolean("isRequested", isRequested);
@@ -80,7 +80,8 @@ public class StrangerFragment extends Fragment {
                 strangerLevelTV.setText(user.getRunningLevel());
                 strangerDistance.setText(user.getFullName() + " is " + distanceInMeters + "meters away");
                 StorageReference profileImageRef = viewModel.getStrangerProfileImageReference(user.getUserId());
-                Glide.with(Objects.requireNonNull(getContext())).load(profileImageRef).into(strangerProfileImageView);
+                Glide.with(requireContext()).load(profileImageRef).into(strangerProfileImageView);
+                // original                 Glide.with(Objects.requireNonNull(getContext())).load(profileImageRef).into(strangerProfileImageView);
 
             }
         });

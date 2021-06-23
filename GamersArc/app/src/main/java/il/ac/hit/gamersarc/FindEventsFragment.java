@@ -19,8 +19,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.example.runtime.RunnersDialog;
-import com.example.runtime.UserInstance;
+import il.ac.hit.gamersarc.RunnersDialog;
+import il.ac.hit.gamersarc.UserInstance;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,7 +29,7 @@ import java.util.List;
 public class FindEventsFragment extends Fragment implements FindEventsAdapter.OnUpcomingEventListener, SwipeRefreshLayout.OnRefreshListener {
 
     private FindEventsAdapter adapter;
-    private ArrayList<com.example.runtime.Event> relevantEvents = new ArrayList<>();
+    private ArrayList<il.ac.hit.gamersarc.Event> relevantEvents = new ArrayList<>();
     private ArrayList<String> myEvents = new ArrayList<>();
     private FindEventsVM viewModel;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -69,9 +69,9 @@ public class FindEventsFragment extends Fragment implements FindEventsAdapter.On
             }
         });
 
-        viewModel.getRelevantEvents().observe(getViewLifecycleOwner(), new Observer<ArrayList<com.example.runtime.Event>>() {
+        viewModel.getRelevantEvents().observe(getViewLifecycleOwner(), new Observer<ArrayList<il.ac.hit.gamersarc.Event>>() {
             @Override
-            public void onChanged(ArrayList<com.example.runtime.Event> events) {
+            public void onChanged(ArrayList<il.ac.hit.gamersarc.Event> events) {
                 relevantEvents.clear();
                 relevantEvents.addAll(events);
                 adapter.notifyDataSetChanged();

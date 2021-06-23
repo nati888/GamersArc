@@ -17,10 +17,10 @@ import java.util.Date;
 
 public class FindEventsVM extends AndroidViewModel {
 
-    private MutableLiveData<ArrayList<com.example.runtime.Event>> relevantEvents = new MutableLiveData<>();
-    private ArrayList<com.example.runtime.Event> eventsFromDatabase = new ArrayList<>();
-    private com.example.runtime.DataBaseClass dataBaseClass = com.example.runtime.DataBaseClass.getInstance();
-    private ArrayList<com.example.runtime.Event> relevantEventsTemp = new ArrayList<>();
+    private MutableLiveData<ArrayList<il.ac.hit.gamersarc.Event>> relevantEvents = new MutableLiveData<>();
+    private ArrayList<il.ac.hit.gamersarc.Event> eventsFromDatabase = new ArrayList<>();
+    private il.ac.hit.gamersarc.DataBaseClass dataBaseClass = il.ac.hit.gamersarc.DataBaseClass.getInstance();
+    private ArrayList<il.ac.hit.gamersarc.Event> relevantEventsTemp = new ArrayList<>();
     private User currentUser;
     private MutableLiveData<ArrayList<String>> myEvents = new MutableLiveData<>();
     private ArrayList<String> myEventsTemp = new ArrayList<>();
@@ -56,7 +56,7 @@ public class FindEventsVM extends AndroidViewModel {
     }
 
 
-    public MutableLiveData<ArrayList<com.example.runtime.Event>> getRelevantEvents(){
+    public MutableLiveData<ArrayList<il.ac.hit.gamersarc.Event>> getRelevantEvents(){
         return relevantEvents;
     }
 
@@ -76,7 +76,7 @@ public class FindEventsVM extends AndroidViewModel {
 
                 if (snapshot.exists()){
                     for (DataSnapshot snapshot1: snapshot.getChildren()){
-                        com.example.runtime.Event event = snapshot1.getValue(com.example.runtime.Event.class);
+                        il.ac.hit.gamersarc.Event event = snapshot1.getValue(il.ac.hit.gamersarc.Event.class);
                         eventsFromDatabase.add(event);
                     }
                     getCurrentUser();
@@ -105,7 +105,7 @@ public class FindEventsVM extends AndroidViewModel {
         double longitude = currentUser.getLongitude();
         double latitude = currentUser.getLatitude();
 
-        for (com.example.runtime.Event event: eventsFromDatabase) {
+        for (il.ac.hit.gamersarc.Event event: eventsFromDatabase) {
 
             int year = event.getYear();
             int month = event.getMonth();

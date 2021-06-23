@@ -4,8 +4,8 @@ import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
-import com.example.runtime.model.LastMessage;
-import com.example.runtime.model.Message;
+import il.ac.hit.gamersarc.Model.LastMessage;
+import il.ac.hit.gamersarc.Model.Message;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -28,7 +28,7 @@ public class DataBaseClass {
     private DatabaseReference databaseReference;
     private StorageReference storageReference;
 
-    private static com.example.runtime.DataBaseClass dataBaseClass = null;
+    private static il.ac.hit.gamersarc.DataBaseClass dataBaseClass = null;
 
     public interface OnChangeUserListener {
         void onChangeUserSuccess();
@@ -92,9 +92,9 @@ public class DataBaseClass {
 
     }
 
-   public static com.example.runtime.DataBaseClass getInstance() {
+   public static il.ac.hit.gamersarc.DataBaseClass getInstance() {
         if (dataBaseClass == null) {
-            dataBaseClass = new com.example.runtime.DataBaseClass();
+            dataBaseClass = new il.ac.hit.gamersarc.DataBaseClass();
         }
         return dataBaseClass;
 
@@ -581,7 +581,7 @@ public class DataBaseClass {
     }
 
 
-    public void createNewEvent(com.example.runtime.Event event, String userId, ArrayList<String> invitedFriendsIds) {
+    public void createNewEvent(il.ac.hit.gamersarc.Event event, String userId, ArrayList<String> invitedFriendsIds) {
         databaseReference = firebaseDatabase.getReference(); //to get root
         DatabaseReference events = databaseReference.child("events");
         DatabaseReference newEvent = events.push();

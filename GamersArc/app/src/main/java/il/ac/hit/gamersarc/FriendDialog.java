@@ -25,15 +25,15 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class FriendDialog extends DialogFragment {
 
-    private com.example.runtime.FriendDialogVM viewModel;
+    private il.ac.hit.gamersarc.FriendDialogVM viewModel;
     private ArrayList<User> mutualFriends = new ArrayList<>();
-    private com.example.runtime.FriendDialogAdapter adapter;
+    private il.ac.hit.gamersarc.FriendDialogAdapter adapter;
 
     public FriendDialog() {
     }
 
-    public static com.example.runtime.FriendDialog newInstance(String friendId) {
-        com.example.runtime.FriendDialog dialog = new com.example.runtime.FriendDialog();
+    public static il.ac.hit.gamersarc.FriendDialog newInstance(String friendId) {
+        il.ac.hit.gamersarc.FriendDialog dialog = new il.ac.hit.gamersarc.FriendDialog();
         Bundle args = new Bundle();
         args.putString("friendId", friendId);
         dialog.setArguments(args);
@@ -47,7 +47,7 @@ public class FriendDialog extends DialogFragment {
         assert getArguments() != null;
         friendId = getArguments().getString("friendId");
 
-        viewModel = new FriendModelFactory(friendId).create(com.example.runtime.FriendDialogVM.class);
+        viewModel = new FriendModelFactory(friendId).create(il.ac.hit.gamersarc.FriendDialogVM.class);
     }
 
     @Nullable
@@ -82,7 +82,7 @@ public class FriendDialog extends DialogFragment {
         RecyclerView.LayoutManager manager = new GridLayoutManager(this.getContext(), 3);
         friendDialogRecycler.setLayoutManager(manager);
         friendDialogRecycler.setHasFixedSize(true);
-        adapter = new com.example.runtime.FriendDialogAdapter(mutualFriends, this.getContext());
+        adapter = new il.ac.hit.gamersarc.FriendDialogAdapter(mutualFriends, this.getContext());
         friendDialogRecycler.setAdapter(adapter);
 
 
@@ -138,7 +138,8 @@ public class FriendDialog extends DialogFragment {
         viewModel.getImageUriLiveData().observe(getViewLifecycleOwner(), new Observer<Uri>() {
             @Override
             public void onChanged(Uri uri) {
-                Glide.with(Objects.requireNonNull(getContext())).load(uri).placeholder(R.drawable.placeholder_small).into(friendImageView);
+                Glide.with(requireContext()).load(uri).placeholder(R.drawable.placeholder_small).into(friendImageView);
+                //    original            Glide.with(Objects.requireNonNull(getContext())).load(uri).placeholder(R.drawable.placeholder_small).into(friendImageView);
             }
         });
 

@@ -93,11 +93,11 @@ public class SignInFragment extends Fragment implements RegisterClass.SignInFail
             @Override
             public void onClick(View v) {
                 registerClass=RegisterClass.getInstance();
-                registerClass.setSignInFailListener(com.example.runtime.SignInFragment.this);
+                registerClass.setSignInFailListener(il.ac.hit.gamersarc.SignInFragment.this);
                 email=emailEt.getText().toString();
                 password=passwordEt.getText().toString();
 
-                String emptyFieldErrorStr = getString(R.string.required_field);
+                String emptyFieldErrorStr = "required_field";
 
 
                 if(email.equals("") || password.equals("")){
@@ -150,19 +150,19 @@ public class SignInFragment extends Fragment implements RegisterClass.SignInFail
         progressBar.setVisibility(View.INVISIBLE);
         switch (problem){
             case "The email address is badly formatted.":
-                String error = getString(R.string.email_badly_formatted);
+                String error = "email_badly_formatted";
                 emailInputLayout.setError(error);
                 break;
             case "There is no user record corresponding to this identifier. The user may have been deleted.":
-                String error2 =  getString(R.string.no_such_user);
+                String error2 =  "no_such_user";
                 emailInputLayout.setError(error2);
                 break;
             case "The password is invalid or the user does not have a password.":
-                String error3 = getString(R.string.wrong_password);
+                String error3 = "wrong_password";
                 passwordInputLayout.setError(error3);
                 break;
             default:
-                String error4 = getString(R.string.failed_sign_in);
+                String error4 ="failed_sign_in";
                 Toast.makeText(getContext(),error4,Toast.LENGTH_LONG).show();
                 break;
 

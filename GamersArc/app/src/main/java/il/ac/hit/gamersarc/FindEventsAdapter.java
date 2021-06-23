@@ -22,9 +22,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class FindEventsAdapter extends RecyclerView.Adapter<com.example.runtime.FindEventsAdapter.EventsViewHolder> {
+public class FindEventsAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.FindEventsAdapter.EventsViewHolder> {
 
-    private ArrayList<com.example.runtime.Event> events;
+    private ArrayList<il.ac.hit.gamersarc.Event> events;
     private Context context;
     private ArrayList<String> myEvents;
 
@@ -36,7 +36,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<com.example.runtime.
 
     private OnUpcomingEventListener upcomingEventCallback;
 
-    public FindEventsAdapter(ArrayList<com.example.runtime.Event> events, Context context, ArrayList<String> myEvents)  {
+    public FindEventsAdapter(ArrayList<il.ac.hit.gamersarc.Event> events, Context context, ArrayList<String> myEvents)  {
         this.events = events;
         this.context = context;
         this.myEvents = myEvents;
@@ -101,7 +101,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<com.example.runtime.
     @Override
     public void onBindViewHolder(@NonNull EventsViewHolder holder, int position) {
 
-        com.example.runtime.Event event = events.get(position);
+        il.ac.hit.gamersarc.Event event = events.get(position);
         Geocoder geocoder = new Geocoder(context);
         String streetAddress;
         double longitude = event.getLongitude();
@@ -177,7 +177,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<com.example.runtime.
         this.upcomingEventCallback = upcomingEventCallback;
     }
 
-    public int amountOfRunners(com.example.runtime.Event event){
+    public int amountOfRunners(il.ac.hit.gamersarc.Event event){
         HashMap<String,Boolean> runners = event.getRunners();
         int amount = runners.size();
         return amount;

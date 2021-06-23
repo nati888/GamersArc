@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class FriendsRequestsTabFragment extends Fragment implements FriendsRequestsTabAdapter.OnRequestResponse, SwipeRefreshLayout.OnRefreshListener{
 
-    private com.example.runtime.FriendsRequestsTabVM viewModel;
+    private il.ac.hit.gamersarc.FriendsRequestsTabVM viewModel;
     private ArrayList<User> friendRequests = new ArrayList<>();
     private FriendsRequestsTabAdapter adapter;
     private SwipeRefreshLayout swipeRefreshLayout;
@@ -32,7 +32,7 @@ public class FriendsRequestsTabFragment extends Fragment implements FriendsReque
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
 
-        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(com.example.runtime.FriendsRequestsTabVM.class);
+        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(il.ac.hit.gamersarc.FriendsRequestsTabVM.class);
     }
 
     @Nullable

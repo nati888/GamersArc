@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class FriendDialogAdapter extends RecyclerView.Adapter<com.example.runtime.FriendDialogAdapter.MutualFriendsViewHolder>  {
+public class FriendDialogAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.FriendDialogAdapter.MutualFriendsViewHolder>  {
 
     private ArrayList<User> mutualFriends = new ArrayList<>();
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();

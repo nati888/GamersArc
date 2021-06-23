@@ -26,7 +26,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.runtime.model.Message;
+import il.ac.hit.gamersarc.Model.Message;
 
 import org.json.JSONException;
 
@@ -48,8 +48,8 @@ public class MessagesFragment2 extends Fragment {
         messagesVM = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(Messages2VM.class);
     }
 
-    public static com.example.runtime.MessagesFragment2 newInstance(User user) {
-        com.example.runtime.MessagesFragment2 messagesFragment2 = new com.example.runtime.MessagesFragment2();
+    public static il.ac.hit.gamersarc.MessagesFragment2 newInstance(User user) {
+        il.ac.hit.gamersarc.MessagesFragment2 messagesFragment2 = new il.ac.hit.gamersarc.MessagesFragment2();
         Bundle bundle = new Bundle();
         bundle.putString("id", user.getUserId());
         bundle.putString("name", user.getFullName());

@@ -23,17 +23,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.runtime.CreateEventVM;
-import com.example.runtime.InviteFriendsDialog;
-import com.example.runtime.UserInstance;
+import il.ac.hit.gamersarc.CreateEventVM;
+import il.ac.hit.gamersarc.InviteFriendsDialog;
+import il.ac.hit.gamersarc.UserInstance;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class CreateEventFragment extends Fragment implements com.example.runtime.InviteFriendsDialog.PassInvitedFriendsIdsToParentListener {
+public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc.InviteFriendsDialog.PassInvitedFriendsIdsToParentListener {
 
-    private com.example.runtime.CreateEventVM viewModel;
+    private il.ac.hit.gamersarc.CreateEventVM viewModel;
     private static Bundle bundle;
     private int eventYear;
     private int eventMonth;
@@ -61,14 +61,14 @@ public class CreateEventFragment extends Fragment implements com.example.runtime
     private OnMapListener mapCallback;
     private OnBackFromCreateEventListener backFromCreateEventCallback;
 
-    private static com.example.runtime.CreateEventFragment createEventFragment = null;
+    private static il.ac.hit.gamersarc.CreateEventFragment createEventFragment = null;
 
 
-    public static com.example.runtime.CreateEventFragment getCreateEventFragment(boolean isNew){
+    public static il.ac.hit.gamersarc.CreateEventFragment getCreateEventFragment(boolean isNew){
         bundle = new Bundle();
         if(createEventFragment == null || isNew ){
             bundle.putBoolean("isNew", true);
-            createEventFragment = new com.example.runtime.CreateEventFragment();
+            createEventFragment = new il.ac.hit.gamersarc.CreateEventFragment();
         }
         else
         {
@@ -87,20 +87,20 @@ public class CreateEventFragment extends Fragment implements com.example.runtime
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
-            mapCallback = (com.example.runtime.CreateEventFragment.OnMapListener) context;
+            mapCallback = (il.ac.hit.gamersarc.CreateEventFragment.OnMapListener) context;
         }
         catch (ClassCastException e){
             throw new ClassCastException("Activity must implement OnMapListener");
         }
 
         try {
-            backFromCreateEventCallback = (com.example.runtime.CreateEventFragment.OnBackFromCreateEventListener)context;
+            backFromCreateEventCallback = (il.ac.hit.gamersarc.CreateEventFragment.OnBackFromCreateEventListener)context;
         }
         catch (ClassCastException e){
             throw new ClassCastException("Activity must implement OnBackFromCreateEventListener");
         }
 
-        viewModel = new ViewModelProvider(getActivity()).get(com.example.runtime.CreateEventVM.class);
+        viewModel = new ViewModelProvider(getActivity()).get(il.ac.hit.gamersarc.CreateEventVM.class);
     }
 
 
@@ -279,14 +279,14 @@ public class CreateEventFragment extends Fragment implements com.example.runtime
                 updateEventData();
                 if(dateEt.getText().equals("") || timeEt.getText().equals("") ||
                        locationEt.getText().equals("")|| runningLevel==null || eventStatus==null ){
-                    Snackbar.make(getView(),R.string.all_fields, Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(),"all_fields", Snackbar.LENGTH_LONG).show();
 
                 }
                 else{
                     viewModel.setEventData(eventYear,eventMonth,eventDayOfMonth,eventHourOfDay,
                             eventMinute,runningLevel,eventStatus,invitedFriendsIds);
 
-                    Snackbar.make(getView(),R.string.new_event_snack_bar, Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(),"new_event_snack_bar", Snackbar.LENGTH_LONG).show();
                     backFromCreateEventCallback.toHomeFromCreateEvent();
 
                 }
@@ -306,9 +306,9 @@ public class CreateEventFragment extends Fragment implements com.example.runtime
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getFragmentManager();
-                com.example.runtime.InviteFriendsDialog dialog = com.example.runtime.InviteFriendsDialog.getInstance(invitedFriendsIds);
+                il.ac.hit.gamersarc.InviteFriendsDialog dialog = il.ac.hit.gamersarc.InviteFriendsDialog.getInstance(invitedFriendsIds);
                 dialog.setCancelable(true);
-                dialog.setTargetFragment(com.example.runtime.CreateEventFragment.this,300);
+                dialog.setTargetFragment(il.ac.hit.gamersarc.CreateEventFragment.this,300);
                 assert fm != null;
                 dialog.show(fm,"inviteFriendsFragment");
 

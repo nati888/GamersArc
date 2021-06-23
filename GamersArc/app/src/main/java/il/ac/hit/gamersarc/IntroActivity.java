@@ -32,7 +32,7 @@ public class IntroActivity extends AppCompatActivity {
         setContentView(R.layout.intro_layout);
 
         if(getSp()){
-            Intent intent = new Intent(com.example.runtime.IntroActivity.this,MainActivity.class);
+            Intent intent = new Intent(il.ac.hit.gamersarc.IntroActivity.this,MainActivity.class);
             startActivity(intent);
             finish();
         }
@@ -57,7 +57,7 @@ public class IntroActivity extends AppCompatActivity {
         getStartedBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(com.example.runtime.IntroActivity.this,MainActivity.class);
+                Intent intent = new Intent(il.ac.hit.gamersarc.IntroActivity.this,MainActivity.class);
                 startActivity(intent);
                 finish();
                 saveToSp();

@@ -26,7 +26,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.bumptech.glide.Glide;
-import com.example.runtime.UserInstance;
+import il.ac.hit.gamersarc.UserInstance;
 
 import java.util.Calendar;
 

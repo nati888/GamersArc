@@ -14,15 +14,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.runtime.EditPreferencesVM;
-import com.example.runtime.UserPreferences;
+import il.ac.hit.gamersarc.EditPreferencesVM;
+import il.ac.hit.gamersarc.UserPreferences;
 import com.google.android.material.slider.RangeSlider;
 
 import java.util.ArrayList;
 
 public class EditPreferencesFragment extends Fragment {
 
-    private com.example.runtime.EditPreferencesVM editPreferencesVM;
+    private il.ac.hit.gamersarc.EditPreferencesVM editPreferencesVM;
     private String gender;
     private String level;
     private int from;
@@ -33,7 +33,7 @@ public class EditPreferencesFragment extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        editPreferencesVM = new ViewModelProvider(getActivity()).get(com.example.runtime.EditPreferencesVM.class);
+        editPreferencesVM = new ViewModelProvider(getActivity()).get(il.ac.hit.gamersarc.EditPreferencesVM.class);
     }
 
     @Override

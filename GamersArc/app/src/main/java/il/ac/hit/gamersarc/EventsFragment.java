@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.runtime.EventsViewPagerAdapter;
+import il.ac.hit.gamersarc.EventsViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
@@ -27,7 +27,7 @@ public class EventsFragment extends Fragment {
 
         ViewPager2 eventsViewPager = view.findViewById(R.id.eventsViewPager);
         TabLayout eventsTabLayout = view.findViewById(R.id.eventsTabLayout);
-        com.example.runtime.EventsViewPagerAdapter adapter = new com.example.runtime.EventsViewPagerAdapter(this);
+        il.ac.hit.gamersarc.EventsViewPagerAdapter adapter = new il.ac.hit.gamersarc.EventsViewPagerAdapter(this);
         eventsViewPager.setAdapter(adapter);
 
         new TabLayoutMediator(eventsTabLayout, eventsViewPager, new TabLayoutMediator.TabConfigurationStrategy() {

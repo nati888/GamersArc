@@ -20,12 +20,12 @@ import java.util.Calendar;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class FindPeopleAdapter extends RecyclerView.Adapter<com.example.runtime.FindPeopleAdapter.UserViewHolder> {
+public class FindPeopleAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.FindPeopleAdapter.UserViewHolder> {
 
     ArrayList<User> users;
     ArrayList<String> recentSentRequests;
     Context context;
-    com.example.runtime.DataBaseClass dataBaseClass = com.example.runtime.DataBaseClass.getInstance();
+    il.ac.hit.gamersarc.DataBaseClass dataBaseClass = il.ac.hit.gamersarc.DataBaseClass.getInstance();
 
     interface StrangerClickListener{
         void onStrangerClicked(String strangerId, boolean isRequested);

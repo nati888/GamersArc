@@ -20,7 +20,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 public class HomeFragment extends Fragment implements UserInstance.OnGetUserListener {
 
-    private com.example.runtime.HomeVM viewModel;
+    private il.ac.hit.gamersarc.HomeVM viewModel;
     private UserInstance user;
     private TextView title;
     private TextView locationtext;
@@ -34,7 +34,7 @@ public class HomeFragment extends Fragment implements UserInstance.OnGetUserList
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        viewModel= new ViewModelProvider(getActivity()).get(com.example.runtime.HomeVM.class);
+        viewModel= new ViewModelProvider(getActivity()).get(il.ac.hit.gamersarc.HomeVM.class);
         viewModel.setContext(getContext());
 
     }
@@ -100,7 +100,7 @@ public class HomeFragment extends Fragment implements UserInstance.OnGetUserList
             @Override
             public void onClick(View v) {
 
-                Fragment fragment = com.example.runtime.CreateEventFragment.getCreateEventFragment(true);
+                Fragment fragment = il.ac.hit.gamersarc.CreateEventFragment.getCreateEventFragment(true);
                 FragmentManager fragmentManager = getFragmentManager();
                 assert fragmentManager != null;
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -116,7 +116,7 @@ public class HomeFragment extends Fragment implements UserInstance.OnGetUserList
             @Override
             public void onClick(View v) {
 
-                Fragment fragment = new com.example.runtime.FindPeopleFragment();
+                Fragment fragment = new il.ac.hit.gamersarc.FindPeopleFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 assert fragmentManager != null;
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -131,7 +131,7 @@ public class HomeFragment extends Fragment implements UserInstance.OnGetUserList
             @Override
             public void onClick(View v) {
 
-                Fragment fragment = new com.example.runtime.FindEventsFragment();
+                Fragment fragment = new il.ac.hit.gamersarc.FindEventsFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 assert fragmentManager != null;
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

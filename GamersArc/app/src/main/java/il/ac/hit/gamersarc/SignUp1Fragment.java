@@ -166,7 +166,7 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
                 password=passwordEt.getText().toString();
                 passwordConfirm=passwordConfirmEt.getText().toString();
                 email=emailEt.getText().toString();
-                String emptyFieldErrorStr = getString(R.string.required_field);
+                String emptyFieldErrorStr = "required_field";
 
                 if (fullName.equals("") || password.equals("") || passwordConfirm.equals("") || email.equals("")){
                     if (fullName.equals(""))
@@ -192,7 +192,7 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
                             if(!viewModel.setDataNext1(fullName,password,passwordConfirm,email)){
 
 
-                                String passwordsConfirmError = getString(R.string.passwords_not_identical);
+                                String passwordsConfirmError = "passwords_not_identical";
                                 passwordConfirmInputLayout.setError(passwordsConfirmError);
                                 passwordInputLayout.setError(passwordsConfirmError);
                                 progressBar.setVisibility(View.INVISIBLE);
@@ -203,7 +203,7 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
 
                         if(!viewModel.setDataNext1(fullName,password,passwordConfirm,email)){
 
-                            String passwordsConfirmError = getString(R.string.passwords_not_identical);
+                            String passwordsConfirmError = "passwords_not_identical";
                             passwordConfirmInputLayout.setError(passwordsConfirmError);
                             passwordInputLayout.setError(passwordsConfirmError);
                             progressBar.setVisibility(View.INVISIBLE);
@@ -230,7 +230,7 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
                 if(!viewModel.setDataNext1(fullName,password,passwordConfirm,email)){
 
 
-                    String passwordsConfirmError = getString(R.string.passwords_not_identical);
+                    String passwordsConfirmError = "passwords_not_identical";
                     passwordConfirmInputLayout.setError(passwordsConfirmError);
                     passwordInputLayout.setError(passwordsConfirmError);
                     progressBar.setVisibility(View.INVISIBLE);
@@ -247,19 +247,19 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
         progressBar.setVisibility(View.INVISIBLE);
         switch (problem){
             case "Password must be at least 8 letters":
-                String error = getString(R.string.password_must_be_8_letters);
+                String error = "password_must_be_8_letters";
                 passwordInputLayout.setError(error);
                 break;
             case "Invalid Credentials":
-                String error2 = getString(R.string.email_badly_formatted);
+                String error2 = "email_badly_formatted";
                 emailInputLayout.setError(error2);
                 break;
             case "User already exists":
-                String error3 = getString(R.string.user_already_exists);
+                String error3 ="user_already_exists";
                 emailInputLayout.setError(error3);
                 break;
             case "Error":
-                Toast.makeText(getContext(),R.string.failed_to_sign_up,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"failed_to_sign_up",Toast.LENGTH_SHORT).show();
         }
     }
 }

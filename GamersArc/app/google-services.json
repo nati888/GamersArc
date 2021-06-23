@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917419646953",
+    "project_id": "gamersarc-18895",
+    "storage_bucket": "gamersarc-18895.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917419646953:android:e55ef1052f8451b62ff578",
+        "android_client_info": {
+          "package_name": "il.ac.hit.gamersarc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917419646953-r0f3t8m8k04r2tvqttioaeiodos271uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClLBKtu29qC5f2s-ORAoBt0hQz56PNGE8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917419646953-r0f3t8m8k04r2tvqttioaeiodos271uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

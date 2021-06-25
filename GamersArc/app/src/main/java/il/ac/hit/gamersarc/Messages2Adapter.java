@@ -9,14 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.runtime.model.Message;
+import il.ac.hit.gamersarc.Model.Message;
 
 import java.util.ArrayList;
 
 //TODO choose message
 //TODO forward
 //TODO delete message
-public class Messages2Adapter extends RecyclerView.Adapter<com.example.runtime.Messages2Adapter.Message2ViewHolder> {
+public class Messages2Adapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.Messages2Adapter.Message2ViewHolder> {
     Context context;
     ArrayList<Message> list;
     public Messages2Adapter(Context context,ArrayList<Message> list) {

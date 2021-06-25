@@ -21,14 +21,14 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ProfileFragment extends Fragment {
 
-    private com.example.runtime.ProfileVM profileVM;
+    private il.ac.hit.gamersarc.ProfileVM profileVM;
 
 
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        profileVM= new ViewModelProvider(getActivity()).get(com.example.runtime.ProfileVM.class);
+        profileVM= new ViewModelProvider(getActivity()).get(il.ac.hit.gamersarc.ProfileVM.class);
     }
 
     @Nullable

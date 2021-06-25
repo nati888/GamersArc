@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class InviteFriendsDialogAdapter extends RecyclerView.Adapter<com.example.runtime.InviteFriendsDialogAdapter.MyFriendsViewHolder>{
+public class InviteFriendsDialogAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.InviteFriendsDialogAdapter.MyFriendsViewHolder>{
 
     private ArrayList<User> myFriends;
     private ArrayList<String> invitedFriendsIds = new ArrayList<>();
@@ -77,7 +77,7 @@ public class InviteFriendsDialogAdapter extends RecyclerView.Adapter<com.example
     @Override
     public MyFriendsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.invite_friends_cell, parent, false);
-        return new com.example.runtime.InviteFriendsDialogAdapter.MyFriendsViewHolder(view);
+        return new il.ac.hit.gamersarc.InviteFriendsDialogAdapter.MyFriendsViewHolder(view);
 
     }
 

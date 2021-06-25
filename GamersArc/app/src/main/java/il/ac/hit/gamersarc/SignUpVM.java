@@ -2,6 +2,7 @@ package il.ac.hit.gamersarc;
 
 import android.net.Uri;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
@@ -203,24 +204,12 @@ public class SignUpVM extends ViewModel {
                 });
 
 
-        FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<InstallationTokenResult>() {
+          FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<String>() {
             @Override
-            public void onComplete(@NonNull Task<InstallationTokenResult> task) {
+            public void onComplete(@NonNull Task<String> task) {
 
                 if(task.isSuccessful()){
-                    String token = Objects.requireNonNull(task.getResult()).getToken();
-                    user.setUserToken(token);
-                    dataBaseClass.createUser(user);
-                }
-
-            }
-        })
-
-        FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-            @Override
-            public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                if(task.isSuccessful()){
-                    String token = Objects.requireNonNull(task.getResult()).getToken();
+                    String token = Objects.requireNonNull(task.getResult());
                     user.setUserToken(token);
                     dataBaseClass.createUser(user);
                 }

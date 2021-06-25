@@ -18,23 +18,23 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import java.util.ArrayList;
 
-public class InvitationsTabFragment extends Fragment implements com.example.runtime.InvitationsTabAdapter.OnInvitationResponse, SwipeRefreshLayout.OnRefreshListener {
+public class InvitationsTabFragment extends Fragment implements il.ac.hit.gamersarc.InvitationsTabAdapter.OnInvitationResponse, SwipeRefreshLayout.OnRefreshListener {
 
-    private ArrayList<com.example.runtime.Event> invitations = new ArrayList<>();
-    private com.example.runtime.InvitationsTabVM viewModel;
-    private com.example.runtime.InvitationsTabAdapter adapter;
+    private ArrayList<il.ac.hit.gamersarc.Event> invitations = new ArrayList<>();
+    private il.ac.hit.gamersarc.InvitationsTabVM viewModel;
+    private il.ac.hit.gamersarc.InvitationsTabAdapter adapter;
     private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        viewModel= new ViewModelProvider(getActivity()).get(com.example.runtime.InvitationsTabVM.class);
+        viewModel= new ViewModelProvider(getActivity()).get(il.ac.hit.gamersarc.InvitationsTabVM.class);
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.invitations_tab_fragment, container, false);
+        return inflater.inflate(R.layout.invitation_tab_fragment, container, false);
     }
 
     @Override
@@ -44,7 +44,7 @@ public class InvitationsTabFragment extends Fragment implements com.example.runt
         invitationsRecycler.setHasFixedSize(true);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(this.getContext());
         invitationsRecycler.setLayoutManager(manager);
-        adapter = new com.example.runtime.InvitationsTabAdapter(invitations, this.getContext());
+        adapter = new il.ac.hit.gamersarc.InvitationsTabAdapter(invitations, this.getContext());
         adapter.setInvitationCallback(this);
         invitationsRecycler.setAdapter(adapter);
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshInvitationsTab);
@@ -60,9 +60,9 @@ public class InvitationsTabFragment extends Fragment implements com.example.runt
         });
 
 
-        viewModel.getInvitationsLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<com.example.runtime.Event>>() {
+        viewModel.getInvitationsLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<il.ac.hit.gamersarc.Event>>() {
             @Override
-            public void onChanged(ArrayList<com.example.runtime.Event> events) {
+            public void onChanged(ArrayList<il.ac.hit.gamersarc.Event> events) {
                 invitations.clear();
                 invitations.addAll(events);
                 adapter.notifyDataSetChanged();

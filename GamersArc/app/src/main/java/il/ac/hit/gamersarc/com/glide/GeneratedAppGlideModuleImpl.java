@@ -1,3 +1,4 @@
+/*
 package il.ac.hit.gamersarc.com.glide;
 
 import android.content.Context;
@@ -52,3 +53,4 @@ final class GeneratedAppGlideModuleImpl extends GeneratedGlideModule {
     return new GeneratedRequestManagerFactory();
   }
 }
+*/

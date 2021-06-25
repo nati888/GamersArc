@@ -56,7 +56,7 @@ public class MapFragment extends Fragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         try {
-            createEventCallback = (com.example.runtime.MapFragment.OnCreateEventListener) context;
+            createEventCallback = (il.ac.hit.gamersarc.MapFragment.OnCreateEventListener) context;
         }
         catch (ClassCastException e){
             throw new ClassCastException("Activity must implement OnCreateEventListener");

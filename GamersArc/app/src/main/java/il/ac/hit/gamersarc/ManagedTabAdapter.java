@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class ManagedTabAdapter extends RecyclerView.Adapter<com.example.runtime.ManagedTabAdapter.ManagedViewHolder> {
+public class ManagedTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.ManagedTabAdapter.ManagedViewHolder> {
 
     private ArrayList<Event> managedEvents = new ArrayList<>();
     private Context context;

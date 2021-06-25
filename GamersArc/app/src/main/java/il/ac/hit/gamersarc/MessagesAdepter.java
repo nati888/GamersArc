@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import de.hdodenhof.circleimageview.CircleImageView;
 import il.ac.hit.gamersarc.Model.UserWithLastMessage;
 
-public class MessagesAdepter extends RecyclerView.Adapter<com.example.runtime.MessagesAdepter.MessagesViewHolder> {
+public class MessagesAdepter extends RecyclerView.Adapter<il.ac.hit.gamersarc.MessagesAdepter.MessagesViewHolder> {
     private ArrayList<UserWithLastMessage> friend = new ArrayList<>();
     private Context context;
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();

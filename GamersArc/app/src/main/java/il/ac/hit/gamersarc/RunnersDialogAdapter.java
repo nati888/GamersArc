@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class RunnersDialogAdapter extends RecyclerView.Adapter<com.example.runtime.RunnersDialogAdapter.RunnersViewHolder> {
+public class RunnersDialogAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.RunnersDialogAdapter.RunnersViewHolder> {
 
     private ArrayList<User> runners = new ArrayList<>();
     DataBaseClass dataBaseClass = DataBaseClass.getInstance();

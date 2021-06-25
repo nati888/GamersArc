@@ -16,9 +16,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Locale;
 
-public class InvitationsTabAdapter extends RecyclerView.Adapter<com.example.runtime.InvitationsTabAdapter.InvitationsViewHolder> {
+public class InvitationsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.InvitationsTabAdapter.InvitationsViewHolder> {
 
-    private ArrayList<com.example.runtime.Event> invitations = new ArrayList<>();
+    private ArrayList<il.ac.hit.gamersarc.Event> invitations = new ArrayList<>();
     private Context context;
     RegisterClass registerClass = RegisterClass.getInstance();
 
@@ -34,7 +34,7 @@ public class InvitationsTabAdapter extends RecyclerView.Adapter<com.example.runt
         this.invitationCallback = invitationCallback;
     }
 
-    public InvitationsTabAdapter(ArrayList<com.example.runtime.Event> invitations, Context context) {
+    public InvitationsTabAdapter(ArrayList<il.ac.hit.gamersarc.Event> invitations, Context context) {
         this.invitations = invitations;
         this.context = context;
     }

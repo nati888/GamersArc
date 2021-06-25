@@ -23,17 +23,17 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
-public class ManagedTabFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, com.example.runtime.ManagedTabAdapter.ManagedListener {
+public class ManagedTabFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener, il.ac.hit.gamersarc.ManagedTabAdapter.ManagedListener {
 
     private ArrayList<Event> managed = new ArrayList<>();
-    private com.example.runtime.ManagedTabVM viewModel;
-    private com.example.runtime.ManagedTabAdapter adapter;
+    private il.ac.hit.gamersarc.ManagedTabVM viewModel;
+    private il.ac.hit.gamersarc.ManagedTabAdapter adapter;
     private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(com.example.runtime.ManagedTabVM.class);
+        viewModel = new ViewModelProvider.AndroidViewModelFactory(getActivity().getApplication()).create(il.ac.hit.gamersarc.ManagedTabVM.class);
 
     }
 
@@ -53,7 +53,7 @@ public class ManagedTabFragment extends Fragment implements SwipeRefreshLayout.O
         managedRecycler.setHasFixedSize(true);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(this.getContext());
         managedRecycler.setLayoutManager(manager);
-        adapter = new com.example.runtime.ManagedTabAdapter(managed, this.getContext());
+        adapter = new il.ac.hit.gamersarc.ManagedTabAdapter(managed, this.getContext());
         adapter.setManagedCallback(this);
         managedRecycler.setAdapter(adapter);
         swipeRefreshLayout = view.findViewById(R.id.swipeRefreshManagedTab);

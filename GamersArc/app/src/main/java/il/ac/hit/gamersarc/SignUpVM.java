@@ -187,6 +187,7 @@ public class SignUpVM extends ViewModel {
 
         final User user = new User("0",registerClass.getUserId(),this.fullName,this.gender,this.year,this.month,this.dayOfMonth,this.runningLevel,userInstance.getUser().getLongitude(),userInstance.getUser().getLatitude());
 
+        
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
             @Override
             public void onComplete(@NonNull Task<InstanceIdResult> task) {

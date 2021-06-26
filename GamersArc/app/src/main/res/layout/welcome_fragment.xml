@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#111111"
-    >
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#111111">
 
 
     <LinearLayout
@@ -16,62 +15,78 @@
             android:layout_height="match_parent"
             android:layout_weight="0.6"/>
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="2"
-            android:background="@drawable/logo_and_name" />
+            android:orientation="vertical"
+            android:gravity="center">
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
 
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/logo_and_name" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/accept"
-            android:textAllCaps="false"
-            android:textSize="19sp"
-            android:textColor="#111111"
-            android:backgroundTint="#fab32c"
-
-            android:id="@+id/sign_up"/>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="sign_in"
-            android:textSize="19sp"
-            android:textAllCaps="false"
-            android:textColor="#000000"
-            android:background="@drawable/sign_in_welcome_orange_btn"
-            android:id="@+id/sign_in"/>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
 
 
-    </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textColor="#111111"
+                android:backgroundTint="#fab32c"
+                app:cornerRadius="30dp"
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp"
+                app:icon="@drawable/add_user"
+                app:iconGravity="textStart"
+                app:iconPadding="20dp"
+                app:iconTint="#111111"
+                android:id="@+id/sign_up"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:textColor="#111111"
+                android:backgroundTint="#fab32c"
+                app:cornerRadius="30dp"
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp"
+                app:icon="@drawable/refer"
+                app:iconGravity="textStart"
+                app:iconPadding="20dp"
+                app:iconTint="#111111"
+                android:id="@+id/sign_in"/>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+
+
+        </LinearLayout>
 
         <Space
             android:layout_width="0dp"

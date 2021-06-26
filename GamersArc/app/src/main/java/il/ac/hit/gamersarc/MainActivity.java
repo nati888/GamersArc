@@ -32,6 +32,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.google.firebase.installations.FirebaseInstallations;
 
 
@@ -104,21 +106,8 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
             final FirebaseUser user=firebaseAuth.getCurrentUser();
             if(user!=null) { //sign up or sign in
 
-                    RelativeLayout layout = findViewById(R.id.toolbarLayout);
-                    layout.setVisibility(View.VISIBLE);
-
-                    ValueEventListener  listener = new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot snapshot) {
-                            if (snapshot.hasChild("gender")){
-                                if (!sp.getBoolean("isChangingConfigurations", false)){
-
-                                    fragmentManager.beginTransaction().replace(R.id.rootLayout,new HomeFragment(),HOME_TAG).commit();
-                                    drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
-                                    fragmentManager.beginTransaction().replace(R.id.toolbarLayout,new ToolBarFragment(),TOOLBAR_TAG).commit();
-                                    fragmentManager.beginTransaction().replace(R.id.layoutBottomNavgtionBar,new BottomNavBarFragment(),NAV_TAG).commit();}
-                            }
-                        }
+                RelativeLayout layout = findViewById(R.id.toolbarLayout);
+                layout.setVisibility(View.VISIBLE);
 
                 ValueEventListener listener = new ValueEventListener() {
                     @Override
@@ -141,14 +130,12 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
 
                 dataBaseClass.isUserExists(registerClass.getUserId(), listener);
 
-                    //revert fire base version to 20.1.6
-                    FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
-                        @Override
-                        public void onComplete(@NonNull Task<InstanceIdResult> task) {
-                            if (task.isSuccessful()){
-                                String token = task.getResult().getToken();
-                                dataBaseClass.saveUserToken(token);
-                            }
+                FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<String>() {
+                    @Override
+                    public void onComplete(@NonNull Task<String> task) {
+                        if (task.isSuccessful()){
+                            String token = task.getResult();
+                            dataBaseClass.saveUserToken(token);
                         }
                     }
                 });

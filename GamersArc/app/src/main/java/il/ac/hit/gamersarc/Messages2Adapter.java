@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import il.ac.hit.gamersarc.Model.Message;
+import il.ac.hit.gamersarc.model.Message;
 
 import java.util.ArrayList;
 

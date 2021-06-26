@@ -4,8 +4,8 @@ import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
-import il.ac.hit.gamersarc.Model.LastMessage;
-import il.ac.hit.gamersarc.Model.Message;
+import il.ac.hit.gamersarc.model.LastMessage;
+import il.ac.hit.gamersarc.model.Message;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;

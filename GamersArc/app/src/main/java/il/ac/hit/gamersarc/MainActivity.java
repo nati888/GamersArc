@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
                     RelativeLayout layout = findViewById(R.id.toolbarLayout);
                     layout.setVisibility(View.VISIBLE);
 
-                    ValueEventListener listener = new ValueEventListener() {
+                    ValueEventListener  listener = new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot snapshot) {
                             if (snapshot.hasChild("gender")){
@@ -131,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
 
                     dataBaseClass.isUserExists(registerClass.getUserId(), listener);
 
+                    //revert fire base version to 20.1.6
                     FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
                         @Override
                         public void onComplete(@NonNull Task<InstanceIdResult> task) {

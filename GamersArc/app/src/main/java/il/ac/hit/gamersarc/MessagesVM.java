@@ -6,10 +6,10 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-import il.ac.hit.gamersarc.Model.LastMessage;
-import il.ac.hit.gamersarc.Model.Message;
-import il.ac.hit.gamersarc.Model.SortFriendMessage;
-import il.ac.hit.gamersarc.Model.UserWithLastMessage;
+import il.ac.hit.gamersarc.model.LastMessage;
+import il.ac.hit.gamersarc.model.Message;
+import il.ac.hit.gamersarc.model.SortFriendMessage;
+import il.ac.hit.gamersarc.model.UserWithLastMessage;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.ValueEventListener;

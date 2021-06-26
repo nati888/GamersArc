@@ -15,7 +15,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
-import il.ac.hit.gamersarc.Model.UserWithLastMessage;
+import il.ac.hit.gamersarc.model.UserWithLastMessage;
 
 public class MessagesAdepter extends RecyclerView.Adapter<il.ac.hit.gamersarc.MessagesAdepter.MessagesViewHolder> {
     private ArrayList<UserWithLastMessage> friend = new ArrayList<>();

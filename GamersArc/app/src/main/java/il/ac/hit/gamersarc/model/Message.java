@@ -1,4 +1,4 @@
-package il.ac.hit.gamersarc.Model;
+package il.ac.hit.gamersarc.model;
 
 import java.util.Objects;
 
@@ -56,7 +56,7 @@ public class Message {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        il.ac.hit.gamersarc.Model.Message message = (il.ac.hit.gamersarc.Model.Message) o;
+        il.ac.hit.gamersarc.model.Message message = (il.ac.hit.gamersarc.model.Message) o;
         return Objects.equals(userIdSent, message.userIdSent);
     }
 

@@ -15,6 +15,7 @@ import com.google.firebase.installations.InstallationTokenResult;
 
 
 import java.util.Objects;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class SignUpVM extends ViewModel {
     private String fullName;
@@ -190,21 +191,7 @@ public class SignUpVM extends ViewModel {
 
         final User user = new User("0",registerClass.getUserId(),this.fullName,this.gender,this.year,this.month,this.dayOfMonth,this.runningLevel,userInstance.getUser().getLongitude(),userInstance.getUser().getLatitude());
 
-
-        FirebaseInstallations.getInstance().delete()
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Log.d("Installations", "Installation deleted");
-                        } else {
-                            Log.e("Installations", "Unable to delete Installation");
-                        }
-                    }
-                });
-
-
-          FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<String>() {
+         FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<String>() {
             @Override
             public void onComplete(@NonNull Task<String> task) {
 

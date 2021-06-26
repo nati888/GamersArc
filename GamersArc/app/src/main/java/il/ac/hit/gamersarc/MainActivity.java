@@ -32,8 +32,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.iid.InstanceIdResult;
+import com.google.firebase.installations.FirebaseInstallations;
 
 
 public class MainActivity extends AppCompatActivity implements MessagesFragment.OnClickOnMessages, DataBaseClass.OnChangeUserListener, BottomNavBarFragment.OnNavigationListener, WelcomeFragment.OnRegisterClick, DataBaseClass.OnUserCreateListener
@@ -100,12 +99,10 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
         toolbarLayout = findViewById(R.id.toolbarLayout);
 
 
-        authStateListener=new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+        authStateListener= firebaseAuth -> {
 
-                final FirebaseUser user=firebaseAuth.getCurrentUser();
-                if(user!=null) { //sign up or sign in
+            final FirebaseUser user=firebaseAuth.getCurrentUser();
+            if(user!=null) { //sign up or sign in
 
                     RelativeLayout layout = findViewById(R.id.toolbarLayout);
                     layout.setVisibility(View.VISIBLE);
@@ -123,13 +120,26 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
                             }
                         }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError error) {
+                ValueEventListener listener = new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.hasChild("gender")){
+                            if (!sp.getBoolean("isChangingConfigurations", false)){
 
+                                fragmentManager.beginTransaction().replace(R.id.rootLayout,new HomeFragment(),HOME_TAG).commit();
+                                drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                                fragmentManager.beginTransaction().replace(R.id.toolbarLayout,new ToolBarFragment(),TOOLBAR_TAG).commit();
+                                fragmentManager.beginTransaction().replace(R.id.layoutBottomNavgtionBar,new BottomNavBarFragment(),NAV_TAG).commit();}
                         }
-                    };
+                    }
 
-                    dataBaseClass.isUserExists(registerClass.getUserId(), listener);
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                };
+
+                dataBaseClass.isUserExists(registerClass.getUserId(), listener);
 
                     //revert fire base version to 20.1.6
                     FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
@@ -140,34 +150,34 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
                                 dataBaseClass.saveUserToken(token);
                             }
                         }
-                    });
-
-
-
-                    getLocationUpdates();
-
-                }
-
-                else {
-
-
-                    if (!sp.getBoolean("isChangingConfigurations", false)){
-                        fragmentManager.beginTransaction().replace(R.id.rootLayout,new WelcomeFragment(),WELCOMEFRAGMENTTAG).commit();
-                        toolBarFragment =getSupportFragmentManager().findFragmentByTag(TOOLBAR_TAG);
-                        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
-                        RelativeLayout layout = findViewById(R.id.toolbarLayout);
-                        layout.setVisibility(View.GONE);
-
-                        if(toolBarFragment!=null) {
-                            fragmentManager.beginTransaction().remove(toolBarFragment).commit();
-                            fragmentManager.beginTransaction().remove(getSupportFragmentManager().findFragmentByTag(NAV_TAG)).commit();
-
-                        }
                     }
+                });
 
+
+
+                getLocationUpdates();
+
+            }
+
+            else {
+
+
+                if (!sp.getBoolean("isChangingConfigurations", false)){
+                    fragmentManager.beginTransaction().replace(R.id.rootLayout,new WelcomeFragment(),WELCOMEFRAGMENTTAG).commit();
+                    toolBarFragment =getSupportFragmentManager().findFragmentByTag(TOOLBAR_TAG);
+                    drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+                    RelativeLayout layout = findViewById(R.id.toolbarLayout);
+                    layout.setVisibility(View.GONE);
+
+                    if(toolBarFragment!=null) {
+                        fragmentManager.beginTransaction().remove(toolBarFragment).commit();
+                        fragmentManager.beginTransaction().remove(getSupportFragmentManager().findFragmentByTag(NAV_TAG)).commit();
+
+                    }
                 }
 
             }
+
         };
 
         registerClass.addStateListener(authStateListener);

@@ -17,6 +17,7 @@ import com.google.firebase.installations.InstallationTokenResult;
 
 
 import java.util.Objects;
+import java.util.concurrent.ScheduledExecutorService;
 
 public class SignUpVM extends ViewModel {
     private String fullName;
@@ -192,7 +193,7 @@ public class SignUpVM extends ViewModel {
 
         final User user = new User("0",registerClass.getUserId(),this.fullName,this.gender,this.year,this.month,this.dayOfMonth,this.runningLevel,userInstance.getUser().getLongitude(),userInstance.getUser().getLatitude());
 
-        
+
         FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
             @Override
             public void onComplete(@NonNull Task<InstanceIdResult> task) {
@@ -203,21 +204,6 @@ public class SignUpVM extends ViewModel {
                 }
             }
         });
-
-
-
-
-/*          FirebaseInstallations.getInstance().getId().addOnCompleteListener(new OnCompleteListener<String>() {
-            @Override
-            public void onComplete(@NonNull Task<String> task) {
-
-                if(task.isSuccessful()){
-                    String token = Objects.requireNonNull(task.getResult());
-                    user.setUserToken(token);
-                    dataBaseClass.createUser(user);
-                }
-            }
-        });*/
     }
 
     public void setDataNext3(int startAge , int endAge , String partnerGender , String partnerLevel){

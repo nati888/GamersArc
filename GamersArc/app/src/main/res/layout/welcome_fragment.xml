@@ -40,21 +40,22 @@
 
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up"
-                android:textAllCaps="false"
-                android:textSize="30sp"
-                android:textColor="#111111"
                 android:backgroundTint="#fab32c"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:textColor="#111111"
+                android:textSize="30sp"
                 app:cornerRadius="30dp"
-                app:strokeColor="#ffffff"
-                app:strokeWidth="3dp"
                 app:icon="@drawable/add_user"
                 app:iconGravity="textStart"
                 app:iconPadding="20dp"
                 app:iconTint="#111111"
-                android:id="@+id/sign_up"/>
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp" />
 
             <Space
                 android:layout_width="match_parent"
@@ -62,21 +63,22 @@
                 android:layout_weight="0.2"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/sign_in"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_in"
-                android:textSize="30sp"
-                android:textAllCaps="false"
-                android:textColor="#111111"
                 android:backgroundTint="#fab32c"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/sign_in"
+                android:textAllCaps="true"
+                android:textColor="#111111"
+                android:textSize="30sp"
                 app:cornerRadius="30dp"
-                app:strokeColor="#ffffff"
-                app:strokeWidth="3dp"
                 app:icon="@drawable/refer"
                 app:iconGravity="textStart"
                 app:iconPadding="20dp"
                 app:iconTint="#111111"
-                android:id="@+id/sign_in"/>
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp" />
 
 
 
@@ -96,3 +98,5 @@
     </LinearLayout>
 
 </RelativeLayout>
+
+

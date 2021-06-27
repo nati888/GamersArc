@@ -4,12 +4,13 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="#111111">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/lightBlue"/>
+        android:background="#fab32c"/>
 
     <Space
         android:layout_width="match_parent"
@@ -19,9 +20,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="welcome_back"
+        android:text="@string/welcome_back"
         android:textSize="18sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="#fab32c"
         />
 
     <Space
@@ -32,9 +33,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_in"
+        android:text="@string/sign_in"
         android:textSize="25sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="#fab32c
+"
         android:textStyle="bold"/>
 
 
@@ -61,94 +63,97 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:orientation="vertical"
+            android:layout_height="359dp"
             android:layout_weight="3"
             android:gravity="center_horizontal"
-            android:layout_height="match_parent">
+            android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sign_in_et_layout_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/lightBlue2"
-                app:boxStrokeWidth="1.2dp"
-                app:hintTextColor="@color/lightBlue2"
-                app:boxCornerRadiusTopStart="22dp"
-                app:boxCornerRadiusTopEnd="22dp"
-                app:boxCornerRadiusBottomStart="22dp"
-                app:boxCornerRadiusBottomEnd="22dp"
                 android:layout_marginBottom="10dp"
-                android:paddingHorizontal="5dp"
-                app:boxStrokeWidthFocused="1.9dp"
                 android:hint="email"
+                android:paddingHorizontal="5dp"
+                app:boxCornerRadiusBottomEnd="22dp"
+                app:boxCornerRadiusBottomStart="22dp"
+                app:boxCornerRadiusTopEnd="22dp"
+                app:boxCornerRadiusTopStart="22dp"
+                app:boxStrokeColor="#fab32c"
+                app:boxStrokeErrorColor="#ffffff"
+                app:boxStrokeWidth="1.2dp"
+                app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
-                android:id="@+id/sign_in_et_layout_email"
-                app:boxStrokeErrorColor="@color/orange"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:hintTextColor="#fab32c">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEtSignIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/emailEtSignIn"
-                    android:inputType="textEmailAddress"
-                    />
+                    android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sign_in_et_layout_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:boxStrokeColor="@color/lightBlue2"
-                app:boxStrokeWidth="1.2dp"
-                app:hintTextColor="@color/lightBlue2"
-                app:boxCornerRadiusTopStart="22dp"
-                app:boxCornerRadiusTopEnd="22dp"
-                app:boxCornerRadiusBottomStart="22dp"
-                app:boxCornerRadiusBottomEnd="22dp"
                 android:layout_marginBottom="10dp"
+                android:hint="password"
                 android:paddingHorizontal="5dp"
+                app:boxCornerRadiusBottomEnd="22dp"
+                app:boxCornerRadiusBottomStart="22dp"
+                app:boxCornerRadiusTopEnd="22dp"
+                app:boxCornerRadiusTopStart="22dp"
+                app:boxStrokeColor="#fab32c"
+                app:boxStrokeErrorColor="#ffffff"
+                app:boxStrokeWidth="1.2dp"
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
-                android:hint="password"
-                android:id="@+id/sign_in_et_layout_password"
-                app:boxStrokeErrorColor="@color/orange"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
+                app:hintTextColor="#fab32c">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEtSignIn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="textPassword"
-                    android:id="@+id/passwordEtSignIn"
-                    />
+                    android:inputType="textPassword" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
-                />
+                android:layout_height="30dp" />
 
             <ProgressBar
+                android:id="@+id/signIn_progressBar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:visibility="invisible"
                 android:indeterminateDrawable="@drawable/progress_bar_sign_up"
-                android:id="@+id/signIn_progressBar"/>
+                android:visibility="invisible" />
 
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:text="sign_in"
-                android:paddingHorizontal="30dp"
-                android:textSize="18sp"
-                android:background="@drawable/orange_btn"
-                android:textColor="#FFF"
-                android:textAllCaps="false"
                 android:id="@+id/signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#fab32c"
+                android:fontFamily="sans-serif-medium"
+                android:paddingHorizontal="30dp"
+                android:text="@string/sign_in"
+                android:textAllCaps="true"
+                android:textColor="#111111"
+                android:textSize="30sp"
+                app:cornerRadius="30dp"
+                app:icon="@drawable/refer"
+                app:iconGravity="textStart"
+                app:iconPadding="20dp"
+                app:iconTint="#111111"
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp" />
 
 
         </LinearLayout>

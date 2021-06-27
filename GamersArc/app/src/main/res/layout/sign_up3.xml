@@ -121,13 +121,13 @@
                 android:text="@string/age"
                 android:id="@+id/age_text_signUp3"/>
 
-            <com.google.android.material.slider.RangeSlider
+            <com.google.android.material.RangeSlider.RangeSlider
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:valueFrom="1"
                 android:valueTo="121"
                 android:stepSize="1"
-                android:id="@+id/slider_multiple_thumbs_signUp3"
+                android:id="@+id/RangeSlider_multiple_thumbs_signUp3"
                 android:layout_toEndOf="@+id/age_text_signUp3"/>
 
 

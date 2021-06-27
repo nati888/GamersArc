@@ -93,10 +93,11 @@
                     android:layout_width="match_parent"
                     android:layout_marginHorizontal="15dp"
                     android:layout_height="wrap_content"
+                    app:values="@array/initial_slider_values"
                     android:valueFrom="1"
                     android:valueTo="121"
                     android:stepSize="1"
-                    android:id="@+id/slider_multiple_thumbs"
+                    android:id="@+id/RangeSlider_multiple_thumbs"
                     android:layout_toEndOf="@+id/age_text_signUp3"/>
 
             </RelativeLayout>

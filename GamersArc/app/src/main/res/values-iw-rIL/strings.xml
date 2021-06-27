@@ -26,10 +26,10 @@
     <string name="fill_all_details">"מלא את כל המידע "</string>
     <string name="failed_to_sign_up">נכשלת בהרשמה</string>
     <string name="user_already_exists">משתמש כבר רשום</string>
-    <string name="invalid_credentials">אישורים לא חוקיים</string>
-    <string name="password_must_be_8_letters">סיסמא חייבת להיות אותיות 8</string>
-    <string name="passwords_not_identical">סיסמאות לא זיהוי</string>
-    <string name="failed_sign_in">נכשלת בהתחברות</string>
+    <string name="invalid_credentials">פרטי משתמש  לא חוקיים</string>
+    <string name="password_must_be_8_letters">"הסיסמה חייבת להכיל לפחות שמונה אותיות "</string>
+    <string name="passwords_not_identical">הסיסמאות אינן זהות</string>
+    <string name="failed_sign_in">ההתחברות נכשלה</string>
     <string name="wrong_password">סיסמא שגויה</string>
     <string name="no_such_user">אין משתמש כזה</string>
     <string name="email_badly_formatted">אימייל לא תקין</string>
@@ -154,4 +154,5 @@
     <string name="date_of_birth">תאריך לידה</string>
     <string name="edit_preference">הוסף ביצועים</string>
     <string name="Select_Image_from_here">לחץ לבחירת תמונה</string>
+    <string name="Saved_successfully">נשמר בהצלחה</string>
 </resources>

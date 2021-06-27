@@ -59,7 +59,7 @@ public class SignUp3Fragment extends Fragment {
         final RadioGroup radioGroupGender = root.findViewById(R.id.genderGroupPartner);
         RadioGroup radioGroupLevel = root.findViewById(R.id.levelGroupPartner);
         Button buttonSignUp = root.findViewById(R.id.signUpDone);
-        RangeSlider slider = root.findViewById(R.id.slider_multiple_thumbs_signUp3);
+        RangeSlider RangeSlider = root.findViewById(R.id.RangeSlider_multiple_thumbs_signUp3);
 
         final ProgressBar progressBar = root.findViewById(R.id.signUp3_progressBar);
         viewModel.getProgressBar3LiveData().observe(getViewLifecycleOwner(), new Observer<Boolean>() {
@@ -74,19 +74,19 @@ public class SignUp3Fragment extends Fragment {
         });
 
 
-        slider.setValues(1f,120f);
+        RangeSlider.setValues(1f,120f);
 
 
-        slider.addOnSliderTouchListener(new RangeSlider.OnSliderTouchListener() {
+        RangeSlider.addOnSliderTouchListener(new RangeSlider.OnSliderTouchListener() {
             @Override
-            public void onStartTrackingTouch(@NonNull RangeSlider slider) {
+            public void onStartTrackingTouch(@NonNull RangeSlider RangeSlider) {
 
             }
 
             @Override
-            public void onStopTrackingTouch(@NonNull RangeSlider slider) {
-                float fromLocal = slider.getValues().get(0);
-                float toLocal = slider.getValues().get(1);
+            public void onStopTrackingTouch(@NonNull RangeSlider RangeSlider) {
+                float fromLocal = RangeSlider.getValues().get(0);
+                float toLocal = RangeSlider.getValues().get(1);
                 ageFrom = (int) fromLocal;
                 ageTo = (int) toLocal;
                 viewModel.setEndAge(ageTo);

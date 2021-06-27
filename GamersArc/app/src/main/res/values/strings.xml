@@ -160,6 +160,7 @@
     <string name="date_of_birth">date of birth</string>
     <string name="edit_preference">edit_preference</string>
     <string name="Select_Image_from_here">Select Image from here...</string>
+    <string name="Saved_successfully">Saved successfully</string>
 
 
 </resources>

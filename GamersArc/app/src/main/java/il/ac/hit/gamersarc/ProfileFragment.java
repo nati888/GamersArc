@@ -47,7 +47,6 @@ public class ProfileFragment extends Fragment {
             }
         };
 
-
         profileVM.getImageLivedata().observe(getViewLifecycleOwner() , resultObserverImage);
 
         final TextView textViewLocation = root.findViewById(R.id.locationProfileTV);
@@ -84,10 +83,6 @@ public class ProfileFragment extends Fragment {
         };
 
         profileVM.getLiveDataUser().observe(getViewLifecycleOwner(),observerUser);
-
-
-
-
 
         return root;
     }

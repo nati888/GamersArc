@@ -128,7 +128,7 @@ public class SignUp2Fragment extends Fragment implements DataBaseClass.OnSaveIma
                 startActivityForResult(
                         Intent.createChooser(
                                 intent,
-                                "Select Image from here..."),
+                                getString(R.string.Select_Image_from_here)),
                         PICK_IMAGE_REQUEST);
             }
         });

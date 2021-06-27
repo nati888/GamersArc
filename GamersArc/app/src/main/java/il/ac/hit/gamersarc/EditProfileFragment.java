@@ -83,7 +83,7 @@ public class EditProfileFragment extends Fragment {
         radioGroupGender = root.findViewById(R.id.genderGroupEditProfile);
         radioGroupLevel = root.findViewById(R.id.levelGroupEditProfile);
         radioButtonMale = root.findViewById(R.id.maleEditProfileRB);
-       radioButtonFemale = root.findViewById(R.id.femaleEditProfileRB);
+        radioButtonFemale = root.findViewById(R.id.femaleEditProfileRB);
         radioButtonEasy = root.findViewById(R.id.easyEditProfileRB);
         radioButtonMedium = root.findViewById(R.id.mediumEditProfileRB);
         radioButtonExpert = root.findViewById(R.id.expertEditProfileRB);

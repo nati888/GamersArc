@@ -97,7 +97,7 @@ public class SignInFragment extends Fragment implements RegisterClass.SignInFail
                 email=emailEt.getText().toString();
                 password=passwordEt.getText().toString();
 
-                String emptyFieldErrorStr = "required_field";
+                String emptyFieldErrorStr = getString(R.string.required_field);
 
 
                 if(email.equals("") || password.equals("")){

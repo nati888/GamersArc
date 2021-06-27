@@ -12,7 +12,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,14 +51,14 @@
             android:textColor="@color/DarkBlue"
             android:id="@+id/fullNameProfileTV"/>
 
-       <!-- <TextView
+       <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.45"
             android:textSize="20sp"
             android:textColor="@color/DarkBlue"
             android:layout_marginStart="10dp"
-            android:id="@+id/ageProfileTV"/>-->
+            android:id="@+id/ageProfileTV"/>
 
 
 

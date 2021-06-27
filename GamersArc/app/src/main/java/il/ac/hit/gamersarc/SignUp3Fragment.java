@@ -154,8 +154,6 @@ public class SignUp3Fragment extends Fragment {
 
                     callBack.onSignUpLast();
                 }
-
-
             }
         });
         return root;

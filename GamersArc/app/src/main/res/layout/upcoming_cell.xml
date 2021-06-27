@@ -68,7 +68,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="runners"
+                android:text="@string/runners"
                 android:layout_marginStart="2dp"
 
                 android:textSize="14sp"
@@ -82,7 +82,7 @@
             android:textColor="@color/lightGray"
             android:layout_height="40dp"
             android:id="@+id/upcomingCellremoveBtn"
-            android:text="remove"
+            android:text="@string/remove"
             android:textAllCaps="false"
             android:textSize="15sp"
             android:layout_alignParentEnd="true"

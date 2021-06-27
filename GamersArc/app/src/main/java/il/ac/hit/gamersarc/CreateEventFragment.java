@@ -236,18 +236,18 @@ public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc
            public void onCheckedChanged(RadioGroup group, int checkedId) {
                switch (checkedId){
                    case R.id.easyRBCreateEvent:{
-                       runningLevel = "easy";
-                       viewModel.setRunningLevel("easy");
+                       runningLevel = getString(R.string.easy);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                    case R.id.mediumRBCreateEvent:{
-                       runningLevel = "medium";
-                       viewModel.setRunningLevel("medium");
+                       runningLevel = getString(R.string.medium);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                    case R.id.expertRBCreateEvent:{
-                       runningLevel = "expert";
-                       viewModel.setRunningLevel("expert");
+                       runningLevel = getString(R.string.expert);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                }
@@ -260,7 +260,7 @@ public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc
                 switch (checkedId){
                     case R.id.public_event:{
                         eventStatus = "publicEvent";
-                        viewModel.setEventStatus("publicEvent");
+                        viewModel.setEventStatus(eventStatus);
                         break;
                     }
                     case R.id.private_event:{

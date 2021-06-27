@@ -20,7 +20,7 @@
                 android:textSize="27sp"
                 android:textColor="@color/DarkBlue"
                 android:layout_gravity="center"
-                android:text="edit_profile"/>
+                android:text="@string/edit_preferences"/>
 
 
             <FrameLayout
@@ -61,7 +61,7 @@
                     android:layout_weight="3"
                     android:textSize="15sp"
                     android:layout_marginStart="40dp"
-                    android:text="full_name"
+                    android:text="@string/full_name"
                     android:textColor="@color/lightBlue2"/>
 
                 <LinearLayout
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
                     android:focusable="false"
-                    android:text="gender"
+                    android:text="@string/gender"
                     android:layout_marginStart="40dp"
                     android:layout_gravity="center_vertical"
                     android:textSize="15sp"
@@ -118,14 +118,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10dp"
                         android:textColor="@color/gray"
-                        android:text="male"
+                        android:text="@string/male"
                         android:id="@+id/maleEditProfileRB"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/gray"
-                        android:text="female"
+                        android:text="@string/female"
                         android:id="@+id/femaleEditProfileRB"/>
                 </RadioGroup>
 
@@ -143,7 +143,7 @@
                     android:layout_weight="3"
                     android:layout_marginStart="40dp"
                     android:textColor="@color/lightBlue2"
-                    android:text="birthdate" />
+                    android:text="@string/birthdate" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -184,7 +184,7 @@
                     android:layout_marginStart="40dp"
                     android:textColor="@color/lightBlue2"
                     android:textSize="15sp"
-                    android:text="running_level"/>
+                    android:text="@string/running_level"/>
 
                 <RadioGroup
                     android:layout_width="0dp"
@@ -198,7 +198,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="easy"
+                        android:text="@string/easy"
                         android:drawableTop="@drawable/easy_option_blue"
                         android:textAlignment="center"
                         android:textColor="@drawable/option_text_blue"
@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/medium_option_blue"
                         android:textAlignment="center"
-                        android:text="medium"
+                        android:text="@string/medium"
                         android:button="@null"
                         android:layout_marginEnd="10dp"
                         android:textColor="@drawable/option_text_blue"
@@ -222,7 +222,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/expert_option_blue"
                         android:textAlignment="center"
-                        android:text="expert"
+                        android:text="@string/expert"
                         android:button="@null"
                         android:textColor="@drawable/option_text_blue"
                         android:id="@+id/expertEditProfileRB"/>
@@ -236,7 +236,7 @@
                 android:background="@drawable/orange_btn"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#ffff"
-                android:text="save"
+                android:text="@string/save"
                 android:id="@+id/saveEditProfileButton"/>
 
 

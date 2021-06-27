@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="welcome_back"
+        android:text="@string/welcome_back"
         android:textSize="18sp"
         android:textColor="@color/DarkBlue"
         />
@@ -32,7 +32,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_in"
+        android:text="@string/sign_in"
         android:textSize="25sp"
         android:textColor="@color/DarkBlue"
         android:textStyle="bold"/>
@@ -79,7 +79,7 @@
                 android:layout_marginBottom="10dp"
                 android:paddingHorizontal="5dp"
                 app:boxStrokeWidthFocused="1.9dp"
-                android:hint="email"
+                android:hint="@string/email"
                 app:errorEnabled="true"
                 android:id="@+id/sign_in_et_layout_email"
                 app:boxStrokeErrorColor="@color/orange"
@@ -109,7 +109,7 @@
                 android:paddingHorizontal="5dp"
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
-                android:hint="password"
+                android:hint="@string/password"
                 android:id="@+id/sign_in_et_layout_password"
                 app:boxStrokeErrorColor="@color/orange"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -140,7 +140,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="sign_in"
+                android:text="@string/sign_in"
                 android:paddingHorizontal="30dp"
                 android:textSize="18sp"
                 android:background="@drawable/orange_btn"

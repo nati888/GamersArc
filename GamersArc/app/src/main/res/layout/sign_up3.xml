@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_up"
+        android:text="@string/sign_up"
         android:textSize="25sp"
         android:textColor="@color/DarkBlue"
         android:textStyle="bold"/>
@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="preferred_running_partner"
+        android:text="@string/preferred_running_partner"
         android:textSize="18sp"
         android:textColor="@color/DarkBlue"
         />
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="gender"
+                    android:text="@string/gender"
                     android:id="@+id/gender_text_signUp3"/>
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="male"
+                        android:text="@string/male"
                         android:buttonTint="@color/orange"
                         android:textColor="@color/lightGray"
                         android:id="@+id/maleRBPartner"/>
@@ -80,7 +80,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="female"
+                        android:text="@string/female"
                         android:buttonTint="@color/orange"
                         android:textColor="@color/lightGray"
                         android:id="@+id/femaleRBPartner"/>
@@ -88,7 +88,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="both"
+                        android:text="@string/both"
                         android:buttonTint="@color/orange"
                         android:textColor="@color/lightGray"
                         android:id="@+id/bothRBPartner"/>
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textColor="@color/lightBlue2"
-                android:text="age"
+                android:text="@string/age"
                 android:id="@+id/age_text_signUp3"/>
 
             <com.google.android.material.slider.RangeSlider
@@ -153,7 +153,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="running_level"
+                    android:text="@string/running_level"
                     android:id="@+id/runningLevel_text"/>
 
 
@@ -168,7 +168,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="easy"
+                        android:text="@string/easy"
                         android:drawableTop="@drawable/easy_option"
                         android:textAlignment="center"
                         android:textColor="@drawable/option_text"
@@ -182,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/medium_option"
                         android:textAlignment="center"
-                        android:text="medium"
+                        android:text="@string/medium"
                         android:button="@android:color/transparent"
                         android:layout_marginEnd="10dp"
                         android:textColor="@drawable/option_text"
@@ -193,7 +193,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/expert_option"
                         android:textAlignment="center"
-                        android:text="expert"
+                        android:text="@string/expert"
                         android:button="@android:color/transparent"
                         android:textColor="@drawable/option_text"
                         android:id="@+id/expertRBPartner"/>
@@ -216,7 +216,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="sign_up"
+            android:text="@string/sign_up"
             android:paddingHorizontal="30dp"
             android:textSize="18sp"
             android:background="@drawable/orange_btn"

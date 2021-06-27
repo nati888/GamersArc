@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:layout_marginStart="5dp"
-            android:text="chosenLocation"
+            android:text="@string/chosenLocation"
             android:textStyle="bold"
             android:layout_toEndOf="@+id/locationIm"
             />
@@ -94,7 +94,7 @@
             android:textSize="18sp"
             android:layout_centerHorizontal="true"
             android:textColor="#fff"
-            android:text="done"
+            android:text="@string/done"
             android:id="@+id/vBtn"
             android:textAllCaps="false"
             android:background="@drawable/orange_btn"/>

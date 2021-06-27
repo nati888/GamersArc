@@ -15,7 +15,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_up"
+        android:text="@string/sign_up"
         android:textSize="25sp"
         android:textColor="@color/DarkBlue"
         android:textStyle="bold"/>
@@ -23,7 +23,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="personal_details"
+        android:text="@string/personal_details"
         android:textSize="18sp"
         android:textColor="@color/DarkBlue"
         />
@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="profile_picture"
+                    android:text="@string/profile_picture"
                     android:id="@+id/profile_picture_text"/>
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="70dp"
@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="gender"
+                    android:text="@string/gender"
                     android:id="@+id/gender_text"/>
 
         <RadioGroup
@@ -111,7 +111,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="male"
+                android:text="@string/male"
                 android:buttonTint="@color/orange"
                 android:textColor="@color/lightGray"
                 android:id="@+id/maleRB"/>
@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:text="female"
+                android:text="@string/female"
                 android:textColor="@color/lightGray"
                 android:buttonTint="@color/orange"
 
@@ -151,7 +151,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="birthdate"
+                    android:text="@string/birthdate"
                     android:id="@+id/birthdate_text"/>
 
                 <ImageView
@@ -167,7 +167,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="date of birth"
+            android:hint="@string/date_of_birth"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/signUp2CalendarIcon"
@@ -202,7 +202,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="running_level"
+                    android:text="@string/running_level"
                     android:id="@+id/runningLevel_text"/>
 
 
@@ -217,7 +217,7 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="easy"
+                android:text="@string/easy"
                 android:drawableTop="@drawable/easy_option"
                 android:textAlignment="center"
                 android:textColor="@drawable/option_text"
@@ -231,7 +231,7 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/medium_option"
                 android:textAlignment="center"
-                android:text="medium"
+                android:text="@string/medium"
                 android:button="@null"
                 android:layout_marginEnd="10dp"
                 android:textColor="@drawable/option_text"
@@ -242,7 +242,7 @@
                 android:layout_height="wrap_content"
                 android:drawableTop="@drawable/expert_option"
                 android:textAlignment="center"
-                android:text="expert"
+                android:text="@string/expert"
                 android:button="@null"
                 android:textColor="@drawable/option_text"
                 android:id="@+id/expertRB"/>
@@ -266,7 +266,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="next"
+            android:text="@string/next"
             android:paddingHorizontal="30dp"
             android:textSize="18sp"
             android:background="@drawable/orange_btn"

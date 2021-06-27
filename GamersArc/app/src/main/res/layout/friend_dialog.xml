@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogImageView"
         android:layout_marginTop="10dp"
-        android:text="Tal, 22"
+        android:text="@string/tal_22"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/DarkBlue"/>
@@ -50,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogNameTV"
         android:layout_marginTop="4dp"
-        android:text="female"
+        android:text="@string/female"
         android:textColor="@color/lightBlue2"
         android:textSize="16sp"/>
 
@@ -97,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/friendDialogRunningLevel"
-                    android:text="expert"
+                    android:text="@string/expert"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
@@ -151,7 +151,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/friendDialogLocationTV"
-                        android:text="expert"
+                        android:text="@string/expert"
                         android:gravity="center_horizontal"
 
                         android:layout_marginTop="5dp"
@@ -161,7 +161,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:text="meters_away"
+                        android:text="@string/meters_away"
 
                         android:layout_marginTop="0.5dp"
                         android:textSize="13sp"
@@ -180,7 +180,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/friendDialogMutualFriends"
-        android:text="mutual"
+        android:text="@string/mutual"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogDetailsLayout"
         android:layout_marginTop="10dp"

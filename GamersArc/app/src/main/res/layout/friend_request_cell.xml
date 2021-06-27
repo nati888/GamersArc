@@ -26,7 +26,7 @@
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/friendRequestCellImageView"
             android:layout_marginStart="25dp"
-            android:text="Rami"
+            android:text="@string/rami"
             android:textStyle="bold"
             android:textColor="@color/DarkBlue"
             android:textSize="20sp"
@@ -45,7 +45,7 @@
             <Button
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:text="accept"
+                android:text="@string/accept"
                 android:background="@drawable/orange_btn"
                 android:textSize="15sp"
                 android:textAllCaps="false"
@@ -57,7 +57,7 @@
             <Button
                 android:layout_width="75dp"
                 android:layout_height="40dp"
-                android:text="remove"
+                android:text="@string/remove"
                 android:textAllCaps="false"
                 android:background="@drawable/blue_btn"
                 android:textColor="@color/white"

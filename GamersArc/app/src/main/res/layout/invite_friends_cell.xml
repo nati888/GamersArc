@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rami"
+            android:text="@string/rami"
             android:textStyle="bold"
             android:textColor="@color/DarkBlue"
             android:textSize="18sp"
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/distanceTV"
-            android:text="meters_away"
+            android:text="@string/meters_away"
             android:textSize="15sp"
             android:textColor="@color/lightBlue2"
             android:layout_below="@+id/myFriendName"
@@ -60,8 +60,8 @@
         <ToggleButton
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:textOn="un_invite"
-            android:textOff="invite"
+            android:textOn="@string/un_invite"
+            android:textOff="@string/invite"
             android:checked="false"
             android:textAllCaps="false"
             android:textSize="15sp"

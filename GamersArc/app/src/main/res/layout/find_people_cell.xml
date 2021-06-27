@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:textSize="18sp"
-            android:text="tal"
+            android:text="@string/tal"
             android:textColor="@color/lightBlue2"
             android:id="@+id/userNameTVRecyclerCell"/>
 
@@ -37,15 +37,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textSize="13sp"
-            android:text="sent_request"
+            android:text="@string/sent_request"
             android:visibility="gone"
             android:textColor="@color/gray"
             android:id="@+id/requestSentTV"/>
         <ToggleButton
             android:layout_width="80dp"
             android:layout_height="35dp"
-            android:textOn="cancel"
-            android:textOff="add"
+            android:textOn="@string/cancel"
+            android:textOff="@string/add"
             android:checked="false"
             android:paddingVertical="5dp"
             android:gravity="center"

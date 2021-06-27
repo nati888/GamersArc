@@ -18,14 +18,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_up"
+        android:text="@string/sign_up"
         android:textSize="25sp"
         android:textColor="@color/DarkBlue"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="registration_details"
+        android:text="@string/registration_details"
         android:textSize="18sp"
         android:textColor="@color/DarkBlue"
         />
@@ -77,7 +77,7 @@
             android:paddingHorizontal="5dp"
             android:id="@+id/signUp1_name_inputLayout"
             app:boxStrokeWidthFocused="1.9dp"
-            android:hint="name"
+            android:hint="@string/name"
 
             app:boxStrokeErrorColor="@color/orange"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -107,7 +107,7 @@
             android:paddingHorizontal="5dp"
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_email_inputLayout"
-            android:hint="email"
+            android:hint="@string/email"
             app:boxStrokeErrorColor="@color/orange"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -132,7 +132,7 @@
             android:paddingHorizontal="5dp"
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_password_inputLayout"
-            android:hint="password"
+            android:hint="@string/password"
             app:boxStrokeErrorColor="@color/orange"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
@@ -157,7 +157,7 @@
             android:paddingHorizontal="5dp"
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_passwordConfirm_inputLayout"
-            android:hint="password_confirm"
+            android:hint="@string/password_confirm"
             app:boxStrokeErrorColor="@color/orange"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -182,7 +182,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="next"
+            android:text="@string/next"
             android:paddingHorizontal="30dp"
             android:textSize="18sp"
             android:background="@drawable/orange_btn"

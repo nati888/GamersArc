@@ -10,7 +10,7 @@
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="create_new_event"
+        android:text="@string/create_new_event"
         android:textSize="25sp"
         android:layout_marginBottom="25dp"
         android:textColor="@color/DarkBlue"
@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:hint="date"
+                    android:hint="@string/date"
                     android:padding="10dp"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:hint="time"
+                    android:hint="@string/time"
                     android:padding="10dp"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:hint="location"
+                    android:hint="@string/location"
                     android:padding="10dp"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
@@ -138,7 +138,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="running_level"
+                        android:text="@string/running_level"
                         android:layout_marginEnd="15dp"
                         android:textSize="16sp"
                         android:textColor="@color/lightBlue2" />
@@ -152,7 +152,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="easy"
+                            android:text="@string/easy"
                             android:drawableTop="@drawable/easy_option"
                             android:button="@null"
                             android:textAlignment="center"
@@ -163,7 +163,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="medium"
+                            android:text="@string/medium"
                             android:drawableTop="@drawable/medium_option"
                             android:button="@null"
                             android:textAlignment="center"
@@ -174,7 +174,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="expert"
+                            android:text="@string/expert"
                             android:drawableTop="@drawable/expert_option"
                             android:button="@null"
                             android:textAlignment="center"
@@ -209,7 +209,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="15sp"
                         android:layout_marginEnd="15dp"
-                        android:text="event_status"
+                        android:text="@string/event_status"
                         android:textColor="@color/lightBlue2"
                         />
 
@@ -227,7 +227,7 @@
                             android:drawablePadding="5dp"
                             android:textSize="15sp"
                             android:button="@null"
-                            android:text="public_event"
+                            android:text="@string/public_event"
                             android:id="@+id/public_event"
                             android:textColor="@color/darkGray"
                             android:layout_marginEnd="10dp"/>
@@ -240,7 +240,7 @@
                             android:textSize="15sp"
                             android:button="@null"
                             android:textColor="@color/darkGray"
-                            android:text="private_event"
+                            android:text="@string/private_event"
                             android:id="@+id/private_event"/>
                     </RadioGroup>
                 </LinearLayout>
@@ -263,7 +263,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="invite_friends_btn"
+                    android:text="@string/invite_friends_btn"
                     android:textSize="20sp"
                     android:textColor="@color/lightBlue2"
                     android:layout_gravity="center_vertical"/>
@@ -297,7 +297,7 @@
                     android:textSize="17sp"
                     android:paddingStart="15dp"
                     android:paddingEnd="17dp"
-                    android:text="done_btn"
+                    android:text="@string/done_btn"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:background="@drawable/orange_btn"

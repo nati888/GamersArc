@@ -148,6 +148,18 @@
     <string name="no_location_detected">No location detected</string>
     <string name="new_invitation">New invitation to running event!</string>
     <string name="see_in_invitations">See it on your invitations</string>
+    <string name="_1_1_1">1/1/1</string>
+    <string name="_00_00">00:00</string>
+    <string name="rehovot">Rehovot</string>
+    <string name="_1">1</string>
+    <string name="tal">tal</string>
+    <string name="rami">Rami</string>
+    <string name="tal_22">Tal, 22</string>
+    <string name="rehovot_golda_meir">Rehovot, golda meir</string>
+    <string name="tali">Tali</string>
+    <string name="date_of_birth">date of birth</string>
+    <string name="edit_preference">edit_preference</string>
+    <string name="Select_Image_from_here">Select Image from here...</string>
 
 
 </resources>

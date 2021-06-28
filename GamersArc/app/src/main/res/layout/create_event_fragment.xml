@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_margin="20dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#111111">
 
 
     <TextView
@@ -46,9 +47,10 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:hint="@string/date"
+                    android:textColorHint="@color/yellow"
                     android:padding="10dp"
                     android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="#fab32c"
                     android:background="@drawable/edit_text_background"
                     android:drawablePadding="15dp"
                     android:layout_marginBottom="15dp"
@@ -77,9 +79,10 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:hint="@string/time"
+                    android:textColorHint="@color/yellow"
                     android:padding="10dp"
                     android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="@color/yellow"
                     android:background="@drawable/edit_text_background"
                     android:drawablePadding="15dp"
                     android:layout_marginBottom="15dp"
@@ -108,9 +111,10 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:hint="@string/location"
+                    android:textColorHint="@color/yellow"
                     android:padding="10dp"
                     android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="@color/yellow"
                     android:background="@drawable/edit_text_background"
                     android:drawablePadding="15dp"
                     android:layout_marginBottom="15dp"
@@ -126,6 +130,7 @@
                 android:paddingBottom="5dp"
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/black"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -138,10 +143,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/running_level"
+                        android:text="@string/skill_level"
                         android:layout_marginEnd="15dp"
                         android:textSize="16sp"
-                        android:textColor="@color/lightBlue2" />
+                        android:textColor="@color/yellow" />
 
                     <RadioGroup
                         android:layout_width="wrap_content"

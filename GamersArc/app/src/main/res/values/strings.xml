@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RunTime</string>
+    <string name="app_name">GamersArc</string>
     <string name="chosenLocation">Chosen location</string>
     <string name="event_date">Date:</string>
     <string name="event_time">Time:</string>
@@ -89,7 +89,12 @@
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="location">Location</string>
-    <string name="running_level">Running level:</string>
+    <string name="skill_level">Skill level:</string>
+    <string name="novice">Novice</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="expert1">Expert</string>
+
+        <string name="running_level">Running level:</string>
     <string name="done">Done</string>
     <string name="enter_address">Enter address</string>
     <string name="confirm_location">Confirm location</string>
@@ -161,6 +166,10 @@
     <string name="edit_preference">edit_preference</string>
     <string name="Select_Image_from_here">Select Image from here...</string>
     <string name="Saved_successfully">Saved successfully</string>
+
+    <string name="gamer_type">Gamer type</string>
+    <string name="console">Console</string>
+    <string name="pc">PC</string>
 
 
 </resources>

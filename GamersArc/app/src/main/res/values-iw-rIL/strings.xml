@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">זמן ריצה</string>
+    <string name="app_name">GamersArc</string>
     <string name="chosenLocation">המקום שנבחר</string>
     <string name="see_in_invitations">תסתכל בהזמנות שלך</string>
     <string name="new_invitation">הזמנה חדשה לאירוע ריצה!</string>
@@ -56,7 +56,13 @@
     <string name="confirm_location">אשר מיקום</string>
     <string name="enter_address">הכנס כתובת</string>
     <string name="done">בוצע</string>
+    <string name="skill_level">רמת יכולת:</string>
+    <string name="novice">מתחיל</string>
+    <string name="intermediate">מתקדם</string>
+    <string name="expert1">מקצועי</string>
     <string name="running_level">רמת ריצה:</string>
+    <string name="number_of_runners">Runners joined</string>
+
     <string name="location">מקום</string>
     <string name="time">זמן</string>
     <string name="date">תאריך</string>
@@ -155,4 +161,9 @@
     <string name="edit_preference">הוסף ביצועים</string>
     <string name="Select_Image_from_here">לחץ לבחירת תמונה</string>
     <string name="Saved_successfully">נשמר בהצלחה</string>
+
+    <string name="gamer_type">סוג שחקן</string>
+    <string name="console">קונסולה</string>
+    <string name="pc">מחשב</string>
+
 </resources>

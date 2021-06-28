@@ -71,7 +71,7 @@ public class SignUp1Fragment extends Fragment implements RegisterClass.SignUpFai
         emailInputLayout = root.findViewById(R.id.signUp1_email_inputLayout);
         passwordInputLayout = root.findViewById(R.id.signUp1_password_inputLayout);
         passwordConfirmInputLayout = root.findViewById(R.id.signUp1_passwordConfirm_inputLayout);
-        Button nextButton = root.findViewById(R.id.next1);
+        Button nextButton = root.findViewById(R.id.nextButton);
 
         registerClass = RegisterClass.getInstance();
         registerClass.setFailListener(this);

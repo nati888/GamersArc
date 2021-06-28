@@ -79,7 +79,6 @@
             android:id="@+id/signUp1_name_inputLayout"
             app:boxStrokeWidthFocused="1.9dp"
             android:hint="@string/name"
-            android:hint="name"
             app:boxStrokeErrorColor="#fab32c"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -135,12 +134,13 @@
             android:hint="@string/password"
             app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/passwordEt"
                 android:inputType="textPassword"
-                android:textCursorDrawable="#fab32c"/>
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -184,13 +184,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/nextButton"
             android:layout_width="wrap_content"
-            android:text="@string/next"
-            android:paddingHorizontal="30dp"
-            android:textSize="18sp"
             android:background="@drawable/orange_btn"
-            android:textColor="#FFF"
-            android:textAllCaps="false"
-            android:id="@+id/next1"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"

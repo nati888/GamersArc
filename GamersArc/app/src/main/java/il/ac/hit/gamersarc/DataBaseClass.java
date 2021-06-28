@@ -84,7 +84,7 @@ public class DataBaseClass {
     private OnUpdateUserPreferences onUpdateUserPreferences;
 
     private DataBaseClass() {
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance("https://gamersarc-18895-default-rtdb.europe-west1.firebasedatabase.app/");
         registerClass = RegisterClass.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
         storageReference = firebaseStorage.getReference();

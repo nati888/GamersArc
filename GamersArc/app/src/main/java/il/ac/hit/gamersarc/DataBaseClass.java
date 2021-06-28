@@ -86,7 +86,7 @@ public class DataBaseClass {
     private DataBaseClass() {
         firebaseDatabase = FirebaseDatabase.getInstance("https://gamersarc-18895-default-rtdb.europe-west1.firebasedatabase.app/");
         registerClass = RegisterClass.getInstance();
-        firebaseStorage = FirebaseStorage.getInstance();
+        firebaseStorage = FirebaseStorage.getInstance("gs://gamersarc-18895.appspot.com");
         storageReference = firebaseStorage.getReference();
         databaseReference = firebaseDatabase.getReference();
 

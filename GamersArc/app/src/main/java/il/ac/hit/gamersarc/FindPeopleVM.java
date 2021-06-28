@@ -3,6 +3,7 @@ package il.ac.hit.gamersarc;
 
 import android.app.Application;
 import android.location.Geocoder;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;

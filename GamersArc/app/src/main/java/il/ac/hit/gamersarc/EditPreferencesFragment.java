@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,8 +26,8 @@ public class EditPreferencesFragment extends Fragment {
     private il.ac.hit.gamersarc.EditPreferencesVM editPreferencesVM;
     private String gender;
     private String level;
-    private int from;
-    private int to;
+    private int from ;
+    private int to  ;
     private ArrayList<Integer> fromAgesArray = new ArrayList<>();
     private ArrayList<Integer> toAgesArray = new ArrayList<>();
 
@@ -66,7 +67,7 @@ public class EditPreferencesFragment extends Fragment {
             @Override
             public void onChanged(Integer integer) {
                 from = integer;
-                slider.setValues((float)from,(float)to);
+                slider.setValues((float)to,(float)from);
             }
         });
 
@@ -74,7 +75,7 @@ public class EditPreferencesFragment extends Fragment {
             @Override
             public void onChanged(Integer integer) {
                 to = integer;
-                slider.setValues((float)from,(float)to);
+                slider.setValues((float)to,(float)from);
             }
         });
 
@@ -111,7 +112,7 @@ public class EditPreferencesFragment extends Fragment {
 
         slider.addOnSliderTouchListener(new RangeSlider.OnSliderTouchListener() {
             @Override
-            public void onStartTrackingTouch(@NonNull RangeSlider slider) {
+            public void onStartTrackingTouch(@NonNull RangeSlider RangeSlider) {
 
             }
 
@@ -148,6 +149,7 @@ public class EditPreferencesFragment extends Fragment {
                 UserPreferences userPreferences = new UserPreferences(from,to,gender,level);
                 editPreferencesVM.updateLiveData(userPreferences);
                 editPreferencesVM.savePreferences(userPreferences);
+                Toast.makeText(getContext(), getString(R.string.Saved_successfully),Toast.LENGTH_LONG).show();
 
             }
         });

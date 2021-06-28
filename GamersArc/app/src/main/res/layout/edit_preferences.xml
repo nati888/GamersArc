@@ -24,7 +24,7 @@
                 android:textSize="30sp"
                 android:textColor="@color/DarkBlue"
                 android:layout_gravity="center"
-                android:text="edit_preferences"/>
+                android:text="@string/edit_preferences"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
-                    android:text="gender"
+                    android:text="@string/gender"
                     android:textColor="@color/lightBlue2"/>
 
                 <RadioGroup
@@ -49,7 +49,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="male"
+                        android:text="@string/male"
                         android:buttonTint="@color/lightBlue2"
                         android:textColor="@color/lightGray"
                         android:id="@+id/maleRBPartnerEditP"/>
@@ -59,7 +59,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/lightGray"
                         android:buttonTint="@color/lightBlue2"
-                        android:text="female"
+                        android:text="@string/female"
                         android:id="@+id/femaleRBPartnerEditP"/>
 
                     <RadioButton
@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/lightGray"
                         android:buttonTint="@color/lightBlue2"
-                        android:text="both"
+                        android:text="@string/both"
                         android:id="@+id/bothRBPartnerEditP"/>
                 </RadioGroup>
 
@@ -86,18 +86,19 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/lightBlue2"
-                    android:text="age"
+                    android:text="@string/age"
                     android:id="@+id/age_text_signUp3"/>
 
                 <com.google.android.material.slider.RangeSlider
                     android:layout_width="match_parent"
                     android:layout_marginHorizontal="15dp"
                     android:layout_height="wrap_content"
+                    app:values="@array/initial_slider_values"
                     android:valueFrom="1"
                     android:valueTo="121"
                     app:values="@array/initial_slider_values"
                     android:stepSize="1"
-                    android:id="@+id/slider_multiple_thumbs"
+                    android:id="@+id/RangeSlider_multiple_thumbs"
                     android:layout_toEndOf="@+id/age_text_signUp3"/>
 
             </RelativeLayout>
@@ -112,7 +113,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="running_level"
+                    android:text="@string/running_level"
                     android:textColor="@color/lightBlue2"
                     android:textSize="18sp"/>
                 <RadioGroup
@@ -128,7 +129,7 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="easy"
+                        android:text="@string/easy"
                         android:drawableTop="@drawable/easy_option_blue"
                         android:textAlignment="center"
                         android:textColor="@drawable/option_text_blue"
@@ -141,7 +142,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/medium_option_blue"
                         android:textAlignment="center"
-                        android:text="medium"
+                        android:text="@string/medium"
                         android:button="@null"
                         android:layout_marginEnd="10dp"
                         android:textColor="@drawable/option_text_blue"
@@ -152,7 +153,7 @@
                         android:layout_height="wrap_content"
                         android:drawableTop="@drawable/expert_option_blue"
                         android:textAlignment="center"
-                        android:text="expert"
+                        android:text="@string/expert"
                         android:button="@null"
                         android:textColor="@drawable/option_text_blue"
                         android:id="@+id/expertRBPartnerEditP"/>
@@ -167,7 +168,7 @@
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/signUpDoneEditP"
                 android:textColor="#ffff"
-                android:text="save"/>
+                android:text="@string/save"/>
 
 
         </LinearLayout>

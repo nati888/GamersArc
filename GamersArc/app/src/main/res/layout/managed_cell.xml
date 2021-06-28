@@ -25,7 +25,7 @@
             android:textSize="18sp"
             android:layout_marginStart="2dp"
             android:textColor="@color/DarkBlue"
-            android:text="Rehovot, golda meir"
+            android:text="@string/rehovot_golda_meir"
             android:layout_toEndOf="@+id/managedCellLocationIcon"
             android:id="@+id/managedCellAddressTV"/>
         <TextView
@@ -67,7 +67,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="runners"
+                android:text="@string/runners"
                 android:layout_marginStart="2dp"
 
                 android:textSize="14sp"
@@ -92,7 +92,7 @@
             <Button
                 android:layout_width="75dp"
                 android:layout_height="40dp"
-                android:text="cancel"
+                android:text="@string/cancel"
 
                 android:background="@drawable/grey_btn"
                 android:textColor="@color/lightGray"

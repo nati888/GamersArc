@@ -5,31 +5,31 @@
     <item
         android:id="@+id/nevHome"
         android:icon="@drawable/home_dark_blue"
-        android:title="home"
+        android:title="@string/home"
         />
 
     <item
         android:id="@+id/nevGroup"
         android:icon="@drawable/friends_dark_blue"
-        android:title="friends"
+        android:title="@string/friends"
         />
 
     <item
         android:id="@+id/nevLocation"
         android:icon="@drawable/events_dark_blue"
-        android:title="events"
+        android:title="@string/events"
         />
 
     <item
         android:id="@+id/nevProfile"
         android:icon="@drawable/profile_dark_blue"
-        android:title="profile"
+        android:title="@string/profile"
         />
 
     <item
         android:id="@+id/nevMessage"
         android:icon="@drawable/messanger_dark_blue"
-        android:title="chat"
+        android:title="@string/chat"
         />
 
 

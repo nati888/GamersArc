@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="edit_name"
+            android:text="@string/edit_name"
             android:textColor="#fff"
             android:textSize="20sp"
             android:layout_marginStart="30dp"
@@ -57,7 +57,7 @@
 
 
         android:textColor="#fff"
-        android:text="save"
+        android:text="@string/save"
         android:textSize="18sp"
         android:textAllCaps="false"
         android:background="@drawable/orange_btn"

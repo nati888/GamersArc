@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="events_recycler_title"
+                android:text="@string/events_recycler_title"
                 android:textSize="23sp"
                 android:textColor="@color/DarkBlue"
                 android:textStyle="bold"

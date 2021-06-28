@@ -38,7 +38,7 @@
                     android:visibility="gone"
                     android:layout_marginTop="3dp"
                     android:id="@+id/areYouComingTV"
-                    android:text="are_you_coming_for_a_run"
+                    android:text="@string/are_you_coming_for_a_run"
                     android:textSize="25sp" />
 
                 <TextView
@@ -65,7 +65,7 @@
                     android:padding="10dp"
                     android:id="@+id/findPeopleBtn"
                     android:textAllCaps="false"
-                    android:text="find_runners_around_you"/>
+                    android:text="@string/find_runners_around_you"/>
 
                 <Button
                     android:layout_width="240dp"
@@ -79,7 +79,7 @@
                     android:background="@drawable/sign_in_welcome_orange_btn"
                     android:textColor="#ffff"
                     android:textAllCaps="false"
-                    android:text="find_event_around_you"/>
+                    android:text="@string/find_event_around_you"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -94,7 +94,7 @@
                     android:visibility="gone"
                     android:textAllCaps="false"
                     android:background="@null"
-                    android:text="create_new_event"/>
+                    android:text="@string/create_new_event"/>
 
                 <ProgressBar
                     android:layout_width="wrap_content"

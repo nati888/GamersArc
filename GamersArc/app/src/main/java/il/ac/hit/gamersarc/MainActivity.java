@@ -383,10 +383,7 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
             drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
 
         }
-
     }
-
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId()==android.R.id.home)
@@ -423,14 +420,5 @@ public class MainActivity extends AppCompatActivity implements MessagesFragment.
 
     @Override
     public void onChangeUserFailed() {
-
     }
-
-
 }
-
-
-
-
-
-

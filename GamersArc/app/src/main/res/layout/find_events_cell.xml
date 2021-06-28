@@ -29,7 +29,7 @@
                 android:textStyle="bold"
                 android:layout_alignParentStart="true"
                 android:textSize="18sp"
-                android:text="event_date"
+                android:text="@string/event_date"
                 android:textColor="@color/DarkBlue"
                 android:id="@+id/event1"
                 />
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:textSize="18sp"
-                android:text="1/1/1"
+                android:text="@string/_1_1_1"
                 android:textColor="@color/lightBlue2"
                 android:layout_toEndOf="@id/event1"
                 android:id="@+id/dateTVRecyclerCell"/>
@@ -50,7 +50,7 @@
                 android:padding="5dp"
                 android:layout_alignParentStart="true"
                 android:textSize="18sp"
-                android:text="event_time"
+                android:text="@string/event_time"
                 android:textStyle="bold"
                 android:textColor="@color/DarkBlue"
                 android:layout_below="@id/event1"
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:textSize="18sp"
-                android:text="00:00"
+                android:text="@string/_00_00"
                 android:layout_below="@+id/event1"
                 android:layout_toEndOf="@id/event2"
                 android:textColor="@color/lightBlue2"
@@ -74,7 +74,7 @@
                 android:padding="5dp"
                 android:layout_alignParentStart="true"
                 android:textSize="18sp"
-                android:text="event_location"
+                android:text="@string/event_location"
                 android:textStyle="bold"
                 android:textColor="@color/DarkBlue"
                 android:layout_below="@id/event2"
@@ -82,22 +82,21 @@
                 />
 
             <TextView
+                android:id="@+id/locationTVRecyclerCell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:textSize="18sp"
-                android:text="Rehovot"
-                android:textColor="@color/lightBlue2"
-                android:layout_below="@id/event2"
                 android:layout_toEndOf="@id/event3"
-                android:id="@+id/locationTVRecyclerCell"/>
+                android:padding="5dp"
+                android:text="@string/rehovot"
+                android:textColor="@color/lightBlue2"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:padding="5dp"
-                android:text="1"
+                android:text="@string/_1"
                 android:textStyle="bold"
                 android:textColor="@color/DarkBlue"
                 android:id="@+id/runnersAmountTVRecyclerCell"
@@ -109,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:padding="5dp"
-                android:text="number_of_runners"
+                android:text="@string/number_of_runners"
                 android:layout_below="@id/locationTVRecyclerCell"
                 android:textColor="@color/DarkBlue"
                 android:id="@+id/event4"
@@ -133,7 +132,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="see_members"
+                    android:text="@string/see_members"
                     android:textColor="@color/orange"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -160,7 +159,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="easy"
+                    android:text="@string/easy"
                     android:textColor="@color/DarkBlue"
                     android:textSize="15sp"
                     android:id="@+id/runningLevelTVRecyclerCell"/>
@@ -175,8 +174,8 @@
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:textOn="cancel_join_btn"
-            android:textOff="join_btn"
+            android:textOn="@string/cancel_join_btn"
+            android:textOff="@string/join_btn"
             android:checked="false"
             android:textAllCaps="false"
             android:textSize="17sp"

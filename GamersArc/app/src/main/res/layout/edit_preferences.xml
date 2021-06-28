@@ -96,6 +96,7 @@
                     app:values="@array/initial_slider_values"
                     android:valueFrom="1"
                     android:valueTo="121"
+                    app:values="@array/initial_slider_values"
                     android:stepSize="1"
                     android:id="@+id/RangeSlider_multiple_thumbs"
                     android:layout_toEndOf="@+id/age_text_signUp3"/>

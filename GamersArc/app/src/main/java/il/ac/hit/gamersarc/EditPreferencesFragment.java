@@ -59,7 +59,7 @@ public class EditPreferencesFragment extends Fragment {
         final RadioButton radioButtonMedium = root.findViewById(R.id.mediumRBPartnerEditP);
         final RadioButton radioButtonExpert = root.findViewById(R.id.expertRBPartnerEditP);
         final RadioButton radioButtonBoth = root.findViewById(R.id.bothRBPartnerEditP);
-        final RangeSlider slider =root.findViewById(R.id.RangeSlider_multiple_thumbs);
+        final RangeSlider slider = root.findViewById(R.id.slider_multiple_thumbs);
 
         editPreferencesVM.getUserPreferences();
 

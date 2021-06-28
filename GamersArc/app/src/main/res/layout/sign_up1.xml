@@ -4,11 +4,12 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#111111">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/lightBlue"/>
+        android:background="#fab32c"/>
 
     <Space
         android:layout_width="match_parent"
@@ -20,14 +21,14 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:textSize="25sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="#fab32c"
         android:textStyle="bold"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/registration_details"
         android:textSize="18sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="#fab32c"
         />
 
     <Space
@@ -66,9 +67,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeColor="@color/lightBlue2"
+            app:boxStrokeColor="#fab32c"
             app:boxStrokeWidth="1.2dp"
-            app:hintTextColor="@color/lightBlue2"
+            app:hintTextColor="#fab32c"
             app:boxCornerRadiusTopStart="22dp"
             app:boxCornerRadiusTopEnd="22dp"
             app:boxCornerRadiusBottomStart="22dp"
@@ -78,10 +79,9 @@
             android:id="@+id/signUp1_name_inputLayout"
             app:boxStrokeWidthFocused="1.9dp"
             android:hint="@string/name"
-
-            app:boxStrokeErrorColor="@color/orange"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            >
+            android:hint="name"
+            app:boxStrokeErrorColor="#fab32c"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -96,9 +96,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeColor="@color/lightBlue2"
+            app:boxStrokeColor="#fab32c"
             app:boxStrokeWidth="1.2dp"
-            app:hintTextColor="@color/lightBlue2"
+            app:hintTextColor="#fab32c"
             app:boxCornerRadiusTopStart="22dp"
             app:boxCornerRadiusTopEnd="22dp"
             app:boxCornerRadiusBottomStart="22dp"
@@ -108,7 +108,7 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_email_inputLayout"
             android:hint="@string/email"
-            app:boxStrokeErrorColor="@color/orange"
+            app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -121,9 +121,9 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:boxStrokeColor="@color/lightBlue2"
+            app:boxStrokeColor="#fab32c"
             app:boxStrokeWidth="1.2dp"
-            app:hintTextColor="@color/lightBlue2"
+            app:hintTextColor="#fab32c"
             app:boxCornerRadiusTopStart="22dp"
             app:boxCornerRadiusTopEnd="22dp"
             app:boxCornerRadiusBottomStart="22dp"
@@ -133,13 +133,14 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_password_inputLayout"
             android:hint="@string/password"
-            app:boxStrokeErrorColor="@color/orange"
+            app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/passwordEt"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textCursorDrawable="#fab32c"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,6 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/passwordConfirmEt"
+                android:textCursorDrawable="@color/black"
                 android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -179,9 +181,9 @@
             android:indeterminateDrawable="@drawable/progress_bar_sign_up"
             android:id="@+id/signUp1_progressBar"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
             android:text="@string/next"
             android:paddingHorizontal="30dp"
             android:textSize="18sp"
@@ -189,8 +191,19 @@
             android:textColor="#FFF"
             android:textAllCaps="false"
             android:id="@+id/next1"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#fab32c"
+            android:fontFamily="sans-serif-medium"
+            android:paddingHorizontal="30dp"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            android:textColor="#111111"
+            android:textSize="30sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="#ffffff"
+            app:strokeWidth="3dp" />
 
 
         <ImageView

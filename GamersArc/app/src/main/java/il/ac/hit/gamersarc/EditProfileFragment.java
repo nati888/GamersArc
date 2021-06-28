@@ -106,30 +106,27 @@ public class EditProfileFragment extends Fragment {
 
         editProfileVM.getImageLivedata().observe(getViewLifecycleOwner() , resultObserverImage);
 
-        editProfileVM.getUserLiveData().observe(getViewLifecycleOwner(), new Observer<User>() {
-            @Override
-            public void onChanged(User user) {
-                textViewDate.setText(user.getDayOfMonth() + "." + user.getMonth() + "." + user.getYear());
-                textViewFullName.setText(user.getFullName());
-                if(user.getGender().equals("male")){
-                    radioButtonMale.setChecked(true);
-                }
-                else {
-                    radioButtonFemale.setChecked(true);
-                }
-                switch (userInstance.getUser().getRunningLevel()){
-                    case "easy" :
-                        radioButtonEasy.setChecked(true);
-                        break;
-                    case "medium" :
-                        radioButtonMedium.setChecked(true);
-                        break;
-                    case "expert" :
-                        radioButtonExpert.setChecked(true);
-                        break;
-                }
-
+        editProfileVM.getUserLiveData().observe(getViewLifecycleOwner(), user -> {
+            textViewDate.setText(user.getDayOfMonth() + "." + user.getMonth() + "." + user.getYear());
+            textViewFullName.setText(user.getFullName());
+            if(user.getGender().equals("male")){
+                radioButtonMale.setChecked(true);
             }
+            else {
+                radioButtonFemale.setChecked(true);
+            }
+            switch (userInstance.getUser().getRunningLevel()){
+                case "easy" :
+                    radioButtonEasy.setChecked(true);
+                    break;
+                case "medium" :
+                    radioButtonMedium.setChecked(true);
+                    break;
+                case "expert" :
+                    radioButtonExpert.setChecked(true);
+                    break;
+            }
+
         });
 
         gender = userInstance.getUser().getGender();

@@ -63,14 +63,13 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/ic_run_orange_24dp"
+                android:src="@drawable/sword"
                 android:id="@+id/managedCellRunnersIcon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/runners"
-                android:layout_marginStart="2dp"
-
+                android:text="@string/game_event"
+                android:layout_marginStart="5dp"
                 android:textSize="14sp"
                 android:layout_gravity="center_vertical"
                 android:textColor="@color/dark_yellow"/>
@@ -91,7 +90,7 @@
                 android:layout_width="5dp"
                 android:layout_height="match_parent"/>
             <Button
-                android:layout_width="75dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
                 android:text="@string/cancel"
 

@@ -86,7 +86,7 @@
     <string name="event2">Join upcoming events near you</string>
     <string name="event3">or create your own events!</string>
     <string name="get_started">Get started!</string>
-    <string name="create_new_event">Create New Play</string>
+    <string name="create_new_event">Create New event</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="location">Location</string>
@@ -171,6 +171,7 @@
     <string name="gamer_type">Gamer type</string>
     <string name="console">Console</string>
     <string name="pc">PC</string>
+    <string name="game_event">Game</string>
 
 
 </resources>

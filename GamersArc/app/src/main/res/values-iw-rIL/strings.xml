@@ -166,5 +166,6 @@
     <string name="gamer_type">סוג שחקן</string>
     <string name="console">קונסולה</string>
     <string name="pc">מחשב</string>
+    <string name="game_event">משחק</string>
 
 </resources>

@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:text="@string/rami"
             android:textStyle="bold"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/yellow"
             android:textSize="18sp"
             android:layout_marginBottom="5dp"
             android:id="@+id/myFriendName"/>
@@ -44,7 +44,7 @@
             android:layout_toEndOf="@+id/locationIcon"
             android:text="45"
             android:textSize="15sp"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_below="@+id/myFriendName"
             android:layout_marginStart="3dp"/>
         <TextView
@@ -53,7 +53,7 @@
             android:layout_toEndOf="@+id/distanceTV"
             android:text="@string/meters_away"
             android:textSize="15sp"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_below="@+id/myFriendName"
             android:layout_marginStart="3dp"/>
 

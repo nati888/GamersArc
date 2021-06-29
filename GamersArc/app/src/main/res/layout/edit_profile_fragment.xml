@@ -22,7 +22,7 @@
                 android:textSize="27sp"
                 android:textColor="@color/dark_yellow"
                 android:layout_gravity="center"
-                android:text="@string/edit_preferences"/>
+                android:text="@string/edit_profile"/>
 
 
             <FrameLayout

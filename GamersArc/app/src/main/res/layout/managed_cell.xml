@@ -7,6 +7,7 @@
     app:cardMaxElevation="1dp"
     android:layout_marginVertical="5dp"
     app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/darkGray"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout android:layout_width="match_parent"
@@ -24,7 +25,7 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/yellow"
             android:text="@string/rehovot_golda_meir"
             android:layout_toEndOf="@+id/managedCellLocationIcon"
             android:id="@+id/managedCellAddressTV"/>
@@ -32,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_marginTop="5dp"
             android:text="26.9.2020"
             android:textStyle="bold"
@@ -47,7 +48,7 @@
             android:layout_toEndOf="@+id/managedCellDateTV"
             android:layout_marginStart="20dp"
             android:text="10:00"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:textSize="16sp"
             android:id="@+id/managedCellTimeTV"/>
 
@@ -72,7 +73,7 @@
 
                 android:textSize="14sp"
                 android:layout_gravity="center_vertical"
-                android:textColor="@color/orange"/>
+                android:textColor="@color/dark_yellow"/>
 
         </LinearLayout>
 

@@ -30,7 +30,7 @@ import java.util.Set;
 
 public class ManagedTabVM extends AndroidViewModel {
 
-    private final String API_TOKEN_KEY = "AAAA1Zp43-k:APA91bG2LGRbDitz5cKuyq8NhaWiCa_SCMx_CdVm2MeAwFTxCJpEpf1QMZt2hecz0etzk2ggiTp9np0EwCEfeuO-JQpknA5Wc7MbnUwj80rq9gtcvzR_E1b0s6_MnBL7D9JOrs0YjPh5";
+    private final String API_TOKEN_KEY = "AAAA1Zp43-k:APA91bFfzWrTpaf6Sy3xtAbXz715LWVRxguG9NsdxLuAmwebw2sOiwA8uwCd-mfTlmr7kiyWwe6U3k0hnA7Gk_HL3RAa8oFaoStYsTy3sp6DVymQROiQiY-abDniiQNM1z6UgY-TAu_b";
     private ArrayList<Event> managedEvents = new ArrayList<>();
     private ArrayList<String> managedEventsIds = new ArrayList<>();
     MutableLiveData<ArrayList<Event>> managedEventsLiveData = new MutableLiveData<>();

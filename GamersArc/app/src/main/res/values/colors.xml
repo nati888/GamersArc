@@ -38,5 +38,6 @@
     //GamersArc Colors
 
     <color name="yellow">#fab32c</color>
+    <color name="dark_yellow">#B87F12</color>
 
 </resources>

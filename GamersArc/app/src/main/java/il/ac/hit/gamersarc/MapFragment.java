@@ -75,7 +75,6 @@ public class MapFragment extends Fragment {
         geocoder=new Geocoder(getContext());
         searchResult = root.findViewById(R.id.search_result);
         Button vBtn = root.findViewById(R.id.vBtn);
-        Button focusBtn = root.findViewById(R.id.focus_btn);
 
 
         //location set by text
@@ -192,13 +191,6 @@ public class MapFragment extends Fragment {
                 viewModel.setStreetAddress(streetAddress);
                 createEventCallback.onCreateEventFromMap(false);
 
-            }
-        });
-
-        focusBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15));
             }
         });
 

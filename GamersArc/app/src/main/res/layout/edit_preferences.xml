@@ -39,7 +39,7 @@
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
                     android:text="@string/gender"
-                    android:textColor="@color/lightBlue2"/>
+                    android:textColor="@color/yellow"/>
 
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="@color/yellow"
                     android:text="@string/age"
                     android:id="@+id/age_text_signUp3"/>
 
@@ -114,7 +114,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/skill_level"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="@color/yellow"
                     android:layout_gravity="center"
                     android:textSize="18sp"/>
                 <RadioGroup
@@ -169,7 +169,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:background="#fab32c"
+                android:background="@color/yellow"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/signUpDoneEditP"

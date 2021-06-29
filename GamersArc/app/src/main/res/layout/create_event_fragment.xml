@@ -144,7 +144,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/skill_level"
-                        android:layout_marginEnd="15dp"
                         android:textSize="16sp"
                         android:textColor="@color/yellow" />
 
@@ -157,17 +156,18 @@
                         android:layout_marginStart="45dp"
                         android:layout_toEndOf="@+id/runningLevel_text"
                         android:id="@+id/levelGroupCreateEvent">
+
                         <RadioButton
+                            android:id="@+id/easyRBCreateEvent"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/novice"
-                            android:drawableTop="@drawable/stick"
-                            android:textAlignment="center"
-                            android:textColor="@drawable/option_text_blue"
-                            android:button="@null"
-                            android:layout_marginEnd="10dp"
                             android:layout_gravity="center"
-                            android:id="@+id/easyRBCreateEvent"/>
+                            android:layout_marginEnd="10dp"
+                            android:button="@null"
+                            android:drawableTop="@drawable/stick"
+                            android:text="@string/novice"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/option_text_blue" />
 
                         <RadioButton
                             android:layout_width="wrap_content"

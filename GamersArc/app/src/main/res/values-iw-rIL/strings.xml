@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">זמן ריצה</string>
+    <string name="app_name">GamerArc</string>
     <string name="chosenLocation">המקום שנבחר</string>
     <string name="see_in_invitations">תסתכל בהזמנות שלך</string>
     <string name="new_invitation">הזמנה חדשה לאירוע ריצה!</string>
@@ -20,9 +20,9 @@
     <string name="edit_profile">ערוך פרופיל</string>
     <string name="save">שמור</string>
     <string name="my_profile">הפרופיל שלי</string>
-    <string name="find_event_around_you">מצא אירוע סביבך</string>
-    <string name="find_runners_around_you">מצא רצים סביבך</string>
-    <string name="are_you_coming_for_a_run">האם אתה בא לריצה</string>
+    <string name="find_event_around_you">מצא משחק סביבך</string>
+    <string name="find_runners_around_you">מצא שחקנים סביבך</string>
+    <string name="are_you_coming_for_a_run">האם תרצה להצטרף למשחק?</string>
     <string name="fill_all_details">"מלא את כל המידע "</string>
     <string name="failed_to_sign_up">נכשלת בהרשמה</string>
     <string name="user_already_exists">משתמש כבר רשום</string>
@@ -60,7 +60,7 @@
     <string name="location">מקום</string>
     <string name="time">זמן</string>
     <string name="date">תאריך</string>
-    <string name="create_new_event">צור אירוע חדש</string>
+    <string name="create_new_event">צור משחק חדש</string>
     <string name="get_started">להתחיל!</string>
     <string name="event3">או ליצור אירועים משלך!</string>
     <string name="event2">הצטרפו לאירועים הקרובים בקרבתכם</string>

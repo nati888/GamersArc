@@ -253,7 +253,7 @@ public class FindPeopleVM extends AndroidViewModel {
                     //also check if user not on friends list already!
                     if (!userFriendsIds.contains(user.getUserId()) && !userFriendRequestsIds.contains(user.getUserId())){
 
-                        if((user.getGender().equals(preferredGender) || preferredGender.equals("both"))
+/*                        if((user.getGender().equals(preferredGender) || preferredGender.equals("both"))
                                 && user.getRunningLevel().equals(preferredLevel)
                                 && age >= preferredFromAge && age <= preferredToAge
                                 && distance < 20
@@ -261,7 +261,9 @@ public class FindPeopleVM extends AndroidViewModel {
                         ) {
                             relevant.add(user);
 
-                        }
+                        }*/
+                        relevant.add(user);
+
                     }
                 }
 

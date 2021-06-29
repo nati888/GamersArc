@@ -111,15 +111,15 @@ public class FriendDialog extends DialogFragment {
                 switch (s) {
                     case "easy":
                         friendRunningLevel.setText(R.string.easy);
-                        friendRunningLevelImageView.setImageResource(R.drawable.easy_orange);
+                        friendRunningLevelImageView.setImageResource(R.drawable.stick);
                         break;
                     case "medium":
                         friendRunningLevel.setText(R.string.medium);
-                        friendRunningLevelImageView.setImageResource(R.drawable.medium_orange);
+                        friendRunningLevelImageView.setImageResource(R.drawable.sword);
                         break;
                     case "expert":
                         friendRunningLevel.setText(R.string.expert);
-                        friendRunningLevelImageView.setImageResource(R.drawable.hard_orange);
+                        friendRunningLevelImageView.setImageResource(R.drawable.cross_swords);
                         break;
                 }
 

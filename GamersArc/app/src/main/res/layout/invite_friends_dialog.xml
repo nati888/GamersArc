@@ -53,7 +53,7 @@
             android:text="@string/no_friends"
             android:textSize="18sp"
             android:gravity="center_horizontal"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_margin="20dp"
             android:id="@+id/no_friends_TV"
             />

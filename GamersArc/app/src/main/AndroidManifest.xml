@@ -15,6 +15,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GamersArc">
 
+        <service
+            android:name="il.ac.hit.gamersarc.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="map_key"/>

@@ -37,7 +37,7 @@ public class Messages2VM extends AndroidViewModel {
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();
     private MutableLiveData<List<Message>> messageListLiveData;
     private User user = UserInstance.getInstance().getUser();
-    private final String API_TOKEN_KEY = "AAAAfwvvO64:APA91bG6RWYJYEROIIoBMpzKm6kMdCbqDdqpzhynZ4YnFKEiQ0vu5QuLfJdGTtlixdzqBoL2Ul99A5Mf9kspOh8Whz9U-AY1-7rQTBiOUNUeYZM3UHh4A7Tm4Kb-u4Hrv98zApJn76NQ";
+    private final String API_TOKEN_KEY = "AAAA1Zp43-k:APA91bG2LGRbDitz5cKuyq8NhaWiCa_SCMx_CdVm2MeAwFTxCJpEpf1QMZt2hecz0etzk2ggiTp9np0EwCEfeuO-JQpknA5Wc7MbnUwj80rq9gtcvzR_E1b0s6_MnBL7D9JOrs0YjPh5";
 
 
     private String activeConversationFriendId;

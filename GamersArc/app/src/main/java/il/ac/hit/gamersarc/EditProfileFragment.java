@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -107,7 +108,9 @@ public class EditProfileFragment extends Fragment {
         editProfileVM.getImageLivedata().observe(getViewLifecycleOwner() , resultObserverImage);
 
         editProfileVM.getUserLiveData().observe(getViewLifecycleOwner(), user -> {
+            textViewDate.setTextColor(Color.parseColor("#CA8B12"));
             textViewDate.setText(user.getDayOfMonth() + "." + user.getMonth() + "." + user.getYear());
+            textViewFullName.setTextColor(Color.parseColor("#CA8B12"));
             textViewFullName.setText(user.getFullName());
             if(user.getGender().equals("male")){
                 radioButtonMale.setChecked(true);

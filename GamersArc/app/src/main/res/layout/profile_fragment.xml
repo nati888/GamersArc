@@ -49,7 +49,7 @@
 
             android:textSize="20sp"
             android:gravity="center_horizontal"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/yellow"
             android:id="@+id/fullNameProfileTV"/>
 
        <TextView
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.45"
             android:textSize="20sp"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/yellow"
             android:layout_marginStart="10dp"
             android:id="@+id/ageProfileTV"/>
 
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:gravity="center"
             android:id="@+id/genderProfile"/>
 
@@ -99,6 +99,7 @@
             android:layout_marginStart="10dp"
             android:elevation="10dp"
             app:contentPadding="10dp"
+            app:cardBackgroundColor="@color/darkGray"
             android:layout_weight="1">
 
             <LinearLayout
@@ -108,10 +109,10 @@
                 android:gravity="center">
 
                 <ImageView
+                    android:id="@+id/imageProfileLevel"
                     android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:id="@+id/imageProfileLevel"/>
+                    android:layout_height="35dp"
+                    android:layout_gravity="center" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,7 +120,8 @@
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:textColor="@color/orange"
+            android:background="@color/darkGray"
+            android:textColor="@color/yellow"
             android:id="@+id/levelProfileTV"/>
 
             </LinearLayout>
@@ -134,6 +136,7 @@
             android:layout_margin="5dp"
             android:layout_marginEnd="10dp"
             android:elevation="10dp"
+            app:cardBackgroundColor="@color/darkGray"
             app:contentPadding="10dp"
             android:layout_weight="1">
 
@@ -157,7 +160,8 @@
             android:gravity="center"
             android:layout_marginTop="10dp"
                     android:layout_gravity="center"
-            android:id="@+id/locationProfileTV"/>
+            android:id="@+id/locationProfileTV"
+                    android:textColor="@color/yellow"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

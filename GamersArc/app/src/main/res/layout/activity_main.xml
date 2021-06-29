@@ -45,6 +45,7 @@
         app:menu="@menu/sidebar_menu"
         android:theme="@style/DrawerTextStyle"
         app:itemTextColor="@color/yellow"
+        android:background="#323232"
         app:headerLayout="@layout/header_layout_nav"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -12,6 +12,7 @@
     <item
         android:id="@+id/editProfileSidebar"
         android:title="@string/edit_profile"
+        android:icon="@drawable/sword"
         />
 
     <item

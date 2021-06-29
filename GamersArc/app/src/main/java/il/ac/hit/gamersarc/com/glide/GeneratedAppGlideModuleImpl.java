@@ -1,4 +1,6 @@
 /*
+
+
 package il.ac.hit.gamersarc.com.glide;
 
 import android.content.Context;
@@ -8,14 +10,16 @@ import androidx.annotation.NonNull;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.GlideBuilder;
+
 import com.bumptech.glide.Registry;
+import com.bumptech.glide.module.AppGlideModule;
 
 import il.ac.hit.gamersarc.MyAppGlideModule;
 import java.util.Collections;
 import java.util.Set;
 
 @SuppressWarnings("deprecation")
-final class GeneratedAppGlideModuleImpl extends GeneratedGlideModule {
+final class GeneratedAppGlideModuleImpl extends AppGlideModule {
   private final MyAppGlideModule appGlideModule;
 
   public GeneratedAppGlideModuleImpl(Context context) {
@@ -41,7 +45,7 @@ final class GeneratedAppGlideModuleImpl extends GeneratedGlideModule {
     return appGlideModule.isManifestParsingEnabled();
   }
 
-  @Override
+@Override
   @NonNull
   public Set<Class<?>> getExcludedModuleClasses() {
     return Collections.emptySet();
@@ -52,5 +56,8 @@ final class GeneratedAppGlideModuleImpl extends GeneratedGlideModule {
   GeneratedRequestManagerFactory getRequestManagerFactory() {
     return new GeneratedRequestManagerFactory();
   }
+
 }
+
+
 */

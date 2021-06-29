@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="runners"
+            android:text="@string/runners"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:id="@+id/runnerDialogTitle"/>
@@ -44,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:text="manager"
+            android:text="@string/manager"
             android:textStyle="bold"
             android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"

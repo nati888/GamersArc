@@ -22,7 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import il.ac.hit.gamersarc.Model.UserWithLastMessage;
+import il.ac.hit.gamersarc.model.UserWithLastMessage;
 
 public class MessagesFragment extends Fragment {
 

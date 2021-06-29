@@ -3,15 +3,19 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#111111</item>
+        <item name="colorPrimaryDark">#FAB32C</item>
+        <item name="colorAccent">#FFFFFF</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="android:textColorTertiary">@color/text_color_tertiary</item>
+
+
+
     </style>
 
     <style name="DrawerTextStyle" >
-        <item name="android:textColor">@color/lightBlue2</item>
+        <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">17sp</item>
 
     </style>

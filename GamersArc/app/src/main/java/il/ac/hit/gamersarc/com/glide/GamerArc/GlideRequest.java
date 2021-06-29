@@ -1,4 +1,4 @@
-package il.ac.hit.gamersarc.com.glide.runtime;
+package il.ac.hit.gamersarc.com.glide.GamerArc;
 
 import android.content.Context;
 import android.content.res.Resources;

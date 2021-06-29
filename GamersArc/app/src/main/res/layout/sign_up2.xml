@@ -4,291 +4,366 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="#111111">
+ 
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.7"/>
-
-
+ 
+ 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sign_up"
+        android:text="@string/sign_up"
         android:textSize="25sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/dark_yellow"
         android:textStyle="bold"/>
-
+ 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="personal_details"
+        android:text="@string/personal_details"
         android:textSize="18sp"
-        android:textColor="@color/DarkBlue"
+        android:textColor="@color/yellow"
         />
     <Space
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.6"/>
-
+ 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10">
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingHorizontal="30dp">
-
-        <androidx.cardview.widget.CardView
+ 
+ 
+ 
+        <LinearLayout
             android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
-            app:cardElevation="1.5dp"
-            app:cardMaxElevation="2dp"
-            app:cardCornerRadius="10dp">
-            <RelativeLayout
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
+ 
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#597B7B7E">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/profile_picture"
+                        android:id="@+id/profile_picture_text"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/placeholder_small"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="60dp"
+                        android:layout_toEndOf="@+id/profile_picture_text"
+ 
+                        android:id="@+id/profileImageIV"/>
+ 
+                </RelativeLayout>
+ 
+            </androidx.cardview.widget.CardView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+ 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#597B7B7E">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"
+                        android:text="@string/gender"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/gender_text"/>
+ 
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderGroup"
+                android:layout_toEndOf="@+id/gender_text"
+                android:orientation="horizontal"
+                android:layout_marginStart="40dp"
                 >
-                <TextView
+ 
+                <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
-                    android:text="profile_picture"
-                    android:id="@+id/profile_picture_text"/>
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:src="@drawable/placeholder_small"
-                    android:scaleType="centerCrop"
-                    android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@+id/profile_picture_text"
-
-                    android:id="@+id/profileImageIV"/>
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="1.5dp"
-            app:cardMaxElevation="2dp"
-            app:cardCornerRadius="10dp" >
-            <RelativeLayout
+                    android:text="@string/male"
+                    android:textAlignment="center"
+                    android:buttonTint="#fab32c"
+                    android:textColor="#fab32c"
+                    android:id="@+id/maleRB"
+                    />
+ 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/female"
+                    android:textAlignment="center"
+                    android:textColor="#fab32c"
+                    android:buttonTint="#fab32c"
+ 
+                    android:id="@+id/femaleRB"/>
+ 
+            </RadioGroup>
+ 
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+ 
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
-                    android:text="gender"
-                    android:id="@+id/gender_text"/>
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genderGroup"
-            android:layout_toEndOf="@+id/gender_text"
-            android:orientation="horizontal"
-            android:layout_marginStart="50dp"
-            >
-
-            <RadioButton
+                android:layout_height="5dp"/>
+ 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#597B7B7E">
+ 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="20dp">
+ 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"
+                        android:text="@string/birthdate"
+                        android:id="@+id/birthdate_text"
+                        />
+ 
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/birthdate_text"
+                        android:layout_marginStart="40dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/signUp2CalendarIcon"
+                        android:src="@drawable/ic_date_range_orange_24dp"
+                        />
+ 
+ 
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="male"
-                android:buttonTint="@color/orange"
-                android:textColor="@color/lightGray"
-                android:id="@+id/maleRB"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:hint="@string/date_of_birth"
+                android:textColorHint="#fab32c"
+                android:layout_centerVertical="true"
                 android:layout_marginStart="10dp"
-                android:text="female"
-                android:textColor="@color/lightGray"
-                android:buttonTint="@color/orange"
-
-                android:id="@+id/femaleRB"/>
-        </RadioGroup>
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="1.5dp"
-            app:cardMaxElevation="2dp"
-            app:cardCornerRadius="10dp">
-
-            <RelativeLayout
+                android:layout_toEndOf="@id/signUp2CalendarIcon"
+                android:focusable="false"
+                android:id="@+id/dateET"/>
+ 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:id="@+id/age"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+ 
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
-                    android:text="birthdate"
-                    android:id="@+id/birthdate_text"/>
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/birthdate_text"
-                    android:layout_marginStart="40dp"
-                    android:layout_centerVertical="true"
-                    android:id="@+id/signUp2CalendarIcon"
-                    android:src="@drawable/ic_date_range_orange_24dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="date of birth"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/signUp2CalendarIcon"
-            android:focusable="false"
-
-            android:id="@+id/dateET"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:focusable="false"
-            android:id="@+id/age"/>
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="5dp"/>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="1.5dp"
-            app:cardMaxElevation="2dp"
-            app:cardCornerRadius="10dp">
-            <RelativeLayout
+                android:layout_height="5dp"/>
+ 
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
-                    android:text="running_level"
-                    android:id="@+id/runningLevel_text"/>
-
-
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginStart="15dp"
-            android:layout_toEndOf="@+id/runningLevel_text"
-            android:id="@+id/levelGroup">
-
-            <RadioButton
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#597B7B7E">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/gamer_type"
+                        android:id="@+id/gamerType_text"/>
+ 
+ 
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/gamerType_text"
+                        android:id="@+id/typeGroup">
+ 
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/console"
+                            android:drawableTop="@drawable/game_controller"
+                            android:textAlignment="center"
+                            android:textColor="#fab32c"
+                            android:buttonTint="#fab32c"
+                            android:layout_marginRight="15dp"
+ 
+                            android:id="@+id/consoleRB"/>
+ 
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/computer_mouse"
+                            android:textAlignment="center"
+                            android:text="@string/pc"
+                            android:buttonTint="#fab32c"
+                            android:textColor="#fab32c"
+                            android:id="@+id/mnkRB"/>
+ 
+                    </RadioGroup>
+                </RelativeLayout>
+ 
+            </androidx.cardview.widget.CardView>
+ 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"/>
+ 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#597B7B7E">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textSize="18sp"
+                        android:textColor="@color/yellow"
+                        android:text="@string/skill_level"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/runningLevel_text"/>
+ 
+ 
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="15dp"
+                        android:layout_toEndOf="@+id/runningLevel_text"
+                        android:id="@+id/levelGroup">
+ 
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/novice"
+                            android:drawableTop="@drawable/stick"
+                            android:textAlignment="center"
+                            android:textColor="@drawable/option_text"
+                            android:button="@null"
+                            android:layout_marginEnd="10dp"
+ 
+                            android:id="@+id/easyRB"/>
+ 
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/sword"
+                            android:textAlignment="center"
+                            android:text="@string/intermediate"
+                            android:button="@null"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@drawable/option_text"
+                            android:id="@+id/mediumRB"/>
+ 
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableTop="@drawable/cross_swords"
+                            android:textAlignment="center"
+                            android:text="@string/expert1"
+                            android:button="@null"
+                            android:textColor="@drawable/option_text"
+                            android:id="@+id/expertRB"/>
+                    </RadioGroup>
+                </RelativeLayout>
+ 
+            </androidx.cardview.widget.CardView>
+ 
+            <ProgressBar
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="invisible"
+ 
+                android:indeterminateDrawable="@drawable/progress_bar_sign_up"
+                android:id="@+id/signUp2_progressBar"/>
+ 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="easy"
-                android:drawableTop="@drawable/easy_option"
-                android:textAlignment="center"
-                android:textColor="@drawable/option_text"
-                android:button="@null"
-                android:layout_marginEnd="10dp"
-
-                android:id="@+id/easyRB"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/medium_option"
-                android:textAlignment="center"
-                android:text="medium"
-                android:button="@null"
-                android:layout_marginEnd="10dp"
-                android:textColor="@drawable/option_text"
-                android:id="@+id/mediumRB"/>
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableTop="@drawable/expert_option"
-                android:textAlignment="center"
-                android:text="expert"
-                android:button="@null"
-                android:textColor="@drawable/option_text"
-                android:id="@+id/expertRB"/>
-        </RadioGroup>
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            />
-
-        <ProgressBar
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:visibility="invisible"
-
-            android:indeterminateDrawable="@drawable/progress_bar_sign_up"
-            android:id="@+id/signUp2_progressBar"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="next"
-            android:paddingHorizontal="30dp"
-            android:textSize="18sp"
-            android:background="@drawable/orange_btn"
-            android:textColor="#FFF"
-            android:textAllCaps="false"
-            android:id="@+id/nextButton"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:src="@drawable/circles_2"
-            android:layout_marginBottom="40dp"/>
-
-
-
-    </LinearLayout>
-
-
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#fab32c"
+                android:fontFamily="sans-serif-medium"
+                android:paddingHorizontal="30dp"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textColor="#111111"
+                android:textSize="30sp"
+                app:cornerRadius="30dp"
+                app:strokeColor="#ffffff"
+                app:strokeWidth="3dp" />
+ 
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circles_2"
+                android:layout_marginBottom="40dp"/>
+ 
+ 
+ 
+        </LinearLayout>
+ 
+ 
     </ScrollView>
-
-
-
+ 
+ 
+ 
 </LinearLayout>

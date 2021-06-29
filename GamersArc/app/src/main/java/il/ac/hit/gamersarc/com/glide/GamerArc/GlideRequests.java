@@ -1,4 +1,4 @@
-package il.ac.hit.gamersarc.com.glide.runtime;
+package il.ac.hit.gamersarc.com.glide.GamerArc;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -167,10 +167,10 @@ public class GlideRequests extends RequestManager {
 
   @Override
   protected void setRequestOptions(@NonNull RequestOptions toSet) {
-    if (toSet instanceof il.ac.hit.gamersarc.com.glide.runtime.GlideOptions) {
+    if (toSet instanceof il.ac.hit.gamersarc.com.glide.GamerArc.GlideOptions) {
       super.setRequestOptions(toSet);
     } else {
-      super.setRequestOptions(new il.ac.hit.gamersarc.com.glide.runtime.GlideOptions().apply(toSet));
+      super.setRequestOptions(new il.ac.hit.gamersarc.com.glide.GamerArc.GlideOptions().apply(toSet));
     }
   }
 }

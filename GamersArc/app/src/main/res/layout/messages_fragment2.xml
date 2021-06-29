@@ -23,7 +23,7 @@
             android:id="@+id/messagesTVName"
             android:layout_width="wrap_content"
             android:layout_marginStart="10dp"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/yellow"
             android:layout_marginTop="5dp"
             android:layout_height="wrap_content"
             android:textSize="20sp" />
@@ -47,6 +47,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/layoutEditText"
             android:layout_marginTop="10dp"
+
             android:layout_alignParentBottom="true"
             android:orientation="horizontal">
 
@@ -56,15 +57,18 @@
                 android:layout_weight="0.8"
                 android:layout_margin="5dp"
                 android:padding="5dp"
-                app:boxStrokeColor="@color/lightBlue2"
+                app:boxStrokeColor="@color/yellow"
                 android:layout_height="wrap_content"
-                app:hintTextColor="@color/lightBlue2"
-                android:hint="enter_your_message"
+                app:hintTextColor="@color/yellow"
+                android:textColorHint="@color/dark_yellow"
+
+                android:hint="@string/enter_your_message"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/white"
                     android:id="@+id/messageET"
                     />
 

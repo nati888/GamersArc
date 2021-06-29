@@ -3,6 +3,7 @@ package il.ac.hit.gamersarc;
 
 import android.app.Application;
 import android.location.Geocoder;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -42,7 +43,7 @@ public class FindPeopleVM extends AndroidViewModel {
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();
     private ArrayList<User> usersFromDatabase = new ArrayList<>();
     private UserPreferences userPreferences;
-    private final String API_TOKEN_KEY = "AAAAfwvvO64:APA91bG6RWYJYEROIIoBMpzKm6kMdCbqDdqpzhynZ4YnFKEiQ0vu5QuLfJdGTtlixdzqBoL2Ul99A5Mf9kspOh8Whz9U-AY1-7rQTBiOUNUeYZM3UHh4A7Tm4Kb-u4Hrv98zApJn76NQ";
+    private final String API_TOKEN_KEY = "AAAA1Zp43-k:APA91bFfzWrTpaf6Sy3xtAbXz715LWVRxguG9NsdxLuAmwebw2sOiwA8uwCd-mfTlmr7kiyWwe6U3k0hnA7Gk_HL3RAa8oFaoStYsTy3sp6DVymQROiQiY-abDniiQNM1z6UgY-TAu_b";
 
     private MutableLiveData<Boolean> swipeLayoutBool = new MutableLiveData<>();
 
@@ -77,7 +78,7 @@ public class FindPeopleVM extends AndroidViewModel {
                 Math.pow(Math.sin(dLon / 2), 2) *
                         Math.cos(lat1) *
                         Math.cos(lat2);
-        double rad = 6371;
+        double rad = 50000;
         double c = 2 * Math.asin(Math.sqrt(a));
         return rad * c; //distance in km
     }
@@ -252,7 +253,7 @@ public class FindPeopleVM extends AndroidViewModel {
                     //also check if user not on friends list already!
                     if (!userFriendsIds.contains(user.getUserId()) && !userFriendRequestsIds.contains(user.getUserId())){
 
-                        if((user.getGender().equals(preferredGender) || preferredGender.equals("both"))
+/*                        if((user.getGender().equals(preferredGender) || preferredGender.equals("both"))
                                 && user.getRunningLevel().equals(preferredLevel)
                                 && age >= preferredFromAge && age <= preferredToAge
                                 && distance < 20
@@ -260,7 +261,9 @@ public class FindPeopleVM extends AndroidViewModel {
                         ) {
                             relevant.add(user);
 
-                        }
+                        }*/
+                        relevant.add(user);
+
                     }
                 }
 

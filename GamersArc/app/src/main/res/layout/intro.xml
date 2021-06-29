@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textSize="28sp"
         android:layout_marginTop="30dp"
-        android:text="welcome"
+        android:text="@string/welcome"
         android:textColor="@color/lightBlue2"
         android:id="@+id/introTitle"
         />
@@ -28,14 +28,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"
-        android:text="find_someone"
+        android:text="@string/find_someone"
         android:layout_marginTop="30dp"
         android:textColor="@color/DarkBlue"
         android:id="@+id/introDescription1"
         />
 
     <TextView
-        android:text="to_run_with"
+        android:text="@string/to_run_with"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="16sp"

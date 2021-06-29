@@ -1,4 +1,4 @@
-package il.ac.hit.gamersarc.Model;
+package il.ac.hit.gamersarc.model;
 
 
 import il.ac.hit.gamersarc.User;

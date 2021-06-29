@@ -6,6 +6,7 @@
     app:cardUseCompatPadding="true"
     app:contentPadding="10dp"
     android:elevation="10dp"
+    app:cardBackgroundColor="@color/darkGray"
     app:cardCornerRadius="10dp"
     >
 
@@ -29,7 +30,7 @@
             android:layout_marginStart="20dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/yellow"
             android:id="@+id/cardName"
             />
 
@@ -41,7 +42,7 @@
             android:textSize="10sp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/cardName"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/yellow"
             android:id="@+id/cardLastMessage"
             />
 
@@ -52,7 +53,7 @@
             android:layout_marginStart="20dp"
             android:textSize="10sp"
             android:layout_margin="5dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/yellow"
             android:id="@+id/cardLastMessageTime"
             />
 

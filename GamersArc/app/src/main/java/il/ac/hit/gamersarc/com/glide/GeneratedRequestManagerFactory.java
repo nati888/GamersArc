@@ -9,7 +9,7 @@ import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.manager.Lifecycle;
 import com.bumptech.glide.manager.RequestManagerRetriever;
 import com.bumptech.glide.manager.RequestManagerTreeNode;
-import il.ac.hit.gamersarc.com.glide.runtime.GlideRequests;
+import il.ac.hit.gamersarc.com.glide.GamerArc.GlideRequests;
 
 /**
  * Generated code, do not modify

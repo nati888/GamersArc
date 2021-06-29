@@ -1,4 +1,4 @@
-package il.ac.hit.gamersarc.com.glide.runtime;
+package il.ac.hit.gamersarc.com.glide.GamerArc;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

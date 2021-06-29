@@ -2,6 +2,7 @@
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/tools">
@@ -10,7 +11,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="18dp"
 
-        android:background="@color/lightBlue">
+        android:background="@color/dark_yellow">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -38,10 +39,10 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogImageView"
         android:layout_marginTop="10dp"
-        android:text="Tal, 22"
+        android:text="@string/tal_22"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:textColor="@color/DarkBlue"/>
+        android:textColor="@color/yellow"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,8 +51,8 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogNameTV"
         android:layout_marginTop="4dp"
-        android:text="female"
-        android:textColor="@color/lightBlue2"
+        android:text="@string/female"
+        android:textColor="@color/yellow"
         android:textSize="16sp"/>
 
     <LinearLayout
@@ -73,7 +74,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginVertical="10dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="@color/darkGray"
             >
 
 
@@ -82,14 +83,13 @@
                 android:layout_height="match_parent"
                 android:padding="20dp"
                 android:gravity="center_vertical"
-                android:background="#fff"
                 android:orientation="vertical"
                 >
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
 
-                    android:src="@drawable/hard_white"
+                    android:src="@drawable/cross_swords"
                     android:id="@+id/friendDialogRunningLevelImageView"
                     android:layout_gravity="center_horizontal"/>
 
@@ -97,11 +97,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/friendDialogRunningLevel"
-                    android:text="expert"
+                    android:text="@string/expert1"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="5dp"
                     android:textSize="15sp"
-                    android:textColor="@color/orange"/>
+                    android:textColor="@color/yellow"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -122,14 +122,13 @@
             android:layout_marginEnd="20dp"
             android:layout_marginVertical="10dp"
 
-            app:cardBackgroundColor="#fff"
+            app:cardBackgroundColor="@color/darkGray"
             app:cardMaxElevation="4dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
-                android:background="#fff"
                 android:orientation="vertical"
                 android:paddingTop="25dp"
                 >
@@ -151,21 +150,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/friendDialogLocationTV"
-                        android:text="expert"
+                        android:text="@string/expert1"
                         android:gravity="center_horizontal"
 
                         android:layout_marginTop="5dp"
                         android:textSize="15sp"
-                        android:textColor="@color/lightGray"/>
+                        android:textColor="@color/yellow"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
-                        android:text="meters_away"
+                        android:text="@string/meters_away"
 
                         android:layout_marginTop="0.5dp"
                         android:textSize="13sp"
-                        android:textColor="@color/lightGray"/>
+                        android:textColor="@color/yellow"/>
                 </LinearLayout>
 
 
@@ -180,12 +179,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/friendDialogMutualFriends"
-        android:text="mutual"
+        android:text="@string/mutual"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogDetailsLayout"
         android:layout_marginTop="10dp"
         android:textSize="15sp"
-        android:textColor="@color/lightBlue2"/>
+        android:textColor="@color/yellow"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

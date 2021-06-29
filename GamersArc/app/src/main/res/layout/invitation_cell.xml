@@ -7,11 +7,12 @@
     app:cardMaxElevation="1dp"
     android:layout_marginVertical="5dp"
     app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/darkGray"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <RelativeLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp">
+        android:padding="10dp">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -24,15 +25,15 @@
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginStart="2dp"
-            android:textColor="@color/DarkBlue"
-            android:text="Rehovot, golda meir"
+            android:textColor="@color/yellow"
+            android:text="@string/rehovot_golda_meir"
             android:layout_toEndOf="@+id/invitationsCellLocationIcon"
             android:id="@+id/invitationCellAddressTV"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_marginTop="5dp"
             android:text="26.9.2020"
             android:textStyle="bold"
@@ -47,7 +48,7 @@
             android:layout_toEndOf="@+id/invitationCellDateTV"
             android:layout_marginStart="20dp"
             android:text="10:00"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:textSize="16sp"
             android:id="@+id/invitationCellTimeTV"/>
 
@@ -62,17 +63,16 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/ic_run_orange_24dp"
+                android:src="@drawable/sword"
                 android:id="@+id/invitationsCellRunnersIcon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="runners"
-                android:layout_marginStart="2dp"
-
+                android:text="@string/game_event"
+                android:layout_marginStart="5dp"
                 android:textSize="14sp"
                 android:layout_gravity="center_vertical"
-                android:textColor="@color/orange"/>
+                android:textColor="@color/yellow"/>
 
         </LinearLayout>
 
@@ -87,9 +87,9 @@
 
 
             <Button
-                android:layout_width="75dp"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="join"
+                android:text="@string/join"
                 android:background="@drawable/orange_btn"
 
                 android:textColor="@color/white"
@@ -99,15 +99,16 @@
             <Space
                 android:layout_width="5dp"
                 android:layout_height="match_parent"/>
+
             <Button
-                android:layout_width="75dp"
+                android:id="@+id/invitationCellRemoveBtn"
+                android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="remove"
                 android:background="@drawable/blue_btn"
-                android:textColor="@color/white"
-                android:textSize="15sp"
+                android:text="@string/remove"
                 android:textAllCaps="false"
-                android:id="@+id/invitationCellRemoveBtn"/>
+                android:textColor="@color/white"
+                android:textSize="15sp" />
 
 
         </LinearLayout>

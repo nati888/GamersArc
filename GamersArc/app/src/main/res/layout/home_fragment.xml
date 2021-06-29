@@ -25,7 +25,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textColor="@color/DarkBlue"
+                    android:textColor="@color/dark_yellow"
                     android:layout_marginTop="50dp"
                     android:textSize="25sp"
                     android:id="@+id/helloLabelMain"/>
@@ -34,11 +34,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:textColor="@color/DarkBlue"
+                    android:textColor="@color/dark_yellow"
                     android:visibility="gone"
                     android:layout_marginTop="3dp"
                     android:id="@+id/areYouComingTV"
-                    android:text="are_you_coming_for_a_run"
+                    android:text="@string/are_you_coming_for_a_run"
                     android:textSize="25sp" />
 
                 <TextView
@@ -49,6 +49,7 @@
                     android:drawableStart="@drawable/ic_location_on_grey_24dp"
                     android:layout_marginTop="40dp"
                     android:visibility="gone"
+                    android:textColor="@color/gray"
                     android:layout_marginBottom="40dp"
                     android:textSize="15sp"
                     android:id="@+id/locationText"/>
@@ -57,7 +58,7 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:textColor="#ffff"
+                    android:textColor="@color/black"
                     android:background="@drawable/sign_in_welcome_orange_btn"
                     android:layout_gravity="center"
                     android:textSize="17sp"
@@ -65,7 +66,7 @@
                     android:padding="10dp"
                     android:id="@+id/findPeopleBtn"
                     android:textAllCaps="false"
-                    android:text="find_runners_around_you"/>
+                    android:text="@string/find_runners_around_you"/>
 
                 <Button
                     android:layout_width="240dp"
@@ -77,9 +78,9 @@
                     android:textSize="17sp"
                     android:padding="10dp"
                     android:background="@drawable/sign_in_welcome_orange_btn"
-                    android:textColor="#ffff"
+                    android:textColor="@color/black"
                     android:textAllCaps="false"
-                    android:text="find_event_around_you"/>
+                    android:text="@string/find_event_around_you"/>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -89,12 +90,12 @@
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:id="@+id/createNewEventBT"
-                    android:textColor="@color/lightBlue2"
-                    android:drawableStart="@drawable/ic_add_light_blue_24dp"
+                    android:textColor="@color/black"
+                    android:drawableStart="@drawable/sign_in_welcome_orange_btn"
                     android:visibility="gone"
                     android:textAllCaps="false"
-                    android:background="@null"
-                    android:text="create_new_event"/>
+                    android:background="@drawable/sign_in_welcome_orange_btn"
+                    android:text="@string/create_new_event"/>
 
                 <ProgressBar
                     android:layout_width="wrap_content"

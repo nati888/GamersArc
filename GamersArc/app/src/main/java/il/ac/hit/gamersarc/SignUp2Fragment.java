@@ -3,6 +3,7 @@ package il.ac.hit.gamersarc;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -107,6 +108,7 @@ public class SignUp2Fragment extends Fragment implements DataBaseClass.OnSaveIma
         viewModel.getDateStringLiveData().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(String s) {
+                textViewDate.setTextColor(Color.parseColor("#fab32c"));
                 textViewDate.setText(s);
             }
         });
@@ -128,7 +130,7 @@ public class SignUp2Fragment extends Fragment implements DataBaseClass.OnSaveIma
                 startActivityForResult(
                         Intent.createChooser(
                                 intent,
-                                "Select Image from here..."),
+                                getString(R.string.Select_Image_from_here)),
                         PICK_IMAGE_REQUEST);
             }
         });

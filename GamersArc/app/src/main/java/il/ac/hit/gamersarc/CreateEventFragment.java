@@ -236,18 +236,18 @@ public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc
            public void onCheckedChanged(RadioGroup group, int checkedId) {
                switch (checkedId){
                    case R.id.easyRBCreateEvent:{
-                       runningLevel = "easy";
-                       viewModel.setRunningLevel("easy");
+                       runningLevel = getString(R.string.easy);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                    case R.id.mediumRBCreateEvent:{
-                       runningLevel = "medium";
-                       viewModel.setRunningLevel("medium");
+                       runningLevel = getString(R.string.medium);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                    case R.id.expertRBCreateEvent:{
-                       runningLevel = "expert";
-                       viewModel.setRunningLevel("expert");
+                       runningLevel = getString(R.string.expert);
+                       viewModel.setRunningLevel(runningLevel);
                        break;
                    }
                }
@@ -259,13 +259,13 @@ public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId){
                     case R.id.public_event:{
-                        eventStatus = "publicEvent";
-                        viewModel.setEventStatus("publicEvent");
+                        eventStatus = getString(R.string.public_event);
+                        viewModel.setEventStatus(eventStatus);
                         break;
                     }
                     case R.id.private_event:{
-                        eventStatus = "privateEvent";
-                        viewModel.setEventStatus("privateEvent");
+                        eventStatus = getString(R.string.private_event);
+                        viewModel.setEventStatus(eventStatus);
                         break;
                     }
                 }
@@ -279,14 +279,14 @@ public class CreateEventFragment extends Fragment implements il.ac.hit.gamersarc
                 updateEventData();
                 if(dateEt.getText().equals("") || timeEt.getText().equals("") ||
                        locationEt.getText().equals("")|| runningLevel==null || eventStatus==null ){
-                    Snackbar.make(getView(),"all_fields", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(),getString(R.string.all_fields), Snackbar.LENGTH_LONG).show();
 
                 }
                 else{
                     viewModel.setEventData(eventYear,eventMonth,eventDayOfMonth,eventHourOfDay,
                             eventMinute,runningLevel,eventStatus,invitedFriendsIds);
 
-                    Snackbar.make(getView(),"new_event_snack_bar", Snackbar.LENGTH_LONG).show();
+                    Snackbar.make(getView(),getString(R.string.new_event_snack_bar), Snackbar.LENGTH_LONG).show();
                     backFromCreateEventCallback.toHomeFromCreateEvent();
 
                 }

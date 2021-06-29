@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -83,7 +84,7 @@ public class EditProfileFragment extends Fragment {
         radioGroupGender = root.findViewById(R.id.genderGroupEditProfile);
         radioGroupLevel = root.findViewById(R.id.levelGroupEditProfile);
         radioButtonMale = root.findViewById(R.id.maleEditProfileRB);
-       radioButtonFemale = root.findViewById(R.id.femaleEditProfileRB);
+        radioButtonFemale = root.findViewById(R.id.femaleEditProfileRB);
         radioButtonEasy = root.findViewById(R.id.easyEditProfileRB);
         radioButtonMedium = root.findViewById(R.id.mediumEditProfileRB);
         radioButtonExpert = root.findViewById(R.id.expertEditProfileRB);
@@ -106,30 +107,29 @@ public class EditProfileFragment extends Fragment {
 
         editProfileVM.getImageLivedata().observe(getViewLifecycleOwner() , resultObserverImage);
 
-        editProfileVM.getUserLiveData().observe(getViewLifecycleOwner(), new Observer<User>() {
-            @Override
-            public void onChanged(User user) {
-                textViewDate.setText(user.getDayOfMonth() + "." + user.getMonth() + "." + user.getYear());
-                textViewFullName.setText(user.getFullName());
-                if(user.getGender().equals("male")){
-                    radioButtonMale.setChecked(true);
-                }
-                else {
-                    radioButtonFemale.setChecked(true);
-                }
-                switch (userInstance.getUser().getRunningLevel()){
-                    case "easy" :
-                        radioButtonEasy.setChecked(true);
-                        break;
-                    case "medium" :
-                        radioButtonMedium.setChecked(true);
-                        break;
-                    case "expert" :
-                        radioButtonExpert.setChecked(true);
-                        break;
-                }
-
+        editProfileVM.getUserLiveData().observe(getViewLifecycleOwner(), user -> {
+            textViewDate.setTextColor(Color.parseColor("#CA8B12"));
+            textViewDate.setText(user.getDayOfMonth() + "." + user.getMonth() + "." + user.getYear());
+            textViewFullName.setTextColor(Color.parseColor("#CA8B12"));
+            textViewFullName.setText(user.getFullName());
+            if(user.getGender().equals("male")){
+                radioButtonMale.setChecked(true);
             }
+            else {
+                radioButtonFemale.setChecked(true);
+            }
+            switch (userInstance.getUser().getRunningLevel()){
+                case "easy" :
+                    radioButtonEasy.setChecked(true);
+                    break;
+                case "medium" :
+                    radioButtonMedium.setChecked(true);
+                    break;
+                case "expert" :
+                    radioButtonExpert.setChecked(true);
+                    break;
+            }
+
         });
 
         gender = userInstance.getUser().getGender();
@@ -147,7 +147,7 @@ public class EditProfileFragment extends Fragment {
                 startActivityForResult(
                         Intent.createChooser(
                                 intent,
-                                "Select Image from here..."),
+                                getString(R.string.Select_Image_from_here)),
                         PICK_IMAGE_REQUEST);
             }
         });

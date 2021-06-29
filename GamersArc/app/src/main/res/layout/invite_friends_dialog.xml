@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/lightBlue"
+        android:background="@color/dark_yellow"
         android:layout_height="60dp"
         android:id="@+id/myFriendsDialogTitle">
         <TextView
@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="my_friends"
+            android:text="@string/my_friends"
             android:textStyle="bold"
             android:textColor="@color/white" />
         <ImageView
@@ -35,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:id="@+id/myFriendsRecycler"
+        android:background="@color/black"
         />
 
     <RelativeLayout
@@ -49,10 +50,10 @@
             android:layout_width="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
-            android:text="no_friends"
+            android:text="@string/no_friends"
             android:textSize="18sp"
             android:gravity="center_horizontal"
-            android:textColor="@color/lightBlue2"
+            android:textColor="@color/yellow"
             android:layout_margin="20dp"
             android:id="@+id/no_friends_TV"
             />
@@ -62,11 +63,11 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="#ffffff"
+        android:background="@color/gray"
         android:layout_height="60dp"
         android:id="@+id/done_Layout"
         android:gravity="center_vertical"
-        android:layout_marginEnd="20dp">
+        >
 
 
 
@@ -75,12 +76,13 @@
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:text="done"
+            android:text="@string/done"
             android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="18sp"
             android:background="@drawable/blue_btn"
-            android:id="@+id/doneBtnFriendDialog" />
+            android:id="@+id/doneBtnFriendDialog"
+            android:layout_marginEnd="20dp"/>
 
 
     </RelativeLayout>

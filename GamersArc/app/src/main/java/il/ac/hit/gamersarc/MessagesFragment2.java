@@ -26,7 +26,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import il.ac.hit.gamersarc.Model.Message;
+import il.ac.hit.gamersarc.model.Message;
 
 import org.json.JSONException;
 

@@ -15,7 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import il.ac.hit.gamersarc.Model.Message;
+import il.ac.hit.gamersarc.model.Message;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -37,7 +37,7 @@ public class Messages2VM extends AndroidViewModel {
     private DataBaseClass dataBaseClass = DataBaseClass.getInstance();
     private MutableLiveData<List<Message>> messageListLiveData;
     private User user = UserInstance.getInstance().getUser();
-    private final String API_TOKEN_KEY = "AAAAfwvvO64:APA91bG6RWYJYEROIIoBMpzKm6kMdCbqDdqpzhynZ4YnFKEiQ0vu5QuLfJdGTtlixdzqBoL2Ul99A5Mf9kspOh8Whz9U-AY1-7rQTBiOUNUeYZM3UHh4A7Tm4Kb-u4Hrv98zApJn76NQ";
+    private final String API_TOKEN_KEY = "AAAA1Zp43-k:APA91bFfzWrTpaf6Sy3xtAbXz715LWVRxguG9NsdxLuAmwebw2sOiwA8uwCd-mfTlmr7kiyWwe6U3k0hnA7Gk_HL3RAa8oFaoStYsTy3sp6DVymQROiQiY-abDniiQNM1z6UgY-TAu_b";
 
 
     private String activeConversationFriendId;

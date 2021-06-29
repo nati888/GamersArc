@@ -25,24 +25,12 @@
         <SearchView
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:queryHint="enter_address"
+            android:queryHint="@string/enter_address"
             android:id="@+id/search_view"
             android:iconifiedByDefault="false"
             android:padding="2dp"
             android:queryBackground="@drawable/search_background"
             android:background="@drawable/search_background"/>
-
-
-        <Button
-            android:layout_margin="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_below="@+id/search_view"
-            android:id="@+id/focus_btn"
-            android:background="@drawable/focus"
-            />
-
 
     </RelativeLayout>
 
@@ -51,7 +39,7 @@
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
-        android:background="#ffffff"
+        android:background="@color/darkGray"
         android:id="@+id/lay1"
         >
 
@@ -66,8 +54,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:textColor="@color/yellow"
+            android:fontFamily="@string/event_date"
             android:layout_marginStart="5dp"
-            android:text="chosenLocation"
+            android:text="@string/chosenLocation"
             android:textStyle="bold"
             android:layout_toEndOf="@+id/locationIm"
             />
@@ -77,24 +67,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:textColor="@color/yellow"
             android:layout_marginStart="5dp"
             android:layout_toEndOf="@+id/locationIm"
             android:layout_below="@+id/locationIm"
             android:id="@+id/search_result"
+            android:paddingBottom="5dp"
             />
 
 
 
         <Button
+            android:layout_marginTop="5dp"
             android:layout_below="@+id/search_result"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:paddingEnd="10dp"
+            android:textStyle="bold"
             android:paddingStart="10dp"
-            android:layout_height="40dp"
             android:textSize="18sp"
             android:layout_centerHorizontal="true"
-            android:textColor="#fff"
-            android:text="done"
+            android:textColor="#000"
+            android:text="@string/done"
             android:id="@+id/vBtn"
             android:textAllCaps="false"
             android:background="@drawable/orange_btn"/>

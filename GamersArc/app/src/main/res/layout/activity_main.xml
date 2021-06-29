@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:id="@+id/drawerLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout android:layout_width="match_parent"
@@ -17,7 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/colorPrimary"
+            android:background="@color/yellow"
             android:id="@+id/toolbarLayout"
             />
 
@@ -43,7 +44,7 @@
         android:id="@+id/NavigationSide"
         app:menu="@menu/sidebar_menu"
         android:theme="@style/DrawerTextStyle"
-        app:itemTextColor="@color/lightBlue2"
+        app:itemTextColor="@color/yellow"
         app:headerLayout="@layout/header_layout_nav"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

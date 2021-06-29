@@ -7,6 +7,7 @@
     app:cardMaxElevation="1dp"
     app:cardElevation="0.7dp"
     app:contentPadding="30dp"
+    app:cardBackgroundColor="@color/darkGray"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <LinearLayout
@@ -19,7 +20,7 @@
             android:layout_width="96dp"
             android:layout_height="96dp"
             app:civ_border_width="2dp"
-            app:civ_border_color="@color/gray"/>
+            app:civ_border_color="@color/yellow"/>
 
         <TextView
             android:layout_width="96dp"
@@ -27,8 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:textSize="18sp"
-            android:text="tal"
-            android:textColor="@color/lightBlue2"
+            android:text="@string/tal"
+            android:textColor="@color/yellow"
             android:id="@+id/userNameTVRecyclerCell"/>
 
         <TextView
@@ -37,22 +38,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:textSize="13sp"
-            android:text="sent_request"
+            android:text="@string/sent_request"
             android:visibility="gone"
-            android:textColor="@color/gray"
+            android:textColor="@color/yellow"
             android:id="@+id/requestSentTV"/>
         <ToggleButton
+            android:text="Button"
+            android:textColor="#514c4c"
+            android:background="@drawable/btn_find_people_cell"
+            android:shadowColor="#fffab32c"
             android:layout_width="80dp"
             android:layout_height="35dp"
-            android:textOn="cancel"
-            android:textOff="add"
+            android:textOn="@string/cancel"
+            android:textOff="@string/add"
             android:checked="false"
             android:paddingVertical="5dp"
             android:gravity="center"
-            android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="15sp"
-            android:background="@drawable/toggle_btn_backgroung"
             android:layout_marginTop="10dp"
             android:id="@+id/addFriendBtn"/>
 

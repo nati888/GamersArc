@@ -47,7 +47,6 @@ public class ProfileFragment extends Fragment {
             }
         };
 
-
         profileVM.getImageLivedata().observe(getViewLifecycleOwner() , resultObserverImage);
 
         final TextView textViewLocation = root.findViewById(R.id.locationProfileTV);
@@ -63,16 +62,16 @@ public class ProfileFragment extends Fragment {
 
                 switch (user.getRunningLevel()){
                     case "easy" :
-                        textViewLevel.setText(R.string.easy);
-                        imageViewLevel.setImageResource(R.drawable.easy_orange);
+                        textViewLevel.setText(R.string.novice);
+                        imageViewLevel.setImageResource(R.drawable.stick);
                         break;
                     case "medium" :
-                        textViewLevel.setText(R.string.medium);
-                        imageViewLevel.setImageResource(R.drawable.medium_orange);
+                        textViewLevel.setText(R.string.intermediate);
+                        imageViewLevel.setImageResource(R.drawable.sword);
                         break;
                     case "expert" :
-                        textViewLevel.setText(R.string.expert);
-                        imageViewLevel.setImageResource(R.drawable.hard_orange);
+                        textViewLevel.setText(R.string.expert1);
+                        imageViewLevel.setImageResource(R.drawable.cross_swords);
                         break;
                 }
                 //textViewAge.setText(profileVM.getAge(user.getYear(),user.getMonth(),user.getDayOfMonth())+"");
@@ -84,10 +83,6 @@ public class ProfileFragment extends Fragment {
         };
 
         profileVM.getLiveDataUser().observe(getViewLifecycleOwner(),observerUser);
-
-
-
-
 
         return root;
     }

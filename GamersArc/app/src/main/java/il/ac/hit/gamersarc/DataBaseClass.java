@@ -4,8 +4,8 @@ import android.net.Uri;
 
 import androidx.annotation.NonNull;
 
-import il.ac.hit.gamersarc.Model.LastMessage;
-import il.ac.hit.gamersarc.Model.Message;
+import il.ac.hit.gamersarc.model.LastMessage;
+import il.ac.hit.gamersarc.model.Message;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -84,9 +84,9 @@ public class DataBaseClass {
     private OnUpdateUserPreferences onUpdateUserPreferences;
 
     private DataBaseClass() {
-        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance("https://gamersarc-18895-default-rtdb.europe-west1.firebasedatabase.app/");
         registerClass = RegisterClass.getInstance();
-        firebaseStorage = FirebaseStorage.getInstance();
+        firebaseStorage = FirebaseStorage.getInstance("gs://gamersarc-18895.appspot.com");
         storageReference = firebaseStorage.getReference();
         databaseReference = firebaseDatabase.getReference();
 

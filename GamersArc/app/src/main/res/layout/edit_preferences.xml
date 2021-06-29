@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#111111">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textSize="30sp"
-                android:textColor="@color/DarkBlue"
+                android:textColor="@color/dark_yellow"
                 android:layout_gravity="center"
                 android:text="@string/edit_preferences"/>
 
@@ -38,7 +39,7 @@
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
                     android:text="@string/gender"
-                    android:textColor="@color/lightBlue2"/>
+                    android:textColor="@color/yellow"/>
 
                 <RadioGroup
                     android:layout_width="wrap_content"
@@ -50,23 +51,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/male"
-                        android:buttonTint="@color/lightBlue2"
-                        android:textColor="@color/lightGray"
+                        android:buttonTint="#fab32c"
+                        android:textColor="#fab32c"
                         android:id="@+id/maleRBPartnerEditP"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/lightGray"
-                        android:buttonTint="@color/lightBlue2"
+                        android:buttonTint="#fab32c"
+                        android:textColor="#fab32c"
                         android:text="@string/female"
                         android:id="@+id/femaleRBPartnerEditP"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/lightGray"
-                        android:buttonTint="@color/lightBlue2"
+                        android:textColor="#fab32c"
+                        android:buttonTint="#fab32c"
                         android:text="@string/both"
                         android:id="@+id/bothRBPartnerEditP"/>
                 </RadioGroup>
@@ -85,7 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
-                    android:textColor="@color/lightBlue2"
+                    android:textColor="@color/yellow"
                     android:text="@string/age"
                     android:id="@+id/age_text_signUp3"/>
 
@@ -112,8 +113,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/running_level"
-                    android:textColor="@color/lightBlue2"
+                    android:text="@string/skill_level"
+                    android:textColor="@color/yellow"
+                    android:layout_gravity="center"
                     android:textSize="18sp"/>
                 <RadioGroup
                     android:layout_width="0dp"
@@ -128,41 +130,46 @@
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/easy"
-                        android:drawableTop="@drawable/easy_option_blue"
+                        android:text="@string/novice"
+                        android:drawableTop="@drawable/stick"
                         android:textAlignment="center"
                         android:textColor="@drawable/option_text_blue"
                         android:button="@null"
                         android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
                         android:id="@+id/easyRBPartnerEditP"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/medium_option_blue"
+                        android:drawableTop="@drawable/sword"
                         android:textAlignment="center"
-                        android:text="@string/medium"
+                        android:text="@string/intermediate"
                         android:button="@null"
                         android:layout_marginEnd="10dp"
+                        android:layout_gravity="center"
                         android:textColor="@drawable/option_text_blue"
                         android:id="@+id/mediumRBPartnerEditP"/>
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/expert_option_blue"
-                        android:textAlignment="center"
-                        android:text="@string/expert"
+                        android:drawableTop="@drawable/cross_swords"
+                        android:text="@string/expert1"
                         android:button="@null"
                         android:textColor="@drawable/option_text_blue"
-                        android:id="@+id/expertRBPartnerEditP"/>
+                        android:id="@+id/expertRBPartnerEditP"
+
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp" />
                 </RadioGroup>
 
             </LinearLayout>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:background="@drawable/orange_btn"
+                android:background="@color/yellow"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/signUpDoneEditP"

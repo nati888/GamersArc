@@ -5,7 +5,7 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#111111</color>
 <!--
     <color name="white">#FFFFFFFF</color>
 -->
@@ -33,5 +33,11 @@
     <color name="DarkBlueBtnStroke">#043F4C</color>
     <color name="orangeBtnStroke">#EF3F10</color>
     <color name="darkGray">#576060</color>
+
+
+    //GamersArc Colors
+
+    <color name="yellow">#fab32c</color>
+    <color name="dark_yellow">#B87F12</color>
 
 </resources>

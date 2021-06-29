@@ -130,7 +130,7 @@
     <string name="user_already_exists">User already exists</string>
     <string name="failed_to_sign_up">Failed to sign up</string>
     <string name="fill_all_details">Please fill all details</string>
-    <string name="are_you_coming_for_a_run">Are you join  for a paly?</string>
+    <string name="are_you_coming_for_a_run">Are you coming for a game?</string>
     <string name="find_runners_around_you">Find players around you</string>
     <string name="find_event_around_you">Find game around you</string>
 

@@ -112,7 +112,7 @@
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
                 android:hint="@string/password"
-                app:hintTextColor="#fab32c">
+                app:hintTextColor="@color/yellow">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEtSignIn"

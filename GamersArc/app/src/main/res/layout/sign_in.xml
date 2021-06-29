@@ -80,7 +80,7 @@
                 app:boxCornerRadiusBottomStart="22dp"
                 app:boxCornerRadiusTopEnd="22dp"
                 app:boxCornerRadiusTopStart="22dp"
-                app:boxStrokeColor="#fab32c"
+                app:boxStrokeColor="@color/yellow"
                 app:boxStrokeErrorColor="#ffffff"
                 app:boxStrokeWidth="1.2dp"
                 app:boxStrokeWidthFocused="1.9dp"

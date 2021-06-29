@@ -2,21 +2,21 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="false">
         <shape >
-            <solid android:color="@color/orange"/>
+            <solid android:color="@color/yellow"/>
             <corners android:radius="12dp"/>
             <padding android:left="10dp"
                 android:right="10dp"/>
-            <stroke android:color="@color/orangeBtnStroke"
+            <stroke android:color="@color/dark_yellow"
                 android:width="1dp"/>
         </shape>
     </item>
     <item android:state_checked="true">
         <shape>
-            <solid android:color="@color/DarkBlue"/>
+            <solid android:color="@color/yellow"/>
             <corners android:radius="12dp"/>
             <padding android:left="10dp"
                 android:right="10dp"/>
-            <stroke android:color="@color/DarkBlueBtnStroke"
+            <stroke android:color="@color/dark_yellow"
                 android:width="1dp"/>
         </shape>
     </item>

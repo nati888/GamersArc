@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:layout_above="@+id/bottomNavigation"
-        android:background="@color/DarkBlue"
+        android:background="@color/dark_yellow"
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -19,6 +19,6 @@
         app:itemIconTint="@drawable/bottom_nav_color"
         app:labelVisibilityMode="unlabeled"
         android:layout_alignParentBottom="true"
-        android:background="#ffff"
+        android:background="@color/darkGray"
         app:menu="@menu/navigtion_bar"/>
 </RelativeLayout>

@@ -10,8 +10,8 @@
         android:layout_height="wrap_content"
         app:tabGravity="fill"
         app:tabMode="fixed"
-        app:tabTextColor="@color/lightBlue2"
-        app:tabIndicatorColor="@color/lightBlue2"
+        app:tabTextColor="@color/yellow"
+        app:tabIndicatorColor="@color/dark_yellow"
         android:id="@+id/eventsTabLayout"/>
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"

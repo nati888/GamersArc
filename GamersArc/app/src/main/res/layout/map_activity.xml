@@ -39,7 +39,7 @@
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
-        android:background="@color/black"
+        android:background="@color/darkGray"
         android:id="@+id/lay1"
         >
 
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textColor="@color/gray"
+            android:textColor="@color/yellow"
             android:fontFamily="@string/event_date"
             android:layout_marginStart="5dp"
             android:text="@string/chosenLocation"

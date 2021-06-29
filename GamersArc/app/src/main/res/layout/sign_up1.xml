@@ -6,6 +6,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:background="#111111">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -79,12 +80,14 @@
             android:id="@+id/signUp1_name_inputLayout"
             app:boxStrokeWidthFocused="1.9dp"
             android:hint="@string/name"
+            android:textColorHint="@color/dark_yellow"
             app:boxStrokeErrorColor="#fab32c"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/white"
                 android:id="@+id/fullNameEt"
 
 
@@ -107,12 +110,15 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_email_inputLayout"
             android:hint="@string/email"
+            android:textColorHint="@color/dark_yellow"
+
             app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/emailEt"
+                android:textColor="@color/white"
                 android:inputType="textEmailAddress"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -132,6 +138,8 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_password_inputLayout"
             android:hint="@string/password"
+            android:textColorHint="@color/dark_yellow"
+
             app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -139,6 +147,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/passwordEt"
+                android:textColor="@color/white"
+
                 android:inputType="textPassword"
                 />
 
@@ -160,12 +170,16 @@
             android:id="@+id/signUp1_passwordConfirm_inputLayout"
             android:hint="@string/password_confirm"
             app:boxStrokeErrorColor="@color/orange"
+            android:textColorHint="@color/dark_yellow"
+
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/passwordConfirmEt"
+                android:textColor="@color/white"
+
                 android:textCursorDrawable="@color/black"
                 android:inputType="textPassword"/>
 

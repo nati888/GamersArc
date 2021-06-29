@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="email"
+                android:hint="@string/email"
                 android:paddingHorizontal="5dp"
                 app:boxCornerRadiusBottomEnd="22dp"
                 app:boxCornerRadiusBottomStart="22dp"
@@ -85,7 +85,8 @@
                 app:boxStrokeWidth="1.2dp"
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
-                app:hintTextColor="#fab32c">
+                android:textColorHint="@color/dark_yellow"
+                >
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEtSignIn"
@@ -113,7 +114,7 @@
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
                 android:hint="@string/password"
-                app:hintTextColor="@color/yellow">
+                android:textColorHint="@color/dark_yellow">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEtSignIn"

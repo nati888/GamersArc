@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <item
-        android:id="@+id/EditPreferencesSidebar"
-        android:title="@string/edit_preference"
-        
-
-        />
-
     <item
         android:id="@+id/editProfileSidebar"
         android:title="@string/edit_profile"
-        android:icon="@drawable/sword"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:iconTint="#FFAC41"/>
+
+    <item
+        android:id="@+id/EditPreferencesSidebar"
+        android:title="@string/edit_preferences"
+        android:icon="@drawable/ic_outline_fact_check_24"
+        android:iconTint="#FFAC41"
         />
 
     <item
         android:id="@+id/signOutSidebar"
         android:title="@string/sign_out"
-
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:iconTint="#FFAC41"
         />
-
 
 </menu>

@@ -15,7 +15,7 @@
     <string name="hello">שלום</string>
     <string name="menu">תפריט</string>
     <string name="sign_out">התנתק</string>
-    <string name="edit_preferences">עריכת ביצועים</string>
+    <string name="edit_preferences">עריכת העדפות</string>
     <string name="enter_full_name">הכנס שם מלא</string>
     <string name="full_name">שם מלא</string>
     <string name="edit_profile">ערוך פרופיל</string>
@@ -159,7 +159,6 @@
     <string name="rehovot_golda_meir">רחובות, גולדה מאיר</string>
     <string name="tali">טלי</string>
     <string name="date_of_birth">תאריך לידה</string>
-    <string name="edit_preference">הוסף ביצועים</string>
     <string name="Select_Image_from_here">לחץ לבחירת תמונה</string>
     <string name="Saved_successfully">נשמר בהצלחה</string>
 

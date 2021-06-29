@@ -136,12 +136,12 @@
 
     <string name="my_profile">My profile</string>
     <string name="save">Save</string>
-    <string name="edit_profile">Edit profile</string>
+    <string name="edit_profile">Edit Profile</string>
     <string name="full_name">Full Name:</string>
 
     <string name="enter_full_name">Enter full name</string>
-    <string name="edit_preferences">Edit preferences</string>
-    <string name="sign_out">Sign out</string>
+    <string name="edit_preferences">Edit Preferences</string>
+    <string name="sign_out">Sign Out</string>
     <string name="menu">Menu</string>
     <string name="hello">Hello</string>
     <string name="home">Home</string>
@@ -164,7 +164,6 @@
     <string name="rehovot_golda_meir">Rehovot, golda meir</string>
     <string name="tali">Tali</string>
     <string name="date_of_birth">date of birth</string>
-    <string name="edit_preference">edit_preference</string>
     <string name="Select_Image_from_here">Select Image from here...</string>
     <string name="Saved_successfully">Saved successfully</string>
 

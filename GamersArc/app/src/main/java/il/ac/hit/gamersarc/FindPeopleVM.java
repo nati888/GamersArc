@@ -78,7 +78,7 @@ public class FindPeopleVM extends AndroidViewModel {
                 Math.pow(Math.sin(dLon / 2), 2) *
                         Math.cos(lat1) *
                         Math.cos(lat2);
-        double rad = 6371;
+        double rad = 50000;
         double c = 2 * Math.asin(Math.sqrt(a));
         return rad * c; //distance in km
     }

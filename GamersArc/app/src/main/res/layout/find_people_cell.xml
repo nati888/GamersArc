@@ -28,7 +28,7 @@
             android:layout_marginTop="18dp"
             android:textSize="18sp"
             android:text="@string/tal"
-            android:textColor="@color/lightBlue2"
+            android:textColor="#514c4c"
             android:id="@+id/userNameTVRecyclerCell"/>
 
         <TextView
@@ -42,6 +42,10 @@
             android:textColor="@color/gray"
             android:id="@+id/requestSentTV"/>
         <ToggleButton
+            android:text="Button"
+            android:textColor="#514c4c"
+            android:background="@drawable/btn_find_people_cell"
+            android:shadowColor="#fffab32c"
             android:layout_width="80dp"
             android:layout_height="35dp"
             android:textOn="@string/cancel"
@@ -49,10 +53,8 @@
             android:checked="false"
             android:paddingVertical="5dp"
             android:gravity="center"
-            android:textColor="@color/white"
             android:textAllCaps="false"
             android:textSize="15sp"
-            android:background="@drawable/toggle_btn_backgroung"
             android:layout_marginTop="10dp"
             android:id="@+id/addFriendBtn"/>
 

@@ -6,13 +6,8 @@
     <string name="event_time">Time:</string>
     <string name="event_location">Location:</string>
     <string name="number_of_runners">Runners joined</string>
-    <string name="set_date">Set date</string>
-    <string name="set_time">Set time</string>
-    <string name="event_title">Set event details</string>
-    <string name="set_location">Set location</string>
     <string name="invite_friends_btn">Invite Friends</string>
     <string name="done_btn">Done</string>
-    <string name="activity_level">Choose event dificulty</string>
     <string name="easy">Easy</string>
     <string name="expert">Expert</string>
     <string name="medium">Medium</string>
@@ -34,18 +29,15 @@
     <string name="upcoming">Upcoming</string>
     <string name="friends">Friends</string>
     <string name="requests">Requests</string>
-    <string name="find_new_runners">Find New Runners</string>
     <string name="meters_away">meters away</string>
     <string name="runners">Runners</string>
     <string name="accepted_your_request">accepted your friend request</string>
     <string name="send_them_a_message">Send them a message!</string>
     <string name="manager">Manager</string>
     <string name="managed">My events</string>
-    <string name="edit">Edit</string>
     <string name="mutual">Mutual Friends</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
-    <string name="insert_text">enter text</string>
 
     <string name="my_friends">My friends</string>
     <string name="invite">"Invite "</string>
@@ -69,7 +61,6 @@
     <string name="cancel_participation">Cancel participation</string>
     <string name="participation_removed">Participation removed</string>
     <string name="added_to_friends">was added to your friends list</string>
-    <string name="sign_up_with_email">Sign up with email</string>
     <string name="sign_in">Sign in</string>
     <string name="see_members">See members</string>
     <string name="welcome">Welcome to GamersArc!</string>
@@ -98,7 +89,6 @@
         <string name="running_level">Running level:</string>
     <string name="done">Done</string>
     <string name="enter_address">Enter address</string>
-    <string name="confirm_location">Confirm location</string>
     <string name="type">Please type valid address</string>
     <string name="no_friends">No friends to show</string>
     <string name="sign_up">Sign up</string>
@@ -116,17 +106,11 @@
 
     <string name="both">Both</string>
     <string name="age">Age:</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
     <string name="welcome_back">Welcome Back!</string>
     <string name="required_field">Required field</string>
     <string name="email_badly_formatted">Email badly formatted</string>
-    <string name="no_such_user">No user with this address</string>
-    <string name="wrong_password">Wrong Password</string>
-    <string name="failed_sign_in">Failed to sign in</string>
     <string name="passwords_not_identical">Passwords not identical</string>
     <string name="password_must_be_8_letters">Password must be at least 8 letters</string>
-    <string name="invalid_credentials">Invalid credentials</string>
     <string name="user_already_exists">User already exists</string>
     <string name="failed_to_sign_up">Failed to sign up</string>
     <string name="fill_all_details">Please fill all details</string>
@@ -139,7 +123,6 @@
     <string name="edit_profile">Edit profile</string>
     <string name="full_name">Full Name:</string>
 
-    <string name="enter_full_name">Enter full name</string>
     <string name="edit_preferences">Edit preferences</string>
     <string name="sign_out">Sign out</string>
     <string name="menu">Menu</string>
@@ -176,7 +159,6 @@
     <string name="mmo">MMO</string>
     <string name="rpg">RPG</string>
     <string name="strategy">Strategy</string>
-    <string name="simulation">Simulation</string>
 
 
 </resources>

@@ -27,6 +27,7 @@ public class SignUp3Fragment extends Fragment {
     private int ageFrom = 0;
     private String gender;
     private String level;
+    private  String gameType;
     private ArrayList<Integer> fromAgesArray = new ArrayList<>();
     private ArrayList<Integer> toAgesArray = new ArrayList<>();
 
@@ -57,9 +58,11 @@ public class SignUp3Fragment extends Fragment {
 
         viewModel.setProgressBar2LiveData(false);
         final RadioGroup radioGroupGender = root.findViewById(R.id.genderGroupPartner);
+        final RadioGroup radioGroupGamingType = root.findViewById(R.id.playerTypeGroupPartner);
         RadioGroup radioGroupLevel = root.findViewById(R.id.levelGroupPartner);
         Button buttonSignUp = root.findViewById(R.id.signUpDone);
         RangeSlider RangeSlider = root.findViewById(R.id.RangeSlider_multiple_thumbs_signUp3);
+
 
         final ProgressBar progressBar = root.findViewById(R.id.signUp3_progressBar);
         viewModel.getProgressBar3LiveData().observe(getViewLifecycleOwner(), new Observer<Boolean>() {
@@ -115,6 +118,26 @@ public class SignUp3Fragment extends Fragment {
                         break;
                     }
                 }
+            }
+        });
+
+        radioGroupGamingType.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch(checkedId){
+                    case R.id.mmoPlayer:{
+                        gameType="mmo";
+                    }
+                    case R.id.rpgPlayer:{
+                        gameType="rpg";
+                    }
+                    case R.id.strategyPlayer:{
+                        gameType="strategy";
+                    }
+                }
+                viewModel.setPartnerGamingType(gameType);
+
+
             }
         });
 

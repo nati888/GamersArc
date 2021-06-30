@@ -39,7 +39,7 @@
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
         android:padding="10dp"
-        android:background="@color/darkGray"
+        android:background="@color/gray"
         android:id="@+id/lay1"
         >
 

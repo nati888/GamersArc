@@ -23,15 +23,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:textSize="30sp"
-                android:textColor="@color/dark_yellow"
+                android:textColor="@color/yellow"
                 android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
                 android:text="@string/edit_preferences"/>
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#597B7B7E"
+                app:cardCornerRadius="10dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginTop="40dp">
+                android:layout_gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -39,12 +48,14 @@
                     android:layout_marginStart="20dp"
                     android:textSize="18sp"
                     android:text="@string/gender"
+                    android:layout_gravity="center"
                     android:textColor="@color/yellow"/>
 
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="45dp"
+                    android:orientation="horizontal"
                     android:id="@+id/genderGroupPartnerEditP">
 
                     <RadioButton
@@ -73,14 +84,23 @@
                 </RadioGroup>
 
             </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
-
-            <RelativeLayout
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#597B7B7E"
+                app:cardCornerRadius="10dp">
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="20dp">
+                android:gravity="center"
+                android:padding="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -101,12 +121,23 @@
                     android:id="@+id/slider_multiple_thumbs"
                     android:layout_toEndOf="@+id/age_text_signUp3"/>
 
-            </RelativeLayout>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#597B7B7E"
+                app:cardCornerRadius="10dp">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
                 android:layout_marginStart="20dp"
                 android:orientation="horizontal">
 
@@ -166,14 +197,74 @@
                 </RadioGroup>
 
             </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="1.5dp"
+                app:cardMaxElevation="2dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#597B7B7E"
+                app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:text="@string/game_type"
+                    android:textColor="@color/yellow"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:orientation="vertical"
+                    android:id="@+id/playerTypeGroupPartnerEditP">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mmo"
+                        android:buttonTint="#fab32c"
+                        android:textColor="#fab32c"
+                        android:id="@+id/mmoPlayerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#fab32c"
+                        android:textColor="#fab32c"
+                        android:text="@string/rpg"
+                        android:id="@+id/rpgPlayerEditP"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fab32c"
+                        android:buttonTint="#fab32c"
+                        android:text="@string/strategy"
+                        android:id="@+id/strategyPlayerEditP"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:background="@color/yellow"
                 android:layout_marginTop="40dp"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/signUpDoneEditP"
                 android:textColor="#ffff"
+                android:background="@drawable/orange_btn"
                 android:text="@string/save"/>
 
 

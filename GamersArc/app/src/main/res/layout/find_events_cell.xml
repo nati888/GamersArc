@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/see_members"
-                    android:textColor="@color/dark_yellow"
+                    android:textColor="@color/yellow"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 

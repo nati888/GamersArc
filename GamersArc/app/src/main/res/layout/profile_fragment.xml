@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:layout_marginTop="30dp"
-        android:textColor="@color/dark_yellow"
+        android:textColor="@color/yellow"
         android:id="@+id/myProfileLabel"/>
 
 
@@ -99,7 +99,7 @@
             android:layout_marginStart="10dp"
             android:elevation="10dp"
             app:contentPadding="10dp"
-            app:cardBackgroundColor="@color/darkGray"
+            app:cardBackgroundColor="@color/gray"
             android:layout_weight="1">
 
             <LinearLayout
@@ -120,7 +120,7 @@
             android:textSize="20sp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@color/darkGray"
+            android:background="@color/gray"
             android:textColor="@color/yellow"
             android:id="@+id/levelProfileTV"/>
 
@@ -136,7 +136,7 @@
             android:layout_margin="5dp"
             android:layout_marginEnd="10dp"
             android:elevation="10dp"
-            app:cardBackgroundColor="@color/darkGray"
+            app:cardBackgroundColor="@color/gray"
             app:contentPadding="10dp"
             android:layout_weight="1">
 

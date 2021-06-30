@@ -60,7 +60,7 @@
                 app:boxStrokeColor="@color/yellow"
                 android:layout_height="wrap_content"
                 app:hintTextColor="@color/yellow"
-                android:textColorHint="@color/dark_yellow"
+                android:textColorHint="@color/yellow"
 
                 android:hint="@string/enter_your_message"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">

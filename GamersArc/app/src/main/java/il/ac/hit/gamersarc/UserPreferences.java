@@ -5,17 +5,21 @@ public class UserPreferences {
     private int toAge;
     private String gender;
     private String runingLevel;
+    private String gamingType;
 
 
     public UserPreferences() {
     }
 
-    public UserPreferences(int fromAge, int toAge, String gender, String runingLevel) {
+    public UserPreferences(int fromAge, int toAge, String gender, String runingLevel,String gamingType) {
         this.fromAge = fromAge;
         this.toAge = toAge;
         this.gender = gender;
         this.runingLevel = runingLevel;
+        this.gamingType = gamingType;
     }
+
+    public String getGamingType(){return gamingType;}
 
     public int getFromAge() {
         return fromAge;
@@ -32,6 +36,8 @@ public class UserPreferences {
     public void setToAge(int toAge) {
         this.toAge = toAge;
     }
+
+    public void setGamingType(String gamingType){this.gamingType=gamingType;}
 
     public String getGender() {
         return gender;

@@ -85,7 +85,7 @@
                 app:boxStrokeWidth="1.2dp"
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
-                android:textColorHint="@color/dark_yellow"
+                android:textColorHint="@color/yellow"
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -114,7 +114,7 @@
                 app:boxStrokeWidthFocused="1.9dp"
                 app:errorEnabled="true"
                 android:hint="@string/password"
-                android:textColorHint="@color/dark_yellow">
+                android:textColorHint="@color/yellow">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEtSignIn"

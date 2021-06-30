@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:textSize="25sp"
-        android:textColor="@color/dark_yellow"
+        android:textColor="@color/yellow"
         android:textStyle="bold"/>
  
     <TextView
@@ -28,12 +28,10 @@
         android:textSize="18sp"
         android:textColor="@color/yellow"
         />
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.6"/>
+
  
     <ScrollView
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="10">
@@ -330,16 +328,14 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:visibility="invisible"
- 
                 android:indeterminateDrawable="@drawable/progress_bar_sign_up"
                 android:id="@+id/signUp2_progressBar"/>
+
  
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/nextButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
                 android:backgroundTint="#fab32c"
                 android:fontFamily="sans-serif-medium"
                 android:paddingHorizontal="30dp"
@@ -350,16 +346,30 @@
                 app:cornerRadius="30dp"
                 app:strokeColor="#ffffff"
                 app:strokeWidth="3dp" />
- 
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="30dp"
-                android:src="@drawable/circles_2"
-                android:layout_marginBottom="40dp"/>
- 
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/circle"/>
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/full_moon"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/circle"/>
+            </LinearLayout>
+
  
  
         </LinearLayout>
+
  
  
     </ScrollView>

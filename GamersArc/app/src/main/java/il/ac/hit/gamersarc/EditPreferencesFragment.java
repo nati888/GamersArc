@@ -26,6 +26,7 @@ public class EditPreferencesFragment extends Fragment {
     private il.ac.hit.gamersarc.EditPreferencesVM editPreferencesVM;
     private String gender;
     private String level;
+    private String gameType;
     private int from ;
     private int to  ;
     private ArrayList<Integer> fromAgesArray = new ArrayList<>();
@@ -60,6 +61,10 @@ public class EditPreferencesFragment extends Fragment {
         final RadioButton radioButtonExpert = root.findViewById(R.id.expertRBPartnerEditP);
         final RadioButton radioButtonBoth = root.findViewById(R.id.bothRBPartnerEditP);
         final RangeSlider slider = root.findViewById(R.id.slider_multiple_thumbs);
+        final RadioButton radioButtonMMO = root.findViewById(R.id.mmoPlayerEditP);
+        final RadioButton radioButtonRPG = root.findViewById(R.id.rpgPlayerEditP);
+        final RadioButton radioButtonStrat = root.findViewById(R.id.strategyPlayerEditP);
+
 
         editPreferencesVM.getUserPreferences();
 
@@ -104,6 +109,18 @@ public class EditPreferencesFragment extends Fragment {
                         radioButtonExpert.setChecked(true);
                         break;
                 }
+                switch (userPreferences.getGamingType()){
+                    case "mmo" :
+                        radioButtonMMO.setChecked(true);
+                        break;
+                    case "rpg" :
+                        radioButtonRPG.setChecked(true);
+                        break;
+                    case "strategy" :
+                        radioButtonStrat.setChecked(true);
+                        break;
+                }
+
             }
         });
 
@@ -144,9 +161,15 @@ public class EditPreferencesFragment extends Fragment {
                     gender = "female";
                 else
                     gender= "both";
+                if(radioButtonMMO.isChecked())
+                    gameType = "mmo";
+                else if (radioButtonRPG.isChecked())
+                    gameType = "rpg";
+                else
+                    gameType = "strategy";
 
 
-                UserPreferences userPreferences = new UserPreferences(from,to,gender,level);
+                UserPreferences userPreferences = new UserPreferences(from,to,gender,level,gameType);
                 editPreferencesVM.updateLiveData(userPreferences);
                 editPreferencesVM.savePreferences(userPreferences);
                 Toast.makeText(getContext(), getString(R.string.Saved_successfully),Toast.LENGTH_LONG).show();

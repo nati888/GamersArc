@@ -172,6 +172,11 @@
     <string name="console">Console</string>
     <string name="pc">PC</string>
     <string name="game_event">Game</string>
+    <string name="game_type">Game type:</string>
+    <string name="mmo">MMO</string>
+    <string name="rpg">RPG</string>
+    <string name="strategy">Strategy</string>
+    <string name="simulation">Simulation</string>
 
 
 </resources>

@@ -25,6 +25,7 @@ public class SignUpVM extends ViewModel {
     private String password;
     private String passwordConfirm;
     private String gender;
+    private String gamingType;
     private String runningLevel;
     private int startAge =1 ;
     private int endAge = 120;
@@ -89,9 +90,13 @@ public class SignUpVM extends ViewModel {
         return partnerGender;
     }
 
+    public String getPartnerGamingType(){return  gamingType;}
+
     public void setPartnerGender(String partnerGender) {
         this.partnerGender = partnerGender;
     }
+
+    public void setPartnerGamingType(String gamingType){this.gamingType = gamingType;}
 
     public void setGender(String gender) {
         this.gender = gender;
@@ -210,7 +215,7 @@ public class SignUpVM extends ViewModel {
 
         setProgressBar3LiveData(true);
 
-        UserPreferences userPreferences=new UserPreferences(this.startAge, this.endAge,this.partnerGender,this.partnerLevel);
+        UserPreferences userPreferences=new UserPreferences(this.startAge, this.endAge,this.partnerGender,this.partnerLevel, gamingType);
         UserLists userLists=new UserLists();
         dataBaseClass.createPreferences(userPreferences);
         dataBaseClass.createUserLists(userLists);

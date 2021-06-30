@@ -21,7 +21,7 @@
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="@string/events_recycler_title"
-                android:textColor="@color/dark_yellow"
+                android:textColor="@color/yellow"
                 android:textSize="23sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/dark_yellow"
+                android:textColor="@color/yellow"
                 android:textSize="18sp"
                 android:id="@+id/locationTVRecycler"/>
 

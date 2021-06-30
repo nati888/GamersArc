@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="#111111">
+    android:background="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:id="@+id/signUp1_name_inputLayout"
             app:boxStrokeWidthFocused="1.9dp"
             android:hint="@string/name"
-            android:textColorHint="@color/dark_yellow"
+            android:textColorHint="@color/yellow"
             app:boxStrokeErrorColor="#fab32c"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -110,7 +110,7 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_email_inputLayout"
             android:hint="@string/email"
-            android:textColorHint="@color/dark_yellow"
+            android:textColorHint="@color/yellow"
 
             app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -138,7 +138,7 @@
             app:boxStrokeWidthFocused="1.9dp"
             android:id="@+id/signUp1_password_inputLayout"
             android:hint="@string/password"
-            android:textColorHint="@color/dark_yellow"
+            android:textColorHint="@color/yellow"
 
             app:boxStrokeErrorColor="@color/design_default_color_error"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -170,7 +170,7 @@
             android:id="@+id/signUp1_passwordConfirm_inputLayout"
             android:hint="@string/password_confirm"
             app:boxStrokeErrorColor="@color/orange"
-            android:textColorHint="@color/dark_yellow"
+            android:textColorHint="@color/yellow"
 
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
@@ -214,11 +214,30 @@
             app:strokeWidth="3dp" />
 
 
-        <ImageView
+<!--        <ImageView
             android:layout_width="60dp"
             android:layout_height="30dp"
             android:src="@drawable/circles_1"
-            android:layout_marginBottom="40dp"/>
+            android:layout_marginBottom="40dp"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/full_moon"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle"/>
+        </LinearLayout>
 
 
 

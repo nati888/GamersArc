@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:paddingVertical="18dp"
 
-        android:background="@color/dark_yellow">
+        android:background="@color/yellow">
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -74,7 +74,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginVertical="10dp"
             app:cardElevation="2dp"
-            app:cardBackgroundColor="@color/darkGray"
+            app:cardBackgroundColor="@color/gray"
             >
 
 
@@ -122,7 +122,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginVertical="10dp"
 
-            app:cardBackgroundColor="@color/darkGray"
+            app:cardBackgroundColor="@color/gray"
             app:cardMaxElevation="4dp"
             >
             <LinearLayout

@@ -67,7 +67,7 @@
     <string name="location">מקום</string>
     <string name="time">זמן</string>
     <string name="date">תאריך</string>
-    <string name="create_new_event">צור משחק חדש</string>
+    <string name="create_new_event">קבע מפגש משחק חדש</string>
     <string name="get_started">להתחיל!</string>
     <string name="event3">או ליצור אירועים משלך!</string>
     <string name="event2">הצטרפו לאירועים הקרובים בקרבתכם</string>
@@ -167,5 +167,12 @@
     <string name="console">קונסולה</string>
     <string name="pc">מחשב</string>
     <string name="game_event">משחק</string>
+    <string name="game_type">:סוג משחק</string>
+
+    <string name="mmo">משחק מרובה משתתפים</string>
+    <string name="rpg">משחק תפקידים</string>
+    <string name="strategy">אסטרטגיה</string>
+    <string name="simulation">סימולציה</string>
+
 
 </resources>

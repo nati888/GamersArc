@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sign_up"
         android:textSize="25sp"
-        android:textColor="@color/dark_yellow"
+        android:textColor="@color/yellow"
         android:textStyle="bold"/>
 
     <TextView
@@ -53,23 +53,25 @@
             app:cardMaxElevation="2dp"
             android:backgroundTint="#597B7B7E"
             app:cardCornerRadius="10dp">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="20dp">
+                android:padding="10dp">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/yellow"
                     android:text="@string/gender"
+                    android:layout_gravity="center"
                     android:id="@+id/gender_text_signUp3"/>
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/genderGroupPartner"
+                    android:orientation="horizontal"
                     android:layout_toEndOf="@+id/gender_text_signUp3"
-                    android:layout_marginStart="40dp">
+                    android:layout_marginStart="30dp">
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -97,7 +99,7 @@
 
                 </RadioGroup>
 
-            </RelativeLayout>
+            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <Space
@@ -206,49 +208,68 @@
                         android:textColor="@drawable/option_text"
                         android:id="@+id/expertRBPartner"/>
                 </RadioGroup>
+            </RelativeLayout>
 
-<!--                <RadioGroup
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="1.5dp"
+            app:cardMaxElevation="2dp"
+            android:backgroundTint="#597B7B7E"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="@string/game_type"
+                android:textColor="@color/yellow"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:orientation="vertical"
+                android:id="@+id/playerTypeGroupPartner">
+
+                <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_toEndOf="@+id/runningLevel_text"
-                    android:layout_marginStart="15dp"
-                    android:id="@+id/levelGroupPartner">
+                    android:text="@string/mmo"
+                    android:buttonTint="#fab32c"
+                    android:textColor="#fab32c"
+                    android:id="@+id/mmoPlayer"/>
 
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/easy"
-                        android:drawableTop="@drawable/easy_option"
-                        android:textAlignment="center"
-                        android:textColor="@drawable/option_text"
-                        android:button="@android:color/transparent"
-                        android:layout_marginEnd="10dp"
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#fab32c"
+                    android:textColor="#fab32c"
+                    android:text="@string/rpg"
+                    android:id="@+id/rpgPlayer"/>
 
-                        android:id="@+id/easyRBPartner"/>
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/medium_option"
-                        android:textAlignment="center"
-                        android:text="@string/medium"
-                        android:button="@android:color/transparent"
-                        android:layout_marginEnd="10dp"
-                        android:textColor="@drawable/option_text"
-                        android:id="@+id/mediumRBPartner"/>
-
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:drawableTop="@drawable/expert_option"
-                        android:textAlignment="center"
-                        android:text="@string/expert"
-                        android:button="@android:color/transparent"
-                        android:textColor="@drawable/option_text"
-                        android:id="@+id/expertRBPartner"/>
-                </RadioGroup>-->
-            </RelativeLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fab32c"
+                    android:buttonTint="#fab32c"
+                    android:text="@string/strategy"
+                    android:id="@+id/strategyPlayer"/>
+            </RadioGroup>
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -276,11 +297,24 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"/>
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:src="@drawable/circles_3"
-            android:layout_marginBottom="40dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle"/>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/circle"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:src="@drawable/full_moon"/>
+        </LinearLayout>
 
     </LinearLayout>
 

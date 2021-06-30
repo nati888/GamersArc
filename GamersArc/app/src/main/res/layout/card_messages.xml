@@ -6,7 +6,7 @@
     app:cardUseCompatPadding="true"
     app:contentPadding="10dp"
     android:elevation="10dp"
-    app:cardBackgroundColor="@color/darkGray"
+    app:cardBackgroundColor="@color/gray"
     app:cardCornerRadius="10dp"
     >
 

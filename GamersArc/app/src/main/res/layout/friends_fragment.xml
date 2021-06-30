@@ -12,7 +12,7 @@
         app:tabMode="fixed"
         app:tabTextColor="@color/yellow"
         app:tabIndicatorColor="@color/yellow"
-        app:tabBackground="@color/darkGray"
+        app:tabBackground="@color/gray"
         android:id="@+id/friendsTabLayout"/>
     <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"

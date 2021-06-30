@@ -48,7 +48,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
         TextView dateTv;
         TextView timeTv;
         TextView runningLevelTv;
-        TextView runnersAmountTv;
+        TextView gamersAmountTv;
         ImageView runningLevelIm;
         ToggleButton joinBtn;
         LinearLayout seeMembers;
@@ -60,7 +60,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
             dateTv = itemView.findViewById(R.id.dateTVRecyclerCell);
             timeTv = itemView.findViewById(R.id.timeTVRecyclerCell);
             runningLevelTv = itemView.findViewById(R.id.runningLevelTVRecyclerCell);
-            runnersAmountTv = itemView.findViewById(R.id.runnersAmountTVRecyclerCell);
+            gamersAmountTv = itemView.findViewById(R.id.gamersAmountTVRecyclerCell);
             runningLevelIm = itemView.findViewById(R.id.runningLevelIm);
             joinBtn = itemView.findViewById(R.id.joinEventBtn);
             seeMembers = itemView.findViewById(R.id.seeMembersTv);
@@ -162,7 +162,7 @@ public class FindEventsAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
             holder.joinBtn.setChecked(true);
         }
 
-        holder.runnersAmountTv.setText(String.valueOf(amountOfRunners(event)));
+        holder.gamersAmountTv.setText(String.valueOf(amountOfgamers(event)));
 
 
 
@@ -177,9 +177,9 @@ public class FindEventsAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
         this.upcomingEventCallback = upcomingEventCallback;
     }
 
-    public int amountOfRunners(il.ac.hit.gamersarc.Event event){
-        HashMap<String,Boolean> runners = event.getRunners();
-        int amount = runners.size();
+    public int amountOfgamers(il.ac.hit.gamersarc.Event event){
+        HashMap<String,Boolean> gamers = event.getgamers();
+        int amount = gamers.size();
         return amount;
     }
 

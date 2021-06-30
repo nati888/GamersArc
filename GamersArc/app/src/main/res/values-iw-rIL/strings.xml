@@ -20,7 +20,7 @@
     <string name="save">שמור</string>
     <string name="my_profile">הפרופיל שלי</string>
     <string name="find_event_around_you">מצא משחק סביבך</string>
-    <string name="find_runners_around_you">מצא שחקנים סביבך</string>
+    <string name="find_gamers_around_you">מצא שחקנים סביבך</string>
     <string name="lets_find_gamers">האם תרצה להצטרף למשחק?</string>
     <string name="fill_all_details">"מלא את כל המידע "</string>
     <string name="failed_to_sign_up">נכשלת בהרשמה</string>
@@ -53,7 +53,7 @@
     <string name="intermediate">מתקדם</string>
     <string name="expert1">מקצועי</string>
     <string name="skill_level1">רמת ריצה:</string>
-    <string name="number_of_runners">גיימרים שהצטרפו</string>
+    <string name="number_of_gamers">גיימרים שהצטרפו</string>
 
     <string name="location">מקום</string>
     <string name="time">זמן</string>
@@ -103,7 +103,7 @@
     <string name="manager">מנהל</string>
     <string name="send_them_a_message">שלח להם הודעה!</string>
     <string name="accepted_your_request">קבל את בקשת החברות</string>
-    <string name="runners">גיימרים</string>
+    <string name="gamers">גיימרים</string>
     <string name="meters_away">מטר משם</string>
     <string name="requests">בקשות</string>
     <string name="friends">חברים</string>
@@ -133,12 +133,6 @@
     <string name="event_date">תאריך:</string>
     <string name="_1_1_1">1/1/1</string>
     <string name="_00_00">00:00</string>
-    <string name="rehovot">רחובות</string>
-    <string name="_1">1</string>
-    <string name="tal">טל</string>
-    <string name="rami">רמי</string>
-    <string name="tal_22">טל, 22</string>
-    <string name="rehovot_golda_meir">רחובות, גולדה מאיר</string>
     <string name="tali">טלי</string>
     <string name="date_of_birth">תאריך לידה</string>
     <string name="Select_Image_from_here">לחץ לבחירת תמונה</string>

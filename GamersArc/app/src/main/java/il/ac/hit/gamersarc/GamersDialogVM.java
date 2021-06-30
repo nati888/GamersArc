@@ -13,7 +13,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class RunnersDialogVM extends ViewModel {
+public class GamersDialogVM extends ViewModel {
 
 
     private String eventId;
@@ -21,29 +21,29 @@ public class RunnersDialogVM extends ViewModel {
 
     MutableLiveData<Uri> managerImageUriLiveData = new MutableLiveData<>();
     MutableLiveData<User> manager = new MutableLiveData<>();
-    MutableLiveData<ArrayList<User>> runnersLiveData = new MutableLiveData<>();
-    private ArrayList<String> runnersIds = new ArrayList<>();
-    private ArrayList<User> runners = new ArrayList<>();
+    MutableLiveData<ArrayList<User>> gamersLiveData = new MutableLiveData<>();
+    private ArrayList<String> gamersIds = new ArrayList<>();
+    private ArrayList<User> gamers = new ArrayList<>();
     DataBaseClass dataBaseClass = DataBaseClass.getInstance();
 
-    public RunnersDialogVM(String eventId) {
+    public GamersDialogVM(String eventId) {
         this.eventId = eventId;
         getManagerId();
-        getRunnersIds();
+        getgamersIds();
     }
 
-    private void getRunnersIds() {
+    private void getgamersIds() {
         ValueEventListener listener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                runnersIds.clear();
+                gamersIds.clear();
                 if (snapshot.exists()){
                     for (DataSnapshot snapshot1: snapshot.getChildren()){
-                        runnersIds.add(snapshot1.getKey());
+                        gamersIds.add(snapshot1.getKey());
                     }
                 }
-                runnersIds.remove("false");
-                getRunners();
+                gamersIds.remove("false");
+                getgamers();
             }
 
             @Override
@@ -52,22 +52,22 @@ public class RunnersDialogVM extends ViewModel {
             }
         };
 
-        dataBaseClass.retrieveRunnersIds(eventId, listener);
+        dataBaseClass.retrievegamersIds(eventId, listener);
     }
 
-    private void getRunners() {
+    private void getgamers() {
         ValueEventListener listener = new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                runners.clear();
+                gamers.clear();
                 if(snapshot.exists()){
                     for(DataSnapshot snapshot1 : snapshot.getChildren()){
-                        if (runnersIds.contains(snapshot1.getKey())){
+                        if (gamersIds.contains(snapshot1.getKey())){
                             User user = snapshot1.getValue(User.class);
-                            runners.add(user);
+                            gamers.add(user);
                         }
                     }
-                    runnersLiveData.setValue(runners);
+                    gamersLiveData.setValue(gamers);
                 }
             }
 
@@ -142,7 +142,7 @@ public class RunnersDialogVM extends ViewModel {
         return managerImageUriLiveData;
     }
 
-    public MutableLiveData<ArrayList<User>> getRunnersLiveData(){
-        return runnersLiveData;
+    public MutableLiveData<ArrayList<User>> getgamersLiveData(){
+        return gamersLiveData;
     }
 }

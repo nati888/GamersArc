@@ -25,7 +25,7 @@ public class InvitationsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamers
     interface OnInvitationResponse{
         void onJoinToEvent(String userId, String eventId, int position);
         void onRemoveEvent(String userId, String eventId, int position);
-        void onRunnersClicked(String eventId);
+        void ongamersClicked(String eventId);
     }
 
     private OnInvitationResponse invitationCallback;
@@ -90,7 +90,7 @@ public class InvitationsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamers
         TextView invitationTimeTV;
         Button joinBtn;
         Button removeBtn;
-        LinearLayout runners;
+        LinearLayout gamers;
 
         public InvitationsViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -99,7 +99,7 @@ public class InvitationsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamers
             invitationTimeTV = itemView.findViewById(R.id.invitationCellTimeTV);
             joinBtn = itemView.findViewById(R.id.invitationCellJoinBtn);
             removeBtn = itemView.findViewById(R.id.invitationCellRemoveBtn);
-            runners = itemView.findViewById(R.id.invitationsCellRunners);
+            gamers = itemView.findViewById(R.id.invitationsCellgamers);
 
             joinBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -118,11 +118,11 @@ public class InvitationsTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamers
                 }
             });
 
-            runners.setOnClickListener(new View.OnClickListener() {
+            gamers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    invitationCallback.onRunnersClicked(invitations.get(getAdapterPosition()).getEventId());
+                    invitationCallback.ongamersClicked(invitations.get(getAdapterPosition()).getEventId());
                 }
             });
         }

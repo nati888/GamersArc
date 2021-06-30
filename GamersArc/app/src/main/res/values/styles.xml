@@ -1,18 +1,6 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.Bridge">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">#323232</item>
-        <item name="colorPrimaryDark">#000000</item>
-        <item name="colorAccent">#FFAC41</item>
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <item name="android:textColorTertiary">#FFAC41</item>
-
-
-
-    </style>
 
     <style name="DrawerTextStyle" >
         <item name="android:textColor">#FFAC41</item>

@@ -1,33 +1,9 @@
-<!--
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/my_profile"
-        android:layout_centerHorizontal="true"
-        android:textSize="30sp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/yellow"
-        android:id="@+id/myProfileLabel"/>
-
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/myProfileLabel"
-        app:civ_border_width="2dp"
-        android:layout_marginTop="35dp"
-        app:civ_border_color="#FF000000"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,7 +17,7 @@
             android:textSize="30sp"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:textColor="@color/yellow"
+            android:textColor="@color/dark_yellow"
             android:id="@+id/myProfileLabel"/>
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -55,29 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
-<<<<<<< HEAD
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="2"
-        android:paddingHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/profile_image">
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            app:cardCornerRadius="4dp"
-            android:layout_margin="5dp"
-            android:layout_marginStart="10dp"
-            android:elevation="10dp"
-            app:contentPadding="10dp"
-            app:cardBackgroundColor="@color/gray"
-            android:layout_weight="1">
-
-            <LinearLayout
-=======
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -94,7 +47,6 @@
                 android:id="@+id/fullNameProfileTV"/>
 
             <TextView
->>>>>>> 71e463d66f180e886bdc6bcfdd30a9bf2912e45c
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
@@ -111,18 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-<<<<<<< HEAD
-            android:layout_marginTop="10dp"
-            android:background="@color/gray"
-            android:textColor="@color/yellow"
-            android:id="@+id/levelProfileTV"/>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-=======
             android:orientation="vertical">
->>>>>>> 71e463d66f180e886bdc6bcfdd30a9bf2912e45c
 
             <TextView
                 android:layout_width="match_parent"
@@ -133,22 +74,9 @@
                 android:text="male"
                 android:id="@+id/genderProfile"/>
 
-<<<<<<< HEAD
-        <androidx.cardview.widget.CardView
-            android:layout_width="0dp"
-            android:layout_height="130dp"
-            app:cardCornerRadius="4dp"
-            android:layout_margin="5dp"
-            android:layout_marginEnd="10dp"
-            android:elevation="10dp"
-            app:cardBackgroundColor="@color/gray"
-            app:contentPadding="10dp"
-            android:layout_weight="1">
-=======
         </LinearLayout>
->>>>>>> 71e463d66f180e886bdc6bcfdd30a9bf2912e45c
 
-         <Space
+        <Space
             android:layout_width="match_parent"
             android:layout_height="15dp"/>
         <LinearLayout
@@ -260,4 +188,3 @@
 
     </LinearLayout>
 </ScrollView>
--->

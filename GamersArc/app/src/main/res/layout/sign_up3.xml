@@ -24,7 +24,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/preferred_running_partner"
+        android:text="@string/preferred_gaming_partner"
         android:textSize="18sp"
         android:textColor="@color/yellow"
         />
@@ -161,7 +161,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textColor="@color/yellow"
-                    android:text="@string/running_level"
+                    android:text="@string/skill_level1"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:id="@+id/runningLevel_text"/>

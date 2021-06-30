@@ -39,7 +39,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/friendDialogImageView"
         android:layout_marginTop="10dp"
-        android:text="@string/tal_22"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textColor="@color/yellow"/>

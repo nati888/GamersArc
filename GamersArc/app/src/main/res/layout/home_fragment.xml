@@ -38,7 +38,7 @@
                     android:visibility="gone"
                     android:layout_marginTop="3dp"
                     android:id="@+id/areYouComingTV"
-                    android:text="@string/are_you_coming_for_a_run"
+                    android:text="@string/lets_find_gamers"
                     android:textSize="25sp" />
 
                 <TextView

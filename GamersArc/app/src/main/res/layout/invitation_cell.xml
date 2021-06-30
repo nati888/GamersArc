@@ -26,7 +26,6 @@
             android:textSize="18sp"
             android:layout_marginStart="2dp"
             android:textColor="@color/yellow"
-            android:text="@string/rehovot_golda_meir"
             android:layout_toEndOf="@+id/invitationsCellLocationIcon"
             android:id="@+id/invitationCellAddressTV"/>
         <TextView

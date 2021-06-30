@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/nevProfile"
+        android:icon="@drawable/ic_round_tag_faces_24"
+        android:title="@string/profile"
+        />
+
+    <item
+        android:id="@+id/nevLocation"
+        android:icon="@drawable/ic_baseline_videogame_asset_24"
+        android:title="@string/events"
+
+        />
 
     <item
         android:id="@+id/nevHome"
-        android:icon="@drawable/home_dark_blue"
+        android:icon="@drawable/ic_baseline_home_24"
         android:title="@string/home"
         />
 
     <item
         android:id="@+id/nevGroup"
-        android:icon="@drawable/friends_dark_blue"
+        android:icon="@drawable/ic_outline_people_alt_24"
         android:title="@string/friends"
-        />
 
-    <item
-        android:id="@+id/nevLocation"
-        android:icon="@drawable/events_dark_blue"
-        android:title="@string/events"
-        />
-
-    <item
-        android:id="@+id/nevProfile"
-        android:icon="@drawable/profile_dark_blue"
-        android:title="@string/profile"
         />
 
     <item
         android:id="@+id/nevMessage"
-        android:icon="@drawable/messanger_dark_blue"
+        android:icon="@drawable/ic_baseline_chat_24"
         android:title="@string/chat"
         />
 

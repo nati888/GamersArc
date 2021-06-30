@@ -18,7 +18,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/yellow"
+            android:background="#FFAC41"
             android:id="@+id/toolbarLayout"
             />
 
@@ -46,6 +46,7 @@
         android:theme="@style/DrawerTextStyle"
         app:itemTextColor="@color/yellow"
         android:background="#323232"
+        app:itemIconTint="#FFAC41"
         app:headerLayout="@layout/header_layout_nav"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -12,13 +12,17 @@
         android:background="@color/yellow"
         />
 
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:itemIconTint="@drawable/bottom_nav_color"
-        app:labelVisibilityMode="unlabeled"
+        android:layout_height="match_parent"
+        app:itemIconTint="#111111"
+        app:itemTextColor="#111111"
+        app:itemRippleColor="#323232"
+        app:labelVisibilityMode="labeled"
+        app:itemIconSize="28dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/gray"
+        android:background="@drawable/nav_background_curved"
         app:menu="@menu/navigtion_bar"/>
 </RelativeLayout>

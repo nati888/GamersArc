@@ -188,7 +188,7 @@
                     android:layout_marginStart="40dp"
                     android:textColor="@color/yellow"
                     android:textSize="15sp"
-                    android:text="@string/running_level"/>
+                    android:text="@string/skill_level1"/>
 
  <!--               <RadioGroup
                     android:layout_width="0dp"

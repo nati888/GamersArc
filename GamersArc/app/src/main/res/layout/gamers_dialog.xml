@@ -14,15 +14,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="@string/runners"
+            android:text="@string/gamers"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:id="@+id/runnerDialogTitle"/>
+            android:id="@+id/gamerDialogTitle"/>
 
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:id="@+id/runnerDialogDismiss"
+            android:id="@+id/gamerDialogDismiss"
             android:src="@drawable/ic_clear_white_24dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
@@ -50,7 +50,7 @@
             android:layout_alignParentEnd="true"
             android:textColor="@color/white"
             android:layout_marginStart="15dp"
-            android:id="@+id/runnerDialogManager"/>
+            android:id="@+id/gamerDialogManager"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,11 +59,11 @@
             android:layout_toEndOf="@id/managerImageView"
             android:textColor="@color/white"
             android:layout_marginStart="15dp"
-            android:id="@+id/runnerDialogManagerName"/>
+            android:id="@+id/gamerDialogManagerName"/>
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/runnersRecycler"/>
+        android:id="@+id/gamersRecycler"/>
 </LinearLayout>

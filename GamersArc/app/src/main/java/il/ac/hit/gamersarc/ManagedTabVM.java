@@ -105,23 +105,23 @@ public class ManagedTabVM extends AndroidViewModel {
 
     public void onEventCancel(final Event event){
 
-        //get runners Ids
-        HashMap<String, Boolean> runnersMap = event.getRunners();
-        Set<String> keySet = runnersMap.keySet();
-        ArrayList<String> runnersIds = new ArrayList<>(keySet);
-        runnersIds.remove("false");
+        //get gamers Ids
+        HashMap<String, Boolean> gamersMap = event.getgamers();
+        Set<String> keySet = gamersMap.keySet();
+        ArrayList<String> gamersIds = new ArrayList<>(keySet);
+        gamersIds.remove("false");
 
         //database
-        dataBaseClass.cancelEvent(event.getEventId(), runnersIds, event.getManager());
+        dataBaseClass.cancelEvent(event.getEventId(), gamersIds, event.getManager());
         getManagedEventsIds();
-        //notification to all runners
-        for(final String runnerId : runnersIds){
+        //notification to all gamers
+        for(final String gamerId : gamersIds){
             ValueEventListener listener = new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                    String token = snapshot.getValue(String.class);
                     try {
-                        notifyRunner(token, event);
+                        notifygamer(token, event);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -132,12 +132,12 @@ public class ManagedTabVM extends AndroidViewModel {
 
                 }
             };
-            dataBaseClass.retrieveUserToken(runnerId, listener);
+            dataBaseClass.retrieveUserToken(gamerId, listener);
         }
 
     }
 
-    private void notifyRunner(String runnerToken, Event event) throws JSONException {
+    private void notifygamer(String gamerToken, Event event) throws JSONException {
 
         double longitude = event.getLongitude();
         double latitude = event.getLatitude();
@@ -168,7 +168,7 @@ public class ManagedTabVM extends AndroidViewModel {
         }
 
         final JSONObject rootObject = new JSONObject();
-        rootObject.put("to", runnerToken);
+        rootObject.put("to", gamerToken);
         JSONObject data = new JSONObject();
         String title = getApplication().getResources().getString(R.string.event_canceled);
         String theEvent = getApplication().getResources().getString(R.string.the_event);

@@ -87,13 +87,13 @@ public class ManagedTabFragment extends Fragment implements SwipeRefreshLayout.O
     }
 
     @Override
-    public void onRunnersClicked(String eventId) {
+    public void ongamersClicked(String eventId) {
         //openDialog
         FragmentManager fm = getFragmentManager();
-        RunnersDialog editNameDialogFragment = RunnersDialog.newInstance(eventId);
+        GamersDialog editNameDialogFragment = GamersDialog.newInstance(eventId);
 
         assert fm != null;
-        editNameDialogFragment.show(fm, "fragment_runners");
+        editNameDialogFragment.show(fm, "fragment_gamers");
     }
 
     @Override

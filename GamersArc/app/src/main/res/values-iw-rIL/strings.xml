@@ -4,7 +4,7 @@
     <string name="app_name">GamersArc</string>
     <string name="chosenLocation">המקום שנבחר</string>
     <string name="see_in_invitations">תסתכל בהזמנות שלך</string>
-    <string name="new_invitation">הזמנה חדשה לאירוע ריצה!</string>
+    <string name="new_invitation">הזמנה חדשה!</string>
     <string name="no_location_detected">לא מיקום זוהה</string>
     <string name="enter_your_message">הזן את ההודעה שלך</string>
     <string name="edit_name">ערוך שם</string>
@@ -20,8 +20,8 @@
     <string name="save">שמור</string>
     <string name="my_profile">הפרופיל שלי</string>
     <string name="find_event_around_you">מצא משחק סביבך</string>
-    <string name="find_runners_around_you">מצא שחקנים סביבך</string>
-    <string name="are_you_coming_for_a_run">האם תרצה להצטרף למשחק?</string>
+    <string name="find_gamers_around_you">מצא שחקנים סביבך</string>
+    <string name="lets_find_gamers">האם תרצה להצטרף למשחק?</string>
     <string name="fill_all_details">"מלא את כל המידע "</string>
     <string name="failed_to_sign_up">נכשלת בהרשמה</string>
     <string name="user_already_exists">משתמש כבר רשום</string>
@@ -40,7 +40,7 @@
     <string name="email">אימייל</string>
     <string name="next">הבא</string>
     <string name="name">שם</string>
-    <string name="preferred_running_partner">שותף מועדף לריצה</string>
+    <string name="preferred_gaming_partner">שותף מועדף לריצה</string>
     <string name="personal_details">פרטים אישיים</string>
     <string name="registration_details">פרטי רישום</string>
     <string name="sign_up">הירשם</string>
@@ -52,8 +52,8 @@
     <string name="novice">מתחיל</string>
     <string name="intermediate">מתקדם</string>
     <string name="expert1">מקצועי</string>
-    <string name="running_level">רמת ריצה:</string>
-    <string name="number_of_runners">Runners joined</string>
+    <string name="skill_level1">רמת ריצה:</string>
+    <string name="number_of_gamers">גיימרים שהצטרפו</string>
 
     <string name="location">מקום</string>
     <string name="time">זמן</string>
@@ -62,9 +62,9 @@
     <string name="get_started">להתחיל!</string>
     <string name="event3">או ליצור אירועים משלך!</string>
     <string name="event2">הצטרפו לאירועים הקרובים בקרבתכם</string>
-    <string name="event1">הצטרף לאירוע ריצה</string>
+    <string name="event1">"הצטרף לאירוע "</string>
     <string name="friend3">מסביבך</string>
-    <string name="friend2">מצא שותפים חדשים לריצה</string>
+    <string name="friend2">מצא גיימרים חדשים בסביבתך</string>
     <string name="friends1">מצא חברים חדשים</string>
     <string name="create3">העדפות</string>
     <string name="create2">בחר את השותף שלך לריצה</string>
@@ -103,7 +103,7 @@
     <string name="manager">מנהל</string>
     <string name="send_them_a_message">שלח להם הודעה!</string>
     <string name="accepted_your_request">קבל את בקשת החברות</string>
-    <string name="runners">רצים</string>
+    <string name="gamers">גיימרים</string>
     <string name="meters_away">מטר משם</string>
     <string name="requests">בקשות</string>
     <string name="friends">חברים</string>
@@ -120,8 +120,8 @@
     <string name="join_btn">הצטרף!</string>
     <string name="new_event_snack_bar">אירוע חדש נוצר בהצלחה!</string>
     <string name="all_fields">בקשה מלא את השדות</string>
-    <string name="private_event">פרטי</string>
-    <string name="public_event">ציבורי</string>
+    <string name="private_event">אירוע פרטי</string>
+    <string name="public_event">אירוע פתוח</string>
     <string name="event_status">מצב האירוע</string>
     <string name="medium">בינוני</string>
     <string name="expert">מומחה</string>
@@ -133,12 +133,6 @@
     <string name="event_date">תאריך:</string>
     <string name="_1_1_1">1/1/1</string>
     <string name="_00_00">00:00</string>
-    <string name="rehovot">רחובות</string>
-    <string name="_1">1</string>
-    <string name="tal">טל</string>
-    <string name="rami">רמי</string>
-    <string name="tal_22">טל, 22</string>
-    <string name="rehovot_golda_meir">רחובות, גולדה מאיר</string>
     <string name="tali">טלי</string>
     <string name="date_of_birth">תאריך לידה</string>
     <string name="Select_Image_from_here">לחץ לבחירת תמונה</string>

@@ -22,7 +22,7 @@ public class ManagedTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
     private Context context;
 
     interface ManagedListener{
-        void onRunnersClicked(String eventId);
+        void ongamersClicked(String eventId);
         void onCancelButtonClicked(Event event);
 
     }
@@ -88,7 +88,7 @@ public class ManagedTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
         TextView managedAddress;
         TextView managedDate;
         TextView managedTime;
-        LinearLayout runners;
+        LinearLayout gamers;
         Button cancelBtn;
 
 
@@ -97,14 +97,14 @@ public class ManagedTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc.
             managedAddress = itemView.findViewById(R.id.managedCellAddressTV);
             managedDate = itemView.findViewById(R.id.managedCellDateTV);
             managedTime = itemView.findViewById(R.id.managedCellTimeTV);
-            runners = itemView.findViewById(R.id.managedCellRunners);
+            gamers = itemView.findViewById(R.id.managedCellgamers);
             cancelBtn = itemView.findViewById(R.id.managedCellCancelBtn);
 
 
-            runners.setOnClickListener(new View.OnClickListener() {
+            gamers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    managedCallback.onRunnersClicked(managedEvents.get(getAdapterPosition()).getEventId());
+                    managedCallback.ongamersClicked(managedEvents.get(getAdapterPosition()).getEventId());
                 }
             });
 

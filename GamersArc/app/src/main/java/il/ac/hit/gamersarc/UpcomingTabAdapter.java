@@ -29,7 +29,7 @@ public class UpcomingTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc
 
     interface UpcomingListener{
         void onUpcomingRemoved(String userId, String eventId);
-        void onRunnersClicked(String eventId);
+        void ongamersClicked(String eventId);
     }
 
     UpcomingListener upcomingCallback;
@@ -90,7 +90,7 @@ public class UpcomingTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc
         TextView upcomingAddress;
         TextView upcomingDate;
         TextView upcomingTime;
-        LinearLayout runners;
+        LinearLayout gamers;
         Button removeBtn;
 
         public UpcomingViewHolder(@NonNull View itemView) {
@@ -98,7 +98,7 @@ public class UpcomingTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc
             upcomingAddress = itemView.findViewById(R.id.upcomingCellAddressTV);
             upcomingDate = itemView.findViewById(R.id.upcomingCellDateTV);
             upcomingTime = itemView.findViewById(R.id.upcomingCellTimeTV);
-            runners = itemView.findViewById(R.id.upcomingCellRunners);
+            gamers = itemView.findViewById(R.id.upcomingCellgamers);
             removeBtn = itemView.findViewById(R.id.upcomingCellremoveBtn);
 
             removeBtn.setOnClickListener(new View.OnClickListener() {
@@ -108,11 +108,11 @@ public class UpcomingTabAdapter extends RecyclerView.Adapter<il.ac.hit.gamersarc
                 }
             });
 
-            runners.setOnClickListener(new View.OnClickListener() {
+            gamers.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     //openDialog
-                    upcomingCallback.onRunnersClicked(upcomingEvents.get(getAdapterPosition()).getEventId());
+                    upcomingCallback.ongamersClicked(upcomingEvents.get(getAdapterPosition()).getEventId());
                 }
             });
         }

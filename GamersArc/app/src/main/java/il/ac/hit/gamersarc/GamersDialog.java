@@ -24,11 +24,11 @@ import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class RunnersDialog extends DialogFragment {
+public class GamersDialog extends DialogFragment {
 
-    private il.ac.hit.gamersarc.RunnersDialogVM viewModel;
-    private ArrayList<User> runners = new ArrayList<>();
-    il.ac.hit.gamersarc.RunnersDialogAdapter adapter;
+    private il.ac.hit.gamersarc.GamersDialogVM viewModel;
+    private ArrayList<User> gamers = new ArrayList<>();
+    il.ac.hit.gamersarc.GamersDialogAdapter adapter;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -37,14 +37,14 @@ public class RunnersDialog extends DialogFragment {
         assert getArguments() != null;
         eventId = getArguments().getString("eventId");
 
-        viewModel = new il.ac.hit.gamersarc.RunnersModelFactory(eventId).create(il.ac.hit.gamersarc.RunnersDialogVM.class);
+        viewModel = new il.ac.hit.gamersarc.GamersModelFactory(eventId).create(il.ac.hit.gamersarc.GamersDialogVM.class);
     }
 
-    public RunnersDialog() {
+    public GamersDialog() {
     }
 
-    public static il.ac.hit.gamersarc.RunnersDialog newInstance(String eventId) {
-        il.ac.hit.gamersarc.RunnersDialog dialog = new il.ac.hit.gamersarc.RunnersDialog();
+    public static il.ac.hit.gamersarc.GamersDialog newInstance(String eventId) {
+        il.ac.hit.gamersarc.GamersDialog dialog = new il.ac.hit.gamersarc.GamersDialog();
         Bundle args = new Bundle();
         args.putString("eventId", eventId);
         dialog.setArguments(args);
@@ -54,7 +54,7 @@ public class RunnersDialog extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.runners_dialog, container);
+        return inflater.inflate(R.layout.gamers_dialog, container);
     }
 
     @Override
@@ -67,7 +67,7 @@ public class RunnersDialog extends DialogFragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        final ImageView dismissBtn = view.findViewById(R.id.runnerDialogDismiss);
+        final ImageView dismissBtn = view.findViewById(R.id.gamerDialogDismiss);
         dismissBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,16 +77,16 @@ public class RunnersDialog extends DialogFragment {
 
 
         final CircleImageView managerImageView = view.findViewById(R.id.managerImageView);
-        final TextView managerNameTV = view.findViewById(R.id.runnerDialogManagerName);
-        RecyclerView runnersRecycler = view.findViewById(R.id.runnersRecycler);
-        adapter = new il.ac.hit.gamersarc.RunnersDialogAdapter(runners, this.getContext());
-        runnersRecycler.setAdapter(adapter);
-        runnersRecycler.setHasFixedSize(true);
+        final TextView managerNameTV = view.findViewById(R.id.gamerDialogManagerName);
+        RecyclerView gamersRecycler = view.findViewById(R.id.gamersRecycler);
+        adapter = new il.ac.hit.gamersarc.GamersDialogAdapter(gamers, this.getContext());
+        gamersRecycler.setAdapter(adapter);
+        gamersRecycler.setHasFixedSize(true);
         RecyclerView.LayoutManager manager = new LinearLayoutManager(this.getContext());
-        runnersRecycler.setLayoutManager(manager);
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(runnersRecycler.getContext(),
+        gamersRecycler.setLayoutManager(manager);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(gamersRecycler.getContext(),
                 ((LinearLayoutManager) manager).getOrientation());
-        runnersRecycler.addItemDecoration(dividerItemDecoration);
+        gamersRecycler.addItemDecoration(dividerItemDecoration);
 
         viewModel.getManager().observe(getViewLifecycleOwner(), new Observer<User>() {
             @Override
@@ -109,11 +109,11 @@ public class RunnersDialog extends DialogFragment {
             }*/
         });
 
-        viewModel.getRunnersLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<User>>() {
+        viewModel.getgamersLiveData().observe(getViewLifecycleOwner(), new Observer<ArrayList<User>>() {
             @Override
             public void onChanged(ArrayList<User> users) {
-                runners.clear();
-                runners.addAll(users);
+                gamers.clear();
+                gamers.addAll(users);
                 adapter.notifyDataSetChanged();
             }
         });

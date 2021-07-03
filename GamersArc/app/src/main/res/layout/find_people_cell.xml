@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:textSize="18sp"
-            android:text="@string/tal"
             android:textColor="@color/yellow"
             android:id="@+id/userNameTVRecyclerCell"/>
 

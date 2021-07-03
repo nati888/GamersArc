@@ -15,7 +15,7 @@ public class Event {
     private String manager;
     private String runningLevel;
     private String eventStatus;
-    private HashMap<String,Boolean> runners = new HashMap<>();
+    private HashMap<String,Boolean> gamers = new HashMap<>();
 
     public Event() {
     }
@@ -32,7 +32,7 @@ public class Event {
         this.runningLevel = runningLevel;
         this.eventStatus  = eventStatus;
 
-        runners.put("false",false);
+        gamers.put("false",false);
     }
 
     public String getEventStatus() {
@@ -123,12 +123,12 @@ public class Event {
         this.runningLevel = runningLevel;
     }
 
-    public HashMap<String, Boolean> getRunners() {
-        return runners;
+    public HashMap<String, Boolean> getgamers() {
+        return gamers;
     }
 
-    public void setRunners(HashMap<String, Boolean> runners) {
-        this.runners = runners;
+    public void setgamers(HashMap<String, Boolean> gamers) {
+        this.gamers = gamers;
     }
 
 }

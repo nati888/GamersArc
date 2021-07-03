@@ -5,7 +5,7 @@
     <string name="event_date">Date:</string>
     <string name="event_time">Time:</string>
     <string name="event_location">Location:</string>
-    <string name="number_of_runners">Runners joined</string>
+    <string name="number_of_gamers">Gamers joined</string>
     <string name="invite_friends_btn">Invite Friends</string>
     <string name="done_btn">Done</string>
     <string name="easy">Easy</string>
@@ -30,7 +30,7 @@
     <string name="friends">Friends</string>
     <string name="requests">Requests</string>
     <string name="meters_away">meters away</string>
-    <string name="runners">Runners</string>
+    <string name="gamers">Gamers</string>
     <string name="accepted_your_request">accepted your friend request</string>
     <string name="send_them_a_message">Send them a message!</string>
     <string name="manager">Manager</string>
@@ -71,7 +71,6 @@
     <string name="create2">choose your running partner</string>
     <string name="create3">preferences</string>
     <string name="friends1">Find new friends</string>
-    <string name="friend2">Find new running partners</string>
     <string name="friend3">around you</string>
     <string name="event1">Join running events</string>
     <string name="event2">Join upcoming events near you</string>
@@ -86,7 +85,7 @@
     <string name="intermediate">Intermediate</string>
     <string name="expert1">Expert</string>
 
-        <string name="running_level">Running level:</string>
+        <string name="skill_level1">Skill level:</string>
     <string name="done">Done</string>
     <string name="enter_address">Enter address</string>
     <string name="type">Please type valid address</string>
@@ -94,7 +93,7 @@
     <string name="sign_up">Sign up</string>
     <string name="registration_details">Registration Details</string>
     <string name="personal_details">Personal Details</string>
-    <string name="preferred_running_partner">Preferred Running Partner</string>
+    <string name="preferred_gaming_partner">Preferred Gaming Partner</string>
     <string name="name">Name</string>
     <string name="next">Next</string>
     <string name="email">Email</string>
@@ -114,8 +113,8 @@
     <string name="user_already_exists">User already exists</string>
     <string name="failed_to_sign_up">Failed to sign up</string>
     <string name="fill_all_details">Please fill all details</string>
-    <string name="are_you_coming_for_a_run">Are you coming for a game?</string>
-    <string name="find_runners_around_you">Find players around you</string>
+    <string name="lets_find_gamers">Lets find some people to game with!</string>
+    <string name="find_gamers_around_you">Find players around you</string>
     <string name="find_event_around_you">Find game around you</string>
 
     <string name="my_profile">My profile</string>
@@ -134,16 +133,10 @@
     <string name="edit_name">Edit name</string>
     <string name="enter_your_message">Enter your message</string>
     <string name="no_location_detected">No location detected</string>
-    <string name="new_invitation">New invitation to running event!</string>
+    <string name="new_invitation">New invitation to gaming event!</string>
     <string name="see_in_invitations">See it on your invitations</string>
     <string name="_1_1_1">1/1/1</string>
     <string name="_00_00">00:00</string>
-    <string name="rehovot">Rehovot</string>
-    <string name="_1">1</string>
-    <string name="tal">tal</string>
-    <string name="rami">Rami</string>
-    <string name="tal_22">Tal, 22</string>
-    <string name="rehovot_golda_meir">Rehovot, golda meir</string>
     <string name="tali">Tali</string>
     <string name="date_of_birth">date of birth</string>
     <string name="Select_Image_from_here">Select Image from here...</string>
@@ -157,6 +150,7 @@
     <string name="mmo">MMO</string>
     <string name="rpg">RPG</string>
     <string name="strategy">Strategy</string>
+    <string name="friend2">Fine new gaming partners</string>
 
 
 </resources>

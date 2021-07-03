@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import il.ac.hit.gamersarc.RunnersDialog;
+import il.ac.hit.gamersarc.GamersDialog;
 import il.ac.hit.gamersarc.UserInstance;
 
 import java.io.IOException;
@@ -130,10 +130,10 @@ public class FindEventsFragment extends Fragment implements FindEventsAdapter.On
     @Override
     public void onSeeMembersClick(String eventId) {
         FragmentManager fm = getFragmentManager();
-        RunnersDialog editNameDialogFragment = RunnersDialog.newInstance(eventId);
+        GamersDialog editNameDialogFragment = GamersDialog.newInstance(eventId);
 
         assert fm != null;
-        editNameDialogFragment.show(fm, "fragment_runners");
+        editNameDialogFragment.show(fm, "fragment_gamers");
     }
 
     @Override

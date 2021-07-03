@@ -59,17 +59,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             android:layout_marginStart="5dp"
-            android:id="@+id/upcomingCellRunners"
+            android:id="@+id/upcomingCellgamers"
             android:layout_below="@+id/upcomingCellDateTV">
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/sword"
-                android:id="@+id/upcomingCellRunnersIcon"/>
+                android:id="@+id/upcomingCellgamersIcon"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/runners"
+                android:text="@string/gamers"
                 android:layout_marginStart="2dp"
 
                 android:textSize="14sp"
